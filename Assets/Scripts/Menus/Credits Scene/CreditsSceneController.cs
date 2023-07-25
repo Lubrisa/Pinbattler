@@ -17,6 +17,7 @@ public class CreditsSceneController : MonoBehaviour
 
     public void EndCredits(InputAction.CallbackContext context)
     {
+        print("Segurou");
         SceneManager.LoadScene(0);
     }
 }
