@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be51871efa6c3e4eae1703925c8f5ac, type: 3}
+  m_Name: Title Screen
+  m_EditorClassIdentifier: 
+  m_SharedTableData: {fileID: 11400000, guid: ac85ef67051e25048ba304543d5a6091, type: 2}
+  m_Tables:
+  - {fileID: 11400000, guid: 33ea069c6ab58c3478ed2a0b06f0c944, type: 2}
+  - {fileID: 11400000, guid: efce2c0af14130f4a99f95db41d4dbef, type: 2}
+  m_Extensions:
+  - id: 0
+  m_Group: String Table
+  references:
+    version: 1
+    00000000:
+      type: {class: GoogleSheetsExtension, ns: UnityEditor.Localization.Plugins.Google, asm: Unity.Localization.Editor}
+      data:
+        m_Collection: {fileID: 11400000}
+        m_SheetsServiceProvider: {fileID: 11400000, guid: 7d567444c20d1f146a41a746f27cd815, type: 2}
+        m_SpreadsheetId: 
+        m_SheetId: 0
+        m_Columns:
+        - id: 1
+        - id: 2
+        m_RemoveMissingPulledKeys: 1
+    00000001:
+      type: {class: KeyColumn, ns: UnityEditor.Localization.Plugins.Google.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_Column: A
+    00000002:
+      type: {class: LocaleColumn, ns: UnityEditor.Localization.Plugins.Google.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_Column: B
+        m_LocaleIdentifier:
+          m_Code: 
+        m_IncludeComments: 0

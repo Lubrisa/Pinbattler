@@ -1,0 +1,163 @@
+{
+    "name": "Controls",
+    "maps": [
+        {
+            "name": "Computer",
+            "id": "57674850-5769-4e59-8fe5-d971c56a9302",
+            "actions": [
+                {
+                    "name": "Flippers",
+                    "type": "Button",
+                    "id": "936e10ba-139c-4b20-a2fd-0f657311cdad",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Spring",
+                    "type": "Button",
+                    "id": "c8270b31-b788-4646-b8e9-479083104d5a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Ability",
+                    "type": "Button",
+                    "id": "20e09149-4ea6-485e-a515-8c4d5466cd6e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "FlipperAxis",
+                    "id": "bafa9aa3-6175-4297-8074-2783131a3041",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Flippers",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "78f7f696-4500-47ee-a1ea-25a892e59f06",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Flippers",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "7466fc45-9ba4-4a79-994b-7b1a74923ffb",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Flippers",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "FlipperAxis",
+                    "id": "ad6718ef-5092-400e-b0d1-86384aa63df3",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Flippers",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "c8a8f945-1aa7-4216-9d74-1aef5670d423",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Flippers",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "f37217cc-8aa7-4495-bf44-66f6ee18ce97",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Flippers",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "dab5e23e-7584-4939-9464-d08cde34c8ce",
+                    "path": "<Keyboard>/s",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Spring",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6c310f07-8d03-43f4-9d51-9db5420a77b5",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Spring",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8b32a4df-aa81-42e3-bb4c-6d131d847ef8",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Ability",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c1718793-b954-4c77-84db-a2625b2d2278",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Ability",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Computer",
+            "bindingGroup": "Computer",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
