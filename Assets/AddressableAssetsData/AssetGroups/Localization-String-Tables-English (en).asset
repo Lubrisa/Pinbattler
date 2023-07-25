@@ -15,7 +15,7 @@ MonoBehaviour:
   m_GroupName: Localization-String-Tables-English (en)
   m_Data:
     m_SerializedData: []
-  m_GUID: 7f03bc93a124bfc4da317cb253c431be
+  m_GUID: c5eeda51cc5ddb64bacc0a5099c80681
   m_SerializeEntries: []
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: fd86bfe006785534494a4b4feda73bee, type: 2}
