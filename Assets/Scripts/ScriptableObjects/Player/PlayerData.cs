@@ -1,0 +1,23 @@
+using Pinbattlers.Player.Resouces;
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace Pinbattlers.Player
+{
+    [CreateAssetMenu(fileName = "Player", menuName = "EntityData/Player")]
+    public class PlayerData : ScriptableObject
+    {
+        [field: SerializeField] public int Life { get; private set; }
+        [field: SerializeField] public int LifeModifier { get; private set; }
+        [field: SerializeField] public int Attack { get; private set; }
+        [field: SerializeField] public int AttackModifier { get; private set; }
+        [field: SerializeField] public int Defense { get; private set; }
+        [field: SerializeField] public List<Sprite> Skins { get; private set; }
+        [field: SerializeField] public Sprite SkinEquiped { get; private set; }
+        [field: SerializeField] public List<Ability> Abilities { get; private set; }
+        [field: SerializeField] public Ability AbilityEquiped { get; private set; }
+        [field: SerializeField] public List<Relic> Relics { get; private set; }
+        [field: SerializeField] public Relic RelicEquiped { get; private set; }
+        [field: SerializeField] public List<Consumable> Consumables { get; private set; }
+    }
+}
