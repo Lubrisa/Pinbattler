@@ -5927,76 +5927,97 @@ ScriptedImporter:
   characterMode: 1
   mosaicPSDLayers: []
   rigPSDLayers:
+  - name: Corpo
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 
+    layerID: 14
+    mosaicPosition: {x: 0, y: 0}
   - name: "Cabe\xE7a"
     spriteName: "Cabe\xE7a"
     isGroup: 0
-    parentIndex: -1
+    parentIndex: 0
     spriteID: a43e8ddb638be9f44baddee50aef0c51
     layerID: 13
     mosaicPosition: {x: 4, y: 473}
   - name: Bunda
     spriteName: Bunda
     isGroup: 0
-    parentIndex: -1
+    parentIndex: 0
     spriteID: 770bd2d0514742943a506f5d5ac28482
     layerID: 12
     mosaicPosition: {x: 4, y: 4}
+  - name: Patas
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 
+    layerID: 16
+    mosaicPosition: {x: 0, y: 0}
   - name: Perna 3E
     spriteName: Perna 3E
     isGroup: 0
-    parentIndex: -1
+    parentIndex: 3
     spriteID: 6a9e48719c25cc24a8c6adfc734d1898
     layerID: 9
     mosaicPosition: {x: 428, y: 443}
   - name: Perna 3D
     spriteName: Perna 3D
     isGroup: 0
-    parentIndex: -1
+    parentIndex: 3
     spriteID: f9ce1554bb8113b4bb712ee25dccd109
     layerID: 8
     mosaicPosition: {x: 428, y: 686}
   - name: Perna 4E
     spriteName: Perna 4E
     isGroup: 0
-    parentIndex: -1
+    parentIndex: 3
     spriteID: 480b182350c79b84e848a894fe1660e6
     layerID: 11
     mosaicPosition: {x: 670, y: 4}
   - name: Perna 4D
     spriteName: Perna 4D
     isGroup: 0
-    parentIndex: -1
+    parentIndex: 3
     spriteID: dd3e7d5aa1e04924687ae9aef8d133c1
     layerID: 10
     mosaicPosition: {x: 428, y: 929}
   - name: Perna 2E
     spriteName: Perna 2E
     isGroup: 0
-    parentIndex: -1
+    parentIndex: 3
     spriteID: b6c0adc4694e1314687239f4c0ef447d
     layerID: 7
     mosaicPosition: {x: 4, y: 889}
   - name: Perna 2D
     spriteName: Perna 2D
     isGroup: 0
-    parentIndex: -1
+    parentIndex: 3
     spriteID: b7a324ca54923f149a826c808847b371
     layerID: 6
     mosaicPosition: {x: 4, y: 1230}
   - name: Perna 1E
     spriteName: Perna 1E
     isGroup: 0
-    parentIndex: -1
+    parentIndex: 3
     spriteID: 28b4e63c1d2e92b4cabcb363aa996854
     layerID: 5
     mosaicPosition: {x: 428, y: 4}
   - name: Perna 1D
     spriteName: Perna 1D
     isGroup: 0
-    parentIndex: -1
+    parentIndex: 3
     spriteID: fe0e111460d91f949b2576aefc5098ce
     layerID: 4
     mosaicPosition: {x: 4, y: 1571}
+  - name: Modelo
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 
+    layerID: 19
+    mosaicPosition: {x: 0, y: 0}
   characterData:
     bones:
     - name: "Cabe\xE7a"
