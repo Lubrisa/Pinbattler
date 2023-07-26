@@ -15811,6 +15811,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 6561965885024160762, guid: a6de3165b9fb5e943ad545bb1a555720, type: 3}
+        m_TargetAssemblyTypeName: AtlasController, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1480419011
 MonoBehaviour:
   m_ObjectHideFlags: 0

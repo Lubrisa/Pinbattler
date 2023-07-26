@@ -7,6 +7,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 523967779538356947, guid: 49b37f31d4eb72343a6bc0f850e41f2c, type: 3}
+      propertyPath: _monoInstallers.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 523967779538356947, guid: 49b37f31d4eb72343a6bc0f850e41f2c, type: 3}
+      propertyPath: _installerPrefabs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 523967779538356947, guid: 49b37f31d4eb72343a6bc0f850e41f2c, type: 3}
+      propertyPath: _monoInstallers.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 523967779538356947, guid: 49b37f31d4eb72343a6bc0f850e41f2c, type: 3}
+      propertyPath: _installerPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1694383131493444155, guid: 49b37f31d4eb72343a6bc0f850e41f2c, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -91,9 +107,63 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2080135549766648731, guid: 49b37f31d4eb72343a6bc0f850e41f2c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6003685046600464733}
+    - target: {fileID: 2080135549766648731, guid: 49b37f31d4eb72343a6bc0f850e41f2c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnConfirmButtonClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 2080135549766648731, guid: 49b37f31d4eb72343a6bc0f850e41f2c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Pinbattlers.Menus.ExitAtlasConfirmBehaviour, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 5502114703130716935, guid: 49b37f31d4eb72343a6bc0f850e41f2c, type: 3}
       propertyPath: m_Name
-      value: ConfirmationMenuBase
+      value: ConfirmationMenuExitAtlas
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5671206105743061794, guid: 49b37f31d4eb72343a6bc0f850e41f2c, type: 3}
+      propertyPath: _installerPrefabs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5671206105743061794, guid: 49b37f31d4eb72343a6bc0f850e41f2c, type: 3}
+      propertyPath: _installerPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7533085777626368030, guid: 49b37f31d4eb72343a6bc0f850e41f2c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6003685046600464733}
+    - target: {fileID: 7533085777626368030, guid: 49b37f31d4eb72343a6bc0f850e41f2c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnDeclineButtonClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 7533085777626368030, guid: 49b37f31d4eb72343a6bc0f850e41f2c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Pinbattlers.Menus.ExitAtlasConfirmBehaviour, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8548449546336705104, guid: 49b37f31d4eb72343a6bc0f850e41f2c, type: 3}
+      propertyPath: m_text
+      value: "Voc\xEA gostaria de voltar para a tela de t\xEDtulo?"
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 4494551290208915135, guid: 49b37f31d4eb72343a6bc0f850e41f2c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 49b37f31d4eb72343a6bc0f850e41f2c, type: 3}
+--- !u!1 &6561965885024160762 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5502114703130716935, guid: 49b37f31d4eb72343a6bc0f850e41f2c, type: 3}
+  m_PrefabInstance: {fileID: 1678638830742642941}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6003685046600464733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6561965885024160762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2271d44ef1215b74889555f494543420, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

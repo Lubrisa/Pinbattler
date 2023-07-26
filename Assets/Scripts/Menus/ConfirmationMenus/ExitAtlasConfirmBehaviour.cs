@@ -1,12 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ExitAtlasConfirmBehaviour : ScriptableObject, IConfirmBehaviour
+namespace Pinbattlers.Menus
 {
-    public void Confirm()
+    public class ExitAtlasConfirmBehaviour : MonoBehaviour
     {
-        SceneManager.LoadScene(0);
+        public void OnConfirmButtonClick()
+        {
+            SceneManager.LoadScene(0);
+        }
+
+        public void OnDeclineButtonClick()
+        {
+            Destroy(gameObject);
+        }
     }
 }
