@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 897ab560e09a4bb458e638a4101d4195, type: 3}
+  m_Name: Monster 0
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: Aranha
+  <Illustration>k__BackingField: {fileID: 21300000, guid: 9e7cd4e40c7c4a948a9f8fb2aef8f232, type: 3}
+  <Life>k__BackingField: 0
+  <Attack>k__BackingField: 0
+  <Defense>k__BackingField: 0
+  <Description>k__BackingField: Aranha rranha a ranha
+  <QuantityKilled>k__BackingField: 1
+  <States>k__BackingField: []

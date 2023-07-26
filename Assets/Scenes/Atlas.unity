@@ -6884,6 +6884,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 664435296}
+  - component: {fileID: 664435297}
   m_Layer: 5
   m_Name: Bestiary
   m_TagString: Untagged
@@ -6919,6 +6920,34 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -600, y: -294}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &664435297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664435295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b244bc5ba4630a4487be84ca14a1134, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_enemyName: {fileID: 1662916907}
+  m_enemyIllustration: {fileID: 1360814909}
+  m_enemyLore: {fileID: 555405543}
+  m_enemyQuantityKilled: {fileID: 464409290}
+  m_nextPageButton: {fileID: 1573067025}
+  m_previousPageButton: {fileID: 1838436903}
+  m_enemiesData:
+  - Data:
+    - {fileID: 11400000, guid: 1cc0a22c5f446514985c50c6a9e2d937, type: 2}
+    - {fileID: 11400000, guid: a491df68a26d0bf4b8dccf2d3bc76101, type: 2}
+  - Data:
+    - {fileID: 11400000, guid: 058a57cde0c52d648a5bb0ae944e4a93, type: 2}
+    - {fileID: 11400000, guid: e58fb7e48f523a64ba52dcde406248c9, type: 2}
+  - Data:
+    - {fileID: 11400000, guid: b3f522700746e684bb725cfe8e532807, type: 2}
+    - {fileID: 11400000, guid: 86339eef1fb58ca41b334d116e4a2497, type: 2}
 --- !u!1 &668390655
 GameObject:
   m_ObjectHideFlags: 0
@@ -7694,6 +7723,42 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 664435297}
+        m_TargetAssemblyTypeName: Pinbattlers.Menus.BestiaryController, Assembly-CSharp
+        m_MethodName: ChangeSession
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 664435297}
+        m_TargetAssemblyTypeName: Pinbattlers.Menus.BestiaryController, Assembly-CSharp
+        m_MethodName: UpdateInfo
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1838436903}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+        m_MethodName: set_interactable
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &751106997
 MonoBehaviour:
@@ -17812,7 +17877,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1564601368}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 664435297}
+        m_TargetAssemblyTypeName: Pinbattlers.Menus.BestiaryController, Assembly-CSharp
+        m_MethodName: ChangeSession
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1564601368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17932,7 +18009,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1573067026}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 664435297}
+        m_TargetAssemblyTypeName: Pinbattlers.Menus.BestiaryController, Assembly-CSharp
+        m_MethodName: OnNextPageButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1573067026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18127,7 +18216,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1601328257}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 664435297}
+        m_TargetAssemblyTypeName: Pinbattlers.Menus.BestiaryController, Assembly-CSharp
+        m_MethodName: ChangeSession
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1601328257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21118,7 +21219,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1838436904}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 664435297}
+        m_TargetAssemblyTypeName: Pinbattlers.Menus.BestiaryController, Assembly-CSharp
+        m_MethodName: OnPreviousPageButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1838436904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24004,7 +24117,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2067665492}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 664435297}
+        m_TargetAssemblyTypeName: Pinbattlers.Menus.BestiaryController, Assembly-CSharp
+        m_MethodName: ChangeSession
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2067665492
 MonoBehaviour:
   m_ObjectHideFlags: 0
