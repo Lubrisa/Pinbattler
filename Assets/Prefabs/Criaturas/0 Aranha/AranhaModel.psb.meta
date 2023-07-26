@@ -1,0 +1,602 @@
+fileFormatVersion: 2
+guid: eb22789fcf69a7e4db25477765a87cb6
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: "Cabe\xE7a"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 473
+      width: 336
+      height: 408
+    spriteID: a43e8ddb638be9f44baddee50aef0c51
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -429, y: 246}
+  - name: Bunda
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 416
+      height: 461
+    spriteID: 770bd2d0514742943a506f5d5ac28482
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -388, y: -518}
+  - name: Perna 3E
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 428
+      y: 443
+      width: 395
+      height: 235
+    spriteID: 6a9e48719c25cc24a8c6adfc734d1898
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 343, y: -87}
+  - name: Perna 3D
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 428
+      y: 686
+      width: 395
+      height: 235
+    spriteID: f9ce1554bb8113b4bb712ee25dccd109
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -288, y: 156}
+  - name: Perna 4E
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 670
+      y: 4
+      width: 347
+      height: 245
+    spriteID: 480b182350c79b84e848a894fe1660e6
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 517, y: -682}
+  - name: Perna 4D
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 428
+      y: 929
+      width: 347
+      height: 245
+    spriteID: dd3e7d5aa1e04924687ae9aef8d133c1
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -268, y: 243}
+  - name: Perna 2E
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 889
+      width: 341
+      height: 333
+    spriteID: b6c0adc4694e1314687239f4c0ef447d
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -128, y: 552}
+  - name: Perna 2D
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1230
+      width: 341
+      height: 333
+    spriteID: b7a324ca54923f149a826c808847b371
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -719, y: 893}
+  - name: Perna 1E
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 428
+      y: 4
+      width: 234
+      height: 431
+    spriteID: 28b4e63c1d2e92b4cabcb363aa996854
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 136, y: -180}
+  - name: Perna 1D
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1571
+      width: 235
+      height: 431
+    spriteID: fe0e111460d91f949b2576aefc5098ce
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -666, y: 1387}
+  platformSettings: []
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 1024
+  importedTextureHeight: 2048
+  documentSize: {x: 1200, y: 1200}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 1024
+  textureActualHeight: 2048
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: "Cabe\xE7a"
+    spriteName: "Cabe\xE7a"
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a43e8ddb638be9f44baddee50aef0c51
+    layerID: 13
+    mosaicPosition: {x: 4, y: 473}
+  - name: Bunda
+    spriteName: Bunda
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 770bd2d0514742943a506f5d5ac28482
+    layerID: 12
+    mosaicPosition: {x: 4, y: 4}
+  - name: Perna 3E
+    spriteName: Perna 3E
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6a9e48719c25cc24a8c6adfc734d1898
+    layerID: 9
+    mosaicPosition: {x: 428, y: 443}
+  - name: Perna 3D
+    spriteName: Perna 3D
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f9ce1554bb8113b4bb712ee25dccd109
+    layerID: 8
+    mosaicPosition: {x: 428, y: 686}
+  - name: Perna 4E
+    spriteName: Perna 4E
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 480b182350c79b84e848a894fe1660e6
+    layerID: 11
+    mosaicPosition: {x: 670, y: 4}
+  - name: Perna 4D
+    spriteName: Perna 4D
+    isGroup: 0
+    parentIndex: -1
+    spriteID: dd3e7d5aa1e04924687ae9aef8d133c1
+    layerID: 10
+    mosaicPosition: {x: 428, y: 929}
+  - name: Perna 2E
+    spriteName: Perna 2E
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b6c0adc4694e1314687239f4c0ef447d
+    layerID: 7
+    mosaicPosition: {x: 4, y: 889}
+  - name: Perna 2D
+    spriteName: Perna 2D
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b7a324ca54923f149a826c808847b371
+    layerID: 6
+    mosaicPosition: {x: 4, y: 1230}
+  - name: Perna 1E
+    spriteName: Perna 1E
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 28b4e63c1d2e92b4cabcb363aa996854
+    layerID: 5
+    mosaicPosition: {x: 428, y: 4}
+  - name: Perna 1D
+    spriteName: Perna 1D
+    isGroup: 0
+    parentIndex: -1
+    spriteID: fe0e111460d91f949b2576aefc5098ce
+    layerID: 4
+    mosaicPosition: {x: 4, y: 1571}
+  characterData:
+    bones:
+    - name: "Cabe\xE7a"
+      position: {x: 603.17126, y: 593.81055, z: 0}
+      rotation: {x: 0, y: 0, z: -0.7068875, w: 0.707326}
+      length: 246.51236
+      parentId: -1
+    - name: Corpo
+      position: {x: 603.4768, y: 592.8972, z: 0}
+      rotation: {x: 0, y: 0, z: 0.71360856, w: 0.70054466}
+      length: 327.4161
+      parentId: -1
+    - name: PernaE_3
+      position: {x: 458.802, y: 683.2483, z: 0}
+      rotation: {x: 0, y: 0, z: 0.9971988, w: 0.07479657}
+      length: 232.58401
+      parentId: -1
+    - name: FrentePerna_E_1
+      position: {x: 232.58403, y: 0.000035221467, z: 0}
+      rotation: {x: 0, y: 0, z: 0.4997567, w: 0.8661658}
+      length: 182.6819
+      parentId: 2
+    - name: PernaE_2
+      position: {x: 471.6889, y: 638.6398, z: 0}
+      rotation: {x: 0, y: 0, z: -0.98474765, w: 0.17398877}
+      length: 257.46533
+      parentId: -1
+    - name: FrentePerna_E_1
+      position: {x: 257.4653, y: 0.000076361255, z: 0}
+      rotation: {x: 0, y: 0, z: 0.43235797, w: 0.9017021}
+      length: 185.26717
+      parentId: 4
+    - name: PernaE_1
+      position: {x: 490.52362, y: 590.06604, z: 0}
+      rotation: {x: 0, y: 0, z: -0.9037338, w: 0.42809492}
+      length: 233.16632
+      parentId: -1
+    - name: FrentePerna_E_1
+      position: {x: 233.16632, y: 0.000026951871, z: 0}
+      rotation: {x: 0, y: 0, z: 0.3113109, w: 0.95030814}
+      length: 181.96744
+      parentId: 6
+    - name: PernaD_1
+      position: {x: 710.1131, y: 578.70416, z: 0}
+      rotation: {x: 0, y: 0, z: -0.43390787, w: 0.9009573}
+      length: 213.16869
+      parentId: -1
+    - name: FrentePerna_D_1
+      position: {x: 213.1687, y: 0.0000814128, z: 0}
+      rotation: {x: 0, y: 0, z: -0.283917, w: 0.9588489}
+      length: 190.4479
+      parentId: 8
+    - name: PernaD_2
+      position: {x: 742.79333, y: 641.886, z: 0}
+      rotation: {x: 0, y: 0, z: -0.17602964, w: 0.9843849}
+      length: 235.74603
+      parentId: -1
+    - name: FrentePerna_D_2
+      position: {x: 235.74603, y: 0.000023144605, z: 0}
+      rotation: {x: 0, y: 0, z: -0.42299002, w: 0.90613437}
+      length: 190.8867
+      parentId: 10
+    - name: PernaD_3
+      position: {x: 768.9375, y: 698.53174, z: 0}
+      rotation: {x: 0, y: 0, z: 0.06622739, w: 0.9978046}
+      length: 197.81674
+      parentId: -1
+    - name: FrentePerna_D_3
+      position: {x: 197.81676, y: -0.000066415385, z: 0}
+      rotation: {x: 0, y: 0, z: -0.49832857, w: 0.8669883}
+      length: 184.77739
+      parentId: 12
+    - name: PernaD_4
+      position: {x: 773.29486, y: 786.7684, z: 0}
+      rotation: {x: 0, y: 0, z: 0.35112354, w: 0.9363292}
+      length: 159.04375
+      parentId: -1
+    - name: FrentePerna_D_4
+      position: {x: 159.04373, y: -0.000022399065, z: 0}
+      rotation: {x: 0, y: 0, z: -0.7192289, w: 0.6947732}
+      length: 165.70879
+      parentId: 14
+    - name: PernaE_4
+      position: {x: 426.88437, y: 766.07086, z: 0}
+      rotation: {x: 0, y: 0, z: 0.9271719, w: 0.37463626}
+      length: 177.1914
+      parentId: -1
+    - name: FrentePerna_E_1
+      position: {x: 177.19145, y: -0.00003374174, z: 0}
+      rotation: {x: 0, y: 0, z: 0.722146, w: 0.69174075}
+      length: 165.91273
+      parentId: 16
+    - name: DenteE
+      position: {x: 517.2997, y: 341.2278, z: 0}
+      rotation: {x: 0, y: 0, z: -0.6051266, w: 0.7961293}
+      length: 81.40227
+      parentId: -1
+    - name: DenteD
+      position: {x: 694.8623, y: 344.49585, z: 0}
+      rotation: {x: 0, y: 0, z: -0.78529394, w: 0.61912316}
+      length: 84.02062
+      parentId: -1
+    parts:
+    - spritePosition:
+        x: 433
+        y: 227
+        width: 336
+        height: 408
+      spriteId: a43e8ddb638be9f44baddee50aef0c51
+      bones: 
+      parentGroup: 0
+      order: 0
+    - spritePosition:
+        x: 392
+        y: 522
+        width: 416
+        height: 461
+      spriteId: 770bd2d0514742943a506f5d5ac28482
+      bones: 
+      parentGroup: 0
+      order: 0
+    - spritePosition:
+        x: 85
+        y: 530
+        width: 395
+        height: 235
+      spriteId: 6a9e48719c25cc24a8c6adfc734d1898
+      bones: 
+      parentGroup: 0
+      order: 0
+    - spritePosition:
+        x: 716
+        y: 530
+        width: 395
+        height: 235
+      spriteId: f9ce1554bb8113b4bb712ee25dccd109
+      bones: 
+      parentGroup: 0
+      order: 0
+    - spritePosition:
+        x: 153
+        y: 686
+        width: 347
+        height: 245
+      spriteId: 480b182350c79b84e848a894fe1660e6
+      bones: 
+      parentGroup: 0
+      order: 0
+    - spritePosition:
+        x: 696
+        y: 686
+        width: 347
+        height: 245
+      spriteId: dd3e7d5aa1e04924687ae9aef8d133c1
+      bones: 
+      parentGroup: 0
+      order: 0
+    - spritePosition:
+        x: 132
+        y: 337
+        width: 341
+        height: 333
+      spriteId: b6c0adc4694e1314687239f4c0ef447d
+      bones: 
+      parentGroup: 0
+      order: 0
+    - spritePosition:
+        x: 723
+        y: 337
+        width: 341
+        height: 333
+      spriteId: b7a324ca54923f149a826c808847b371
+      bones: 
+      parentGroup: 0
+      order: 0
+    - spritePosition:
+        x: 292
+        y: 184
+        width: 234
+        height: 431
+      spriteId: 28b4e63c1d2e92b4cabcb363aa996854
+      bones: 
+      parentGroup: 0
+      order: 0
+    - spritePosition:
+        x: 670
+        y: 184
+        width: 235
+        height: 431
+      spriteId: fe0e111460d91f949b2576aefc5098ce
+      bones: 
+      parentGroup: 0
+      order: 0
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+  generateGOHierarchy: 0
+  textureAssetName: AranhaModel Texture
+  prefabAssetName: AranhaModel Prefab
+  spriteLibAssetName: AranhaModel Sprite Lib
+  secondarySpriteTextures: []
