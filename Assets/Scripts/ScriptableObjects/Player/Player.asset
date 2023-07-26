@@ -23,6 +23,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2be379419a871a847b313e1eae6b68e6, type: 2}
   - {fileID: 11400000, guid: 51afc8370337e484382e7722c0546245, type: 2}
   <AbilityEquiped>k__BackingField: {fileID: 11400000, guid: 2be379419a871a847b313e1eae6b68e6, type: 2}
-  <Relics>k__BackingField: []
-  <RelicEquiped>k__BackingField: {fileID: 0}
+  <Relics>k__BackingField:
+  - {fileID: 11400000, guid: 5774c7d773d12dc44af59c3588fa33f9, type: 2}
+  - {fileID: 11400000, guid: d8ba892d6b0dfb44c9c85f788ef2692b, type: 2}
+  <RelicEquiped>k__BackingField: {fileID: 11400000, guid: 5774c7d773d12dc44af59c3588fa33f9, type: 2}
   <Consumables>k__BackingField: []
+  <Points>k__BackingField: 0
+  <Stars>k__BackingField: 0
+  <Essences>k__BackingField: 0

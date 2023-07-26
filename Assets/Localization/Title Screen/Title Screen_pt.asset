@@ -17,6 +17,22 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: ac85ef67051e25048ba304543d5a6091, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 450822496256
+    m_Localized: Jogar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 765114494029824
+    m_Localized: "Op\xE7\xF5es"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 765175558901760
+    m_Localized: Sair
+    m_Metadata:
+      m_Items: []
+  - m_Id: 765298904993792
+    m_Localized: "Cr\xE9ditos"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
