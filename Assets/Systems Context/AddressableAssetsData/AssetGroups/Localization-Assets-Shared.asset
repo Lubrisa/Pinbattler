@@ -19,12 +19,14 @@ MonoBehaviour:
   m_SerializeEntries:
   - m_GUID: ac85ef67051e25048ba304543d5a6091
     m_Address: Title Screen Shared Data
-    m_ReadOnly: 0
+    m_ReadOnly: 1
     m_SerializedLabels: []
-    m_mainAssetType: UnityEngine.Localization.Tables.SharedTableData, Unity.Localization,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9fe10b73364909e47b74d7a20d0259fd
+    m_Address: Assets/Localization/Options Menu/Options Menu Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 40544037ba4dcba4baafb3b67142aa89, type: 2}
   m_SchemaSet:
