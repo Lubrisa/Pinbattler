@@ -1,7 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Pinbattlers.Player.Resouces
 {
+    [Serializable]
     [CreateAssetMenu(fileName = "Fireball", menuName = "Ability/Fireball")]
     public class Fireball : Ability
     {

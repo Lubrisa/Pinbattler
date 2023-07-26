@@ -1,5 +1,6 @@
 using Pinbattlers.Player.Resouces;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 namespace Pinbattlers.Player
@@ -19,5 +20,8 @@ namespace Pinbattlers.Player
         [field: SerializeField] public List<Relic> Relics { get; private set; }
         [field: SerializeField] public Relic RelicEquiped { get; private set; }
         [field: SerializeField] public List<Consumable> Consumables { get; private set; }
+        [field: SerializeField] public int Points { get; private set; }
+        [field: SerializeField] public int Stars { get; private set; }
+        [field: SerializeField] public int Essences { get; private set; }
     }
 }

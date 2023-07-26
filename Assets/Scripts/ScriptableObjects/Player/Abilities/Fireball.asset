@@ -12,3 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13b5ac5852e2c3649a086d841560f715, type: 3}
   m_Name: Fireball
   m_EditorClassIdentifier: 
+  <Name>k__BackingField: Bola de Fogo
+  <Icon>k__BackingField: {fileID: 0}
+  <LoreDescription>k__BackingField: Magia op
+  <MechanicDescription>k__BackingField: Placeholder
+  <Cooldown>k__BackingField: 0
+  <Level>k__BackingField: 1

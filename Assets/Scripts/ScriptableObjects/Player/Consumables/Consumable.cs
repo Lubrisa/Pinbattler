@@ -4,12 +4,11 @@ namespace Pinbattlers.Player.Resouces
 {
     public abstract class Consumable : Item
     {
-        public override Sprite Icon { get; protected set; }
-        public override string LoreDescription { get; protected set; }
-        public override string MechanicDescription { get; protected set; }
-        public override string Name { get; protected set; }
+        public abstract override Sprite Icon { get; protected set; }
+        public abstract override string LoreDescription { get; protected set; }
+        public abstract override string MechanicDescription { get; protected set; }
+        public abstract override string Name { get; protected set; }
 
-        public override void Effect()
-        { }
+        public abstract override void Effect();
     }
 }

@@ -1,7 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Pinbattlers.Player.Resouces
 {
+    [Serializable]
     public abstract class Ability : ScriptableObject
     {
         public abstract string Name { get; protected set; }
