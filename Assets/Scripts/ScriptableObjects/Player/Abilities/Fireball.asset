@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Fireball
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Bola de Fogo
-  <Icon>k__BackingField: {fileID: 0}
+  <Icon>k__BackingField: {fileID: 21300000, guid: f902260d3719a1046b9038f977b21c06, type: 3}
   <LoreDescription>k__BackingField: Magia op
   <MechanicDescription>k__BackingField: Placeholder
   <Cooldown>k__BackingField: 0

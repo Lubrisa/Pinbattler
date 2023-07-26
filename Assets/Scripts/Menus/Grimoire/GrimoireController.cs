@@ -17,6 +17,7 @@ namespace Pinbattlers.Menus
 
         [SerializeField] private Button m_nextPageButton;
         [SerializeField] private Button m_previousPageButton;
+        [SerializeField] private Button m_equipButton;
 
         private int m_currentPage;
 
@@ -37,14 +38,20 @@ namespace Pinbattlers.Menus
 
         public void NextPage()
         {
-            if (m_currentPage == m_playerData.Abilities.Count) m_nextPageButton.interactable = false;
+            if (m_currentPage + 1 == m_playerData.Abilities.Count) m_nextPageButton.interactable = false;
+            if (!m_previousPageButton.interactable) m_previousPageButton.interactable = true;
             UpdateInfo(m_currentPage + 1);
         }
 
         public void PreviousPage()
         {
-            if (m_currentPage == 0) m_nextPageButton.interactable = false;
+            if (m_currentPage - 1 == 0) m_nextPageButton.interactable = false;
+            if (!m_nextPageButton.interactable) m_nextPageButton.interactable = true;
             UpdateInfo(m_currentPage - 1);
+        }
+
+        public void Equip()
+        {
         }
     }
 }

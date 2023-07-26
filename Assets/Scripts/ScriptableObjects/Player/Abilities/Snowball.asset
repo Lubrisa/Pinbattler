@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Snowball
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Bola de Neve
-  <Icon>k__BackingField: {fileID: 0}
+  <Icon>k__BackingField: {fileID: 21300000, guid: 4eed7049132bb434b979de8ae81a8daf, type: 3}
   <LoreDescription>k__BackingField: Friozin
   <MechanicDescription>k__BackingField: Placeholder
   <Cooldown>k__BackingField: 0
