@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ExitAtlasConfirmBehaviour : ScriptableObject, IConfirmBehaviour
+public class ExitAtlasConfirmBehaviour : ConfirmBehaviour
 {
-    public void Confirm()
+    public override void Confirm()
     {
         SceneManager.LoadScene(0);
     }

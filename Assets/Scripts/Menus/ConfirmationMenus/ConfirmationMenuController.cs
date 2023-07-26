@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class ConfirmationMenuController : MonoBehaviour
 {
-    [SerializeField] private IConfirmBehaviour confirmBehaviour;
+    [SerializeField] private ConfirmBehaviour m_confirmBehaviour;
 
     public void OnConfirmButtonClick()
     {
-
+        m_confirmBehaviour.Confirm();
     }
 
     public void OnDeclineButtonClick()
