@@ -207,8 +207,8 @@ MonoBehaviour:
   - {fileID: 4477222236992035331}
   - {fileID: 5494842784853322751}
   m_Bounds:
-    m_Center: {x: 0.0016798973, y: 0.00000047683716, z: 0}
-    m_Extent: {x: 1.16832, y: 2.1550002, z: 0}
+    m_Center: {x: 0.0016798973, y: 0.00000023841858, z: 0}
+    m_Extent: {x: 1.16832, y: 2.155, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &1092999011009590420
@@ -709,7 +709,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
