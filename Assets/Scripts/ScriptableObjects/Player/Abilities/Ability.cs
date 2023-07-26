@@ -11,7 +11,7 @@ namespace Pinbattlers.Player.Resouces
         public abstract string LoreDescription { get; protected set; }
         public abstract string MechanicDescription { get; protected set; }
         public abstract int Cooldown { get; protected set; }
-        public abstract int Level { get; protected set; }
+        public abstract int Level { get; set; }
 
         public abstract void Cast();
     }

@@ -1,3 +1,4 @@
+using Newtonsoft.Json.Linq;
 using Pinbattlers.Player.Resouces;
 using System.Collections.Generic;
 using TMPro;
@@ -23,5 +24,16 @@ namespace Pinbattlers.Player
         [field: SerializeField] public int Points { get; private set; }
         [field: SerializeField] public int Stars { get; private set; }
         [field: SerializeField] public int Essences { get; private set; }
+
+        public void EquipAbility(Ability ability)
+        {
+            AbilityEquiped = ability;
+        }
+
+        public void UpgradeAbility(int abilityIndex)
+        {
+            Stars -= Abilities[abilityIndex].Level;
+            Abilities[abilityIndex].Level += 1;
+        }
     }
 }

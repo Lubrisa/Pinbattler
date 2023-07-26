@@ -12,7 +12,7 @@ namespace Pinbattlers.Player.Resouces
         [field: SerializeField] public override string LoreDescription { get; protected set; }
         [field: SerializeField] public override string MechanicDescription { get; protected set; }
         [field: SerializeField] public override int Cooldown { get; protected set; }
-        [field: SerializeField] public override int Level { get; protected set; }
+        [field: SerializeField] public override int Level { get; set; }
 
         public override void Cast()
         {
