@@ -31,6 +31,7 @@ MonoBehaviour:
   <Consumables>k__BackingField:
   - {fileID: 11400000, guid: de212970d35e41948aa7a0810de220f7, type: 2}
   - {fileID: 11400000, guid: 620dde89256b0104f9810f0f07980a31, type: 2}
+  - {fileID: 11400000, guid: 76c607be7b1a7a6478fe613d7e4c295d, type: 2}
   <Points>k__BackingField: 0
   <Stars>k__BackingField: 0
   <Essences>k__BackingField: 0
