@@ -6,7 +6,7 @@ using Zenject;
 
 namespace Pinbattlers.Menus
 {
-    public class TitleScreen : MonoBehaviour
+    public class TitleScreenController : MonoBehaviour
     {
         [SerializeField] private int m_backgroundIndex;
         [SerializeField] private Image m_background;
@@ -39,4 +39,3 @@ namespace Pinbattlers.Menus
         }
     }
 }
-

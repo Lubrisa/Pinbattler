@@ -12,3 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8fa6b6fc9e4cde43b0bffc5c5af575f, type: 3}
   m_Name: SpikyCover
   m_EditorClassIdentifier: 
+  <Name>k__BackingField: Cobertura de Espinhos
+  <Icon>k__BackingField: {fileID: 0}
+  <LoreDescription>k__BackingField: bfebeb
+  <MechanicDescription>k__BackingField: edfngbfbwes

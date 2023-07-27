@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4ff90f6a1061be4bae216cbc17d8012, type: 3}
   m_Name: Player
   m_EditorClassIdentifier: 
+  m_instance: {fileID: 11400000}
   <Life>k__BackingField: 100
   <LifeModifier>k__BackingField: 0
   <Attack>k__BackingField: 10
@@ -27,7 +28,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5774c7d773d12dc44af59c3588fa33f9, type: 2}
   - {fileID: 11400000, guid: d8ba892d6b0dfb44c9c85f788ef2692b, type: 2}
   <RelicEquiped>k__BackingField: {fileID: 11400000, guid: 5774c7d773d12dc44af59c3588fa33f9, type: 2}
-  <Consumables>k__BackingField: []
+  <Consumables>k__BackingField:
+  - {fileID: 11400000, guid: de212970d35e41948aa7a0810de220f7, type: 2}
+  - {fileID: 11400000, guid: 620dde89256b0104f9810f0f07980a31, type: 2}
   <Points>k__BackingField: 0
   <Stars>k__BackingField: 0
   <Essences>k__BackingField: 0

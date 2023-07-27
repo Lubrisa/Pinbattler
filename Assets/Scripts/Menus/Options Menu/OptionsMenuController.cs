@@ -6,15 +6,15 @@ using UnityEngine.Localization.Settings;
 
 namespace Pinbattlers.Menus
 {
-    public class OptionsMenu : MonoBehaviour
+    public class OptionsMenuController : MonoBehaviour
     {
-        private int m_currentActiveSessionID;
+        private int m_activeSessionIndex;
         private GameObject[] m_sessions;
 
         private AudioMixer m_mixer;
 
         [Inject]
-        void Contructor(GameObject[] sessions, AudioMixer mixer)
+        private void Contructor(GameObject[] sessions, AudioMixer mixer)
         {
             m_sessions = sessions;
             m_mixer = mixer;
@@ -23,11 +23,11 @@ namespace Pinbattlers.Menus
 
         public void ChangeActiveSession(int sessionIndex)
         {
-            if (m_currentActiveSessionID != sessionIndex)
+            if (m_activeSessionIndex != sessionIndex)
             {
                 m_sessions[sessionIndex].SetActive(true);
-                m_sessions[m_currentActiveSessionID].SetActive(false);
-                m_currentActiveSessionID = sessionIndex;
+                m_sessions[m_activeSessionIndex].SetActive(false);
+                m_activeSessionIndex = sessionIndex;
             }
         }
 
@@ -38,7 +38,6 @@ namespace Pinbattlers.Menus
 
         public void OnEraseSaveButtonClick(string actionName)
         {
-
         }
 
         public void OnResolutionDropdownValueChange(int resolutionIndex)

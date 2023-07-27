@@ -12,3 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29db017c943a6c54299bfbf423304d79, type: 3}
   m_Name: IronHull
   m_EditorClassIdentifier: 
+  <Name>k__BackingField: Casco de Ferro
+  <Icon>k__BackingField: {fileID: 0}
+  <LoreDescription>k__BackingField: sdaofivnqe
+  <MechanicDescription>k__BackingField: brgnaefv
