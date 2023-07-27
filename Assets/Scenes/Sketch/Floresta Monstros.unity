@@ -205,6 +205,7 @@ GameObject:
   m_Component:
   - component: {fileID: 691139676}
   - component: {fileID: 691139675}
+  - component: {fileID: 691139677}
   m_Layer: 0
   m_Name: Floresta - 1
   m_TagString: Untagged
@@ -277,6 +278,97 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &691139677
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 691139674}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 42.612003, y: 35.08}
+    newSize: {x: 42.612003, y: 35.08}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.49292666, y: -11.921884}
+      - {x: 0.5241096, y: -17.524662}
+      - {x: 21.306002, y: -17.539999}
+      - {x: 21.261242, y: 17.53949}
+      - {x: -21.373917, y: 17.522741}
+      - {x: -21.330145, y: -17.560734}
+      - {x: 0.1675396, y: -17.52954}
+      - {x: 0.43572843, y: -15.257762}
+      - {x: -2.1123083, y: -15.258446}
+      - {x: -2.1255977, y: -11.932642}
+      - {x: -6.561398, y: -10.866088}
+      - {x: -6.5272837, y: -4.563209}
+      - {x: -7.392821, y: -3.7575781}
+      - {x: -8.226382, y: -2.7766685}
+      - {x: -8.915161, y: -1.7015584}
+      - {x: -9.549637, y: -0.47872007}
+      - {x: -9.99727, y: 1.0567523}
+      - {x: -10.213501, y: 2.514494}
+      - {x: -10.253119, y: 3.7150676}
+      - {x: -10.060503, y: 5.074793}
+      - {x: -9.728914, y: 6.4464436}
+      - {x: -9.460473, y: 7.1182404}
+      - {x: -9.078482, y: 7.912605}
+      - {x: -8.452685, y: 8.929991}
+      - {x: -7.831104, y: 9.697939}
+      - {x: -7.199269, y: 10.360058}
+      - {x: -6.395445, y: 11.085963}
+      - {x: -5.200259, y: 11.835478}
+      - {x: -3.7007747, y: 12.509805}
+      - {x: -2.1771817, y: 12.882489}
+      - {x: -0.80658597, y: 12.998862}
+      - {x: 0.46757233, y: 12.907552}
+      - {x: 1.4999303, y: 12.692068}
+      - {x: 2.6244636, y: 12.325192}
+      - {x: 3.7504258, y: 11.817356}
+      - {x: 4.737587, y: 11.1435}
+      - {x: 5.755863, y: 10.2732}
+      - {x: 6.5178056, y: 9.441154}
+      - {x: 7.2999873, y: 8.256155}
+      - {x: 7.823234, y: 7.1926556}
+      - {x: 8.343552, y: 5.7320557}
+      - {x: 8.549075, y: 4.788179}
+      - {x: 8.637008, y: 3.7317638}
+      - {x: 8.649939, y: -13.299516}
+      - {x: 7.3977785, y: -13.288826}
+      - {x: 7.3558097, y: 3.7145133}
+      - {x: 7.1797934, y: 5.2486014}
+      - {x: 6.8759594, y: 6.3284087}
+      - {x: 6.332611, y: 7.6875205}
+      - {x: 5.5508394, y: 8.946321}
+      - {x: 4.8751254, y: 9.754973}
+      - {x: 3.7810998, y: 10.6970415}
+      - {x: 2.573804, y: 11.205698}
+      - {x: 1.2951374, y: 11.496358}
+      - {x: -0.44358635, y: 9.758073}
+      - {x: -1.1299534, y: 1.2379739}
+      - {x: -0.33244532, y: -1.1908668}
+      - {x: 1.2609023, y: -1.6398631}
+      - {x: 1.2325354, y: 5.456014}
+      - {x: 1.2591515, y: 9.650114}
+      - {x: 1.8645304, y: 9.706312}
+      - {x: 2.8872867, y: 9.625056}
+      - {x: 3.7698464, y: 9.335941}
+      - {x: 3.7752194, y: -1.5860775}
+      - {x: 4.8865085, y: -4.7959766}
+      - {x: 4.887834, y: -10.873662}
 --- !u!1001 &1062290138
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -645,6 +737,7 @@ GameObject:
   - component: {fileID: 1398030130}
   - component: {fileID: 1398030129}
   - component: {fileID: 1398030128}
+  - component: {fileID: 1398030131}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -717,3 +810,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1398030131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398030127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
