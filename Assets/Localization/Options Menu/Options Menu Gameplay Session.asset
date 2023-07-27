@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5be51871efa6c3e4eae1703925c8f5ac, type: 3}
-  m_Name: Options Menu
+  m_Name: Options Menu Gameplay Session
   m_EditorClassIdentifier: 
-  m_SharedTableData: {fileID: 11400000, guid: 9fe10b73364909e47b74d7a20d0259fd, type: 2}
+  m_SharedTableData: {fileID: 11400000, guid: 591242722679d5441b8915b3afafed91, type: 2}
   m_Tables:
-  - {fileID: 11400000, guid: ea3567f2b40afad40a5e72c0efa952a4, type: 2}
-  - {fileID: 11400000, guid: c3a2a72ef381b2d4a871aaa134387dbe, type: 2}
+  - {fileID: 11400000, guid: f131406776853f342a947a07ce408f1c, type: 2}
+  - {fileID: 11400000, guid: e581aa97f74da474a87723ed78dd073d, type: 2}
   m_Extensions: []
   m_Group: String Table
   references:

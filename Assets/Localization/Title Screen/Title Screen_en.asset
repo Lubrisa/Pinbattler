@@ -18,19 +18,19 @@ MonoBehaviour:
   m_Metadata:
     m_Items: []
   m_TableData:
-  - m_Id: 450822496256
+  - m_Id: 12008558592
     m_Localized: Play
     m_Metadata:
       m_Items: []
-  - m_Id: 765114494029824
+  - m_Id: 96234377216
     m_Localized: Options
     m_Metadata:
       m_Items: []
-  - m_Id: 765175558901760
+  - m_Id: 169487896576
     m_Localized: Exit
     m_Metadata:
       m_Items: []
-  - m_Id: 765298904993792
+  - m_Id: 290334183424
     m_Localized: Credits
     m_Metadata:
       m_Items: []

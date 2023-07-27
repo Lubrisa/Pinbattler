@@ -15,19 +15,19 @@ MonoBehaviour:
   m_TableCollectionName: Title Screen
   m_TableCollectionNameGuidString: ac85ef67051e25048ba304543d5a6091
   m_Entries:
-  - m_Id: 450822496256
+  - m_Id: 12008558592
     m_Key: Jogar
     m_Metadata:
       m_Items: []
-  - m_Id: 765114494029824
+  - m_Id: 96234377216
     m_Key: "Op\xE7\xF5es"
     m_Metadata:
       m_Items: []
-  - m_Id: 765175558901760
+  - m_Id: 169487896576
     m_Key: Sair
     m_Metadata:
       m_Items: []
-  - m_Id: 765298904993792
+  - m_Id: 290334183424
     m_Key: "Cr\xE9ditos"
     m_Metadata:
       m_Items: []
@@ -40,4 +40,4 @@ MonoBehaviour:
     00000000:
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
       data:
-        m_CustomEpoch: 1690217421311
+        m_CustomEpoch: 1690428638034

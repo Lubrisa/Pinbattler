@@ -10,28 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
-  m_Name: Options Menu_pt
+  m_Name: Options Menu Sessions_en
   m_EditorClassIdentifier: 
   m_LocaleId:
-    m_Code: pt
+    m_Code: en
   m_SharedData: {fileID: 11400000, guid: 9fe10b73364909e47b74d7a20d0259fd, type: 2}
   m_Metadata:
     m_Items: []
   m_TableData:
-  - m_Id: 8583712768
-    m_Localized: Jogabilidade
+  - m_Id: 21529628672
+    m_Localized: Gameplay
     m_Metadata:
       m_Items: []
-  - m_Id: 85930872832
-    m_Localized: "Gr\xE1ficos"
+  - m_Id: 108368498688
+    m_Localized: Graphics
     m_Metadata:
       m_Items: []
-  - m_Id: 150820950016
-    m_Localized: "\xC1udio"
+  - m_Id: 192183275520
+    m_Localized: Audio
     m_Metadata:
       m_Items: []
-  - m_Id: 303619444736
-    m_Localized: Ajuda
+  - m_Id: 246189133824
+    m_Localized: Help
     m_Metadata:
       m_Items: []
   references:

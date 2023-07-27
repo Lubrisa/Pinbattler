@@ -10,25 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
-  m_Name: Options Menu Shared Data
+  m_Name: Options Menu Sound Session Shared Data
   m_EditorClassIdentifier: 
-  m_TableCollectionName: Options Menu
-  m_TableCollectionNameGuidString: 9fe10b73364909e47b74d7a20d0259fd
+  m_TableCollectionName: Options Menu Sound Session
+  m_TableCollectionNameGuidString: 92bd32380df2cf443b09d589c812b70e
   m_Entries:
-  - m_Id: 8583712768
-    m_Key: Jogabilidade
+  - m_Id: 5968760832
+    m_Key: Volume Geral
     m_Metadata:
       m_Items: []
-  - m_Id: 85930872832
-    m_Key: "Gr\xE1ficos"
+  - m_Id: 192904695808
+    m_Key: "Volume da M\xFAsica"
     m_Metadata:
       m_Items: []
-  - m_Id: 150820950016
-    m_Key: "\xC1udio"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 303619444736
-    m_Key: Ajuda
+  - m_Id: 281735860224
+    m_Key: Volume dos SFX
     m_Metadata:
       m_Items: []
   m_Metadata:
@@ -40,4 +36,4 @@ MonoBehaviour:
     00000000:
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
       data:
-        m_CustomEpoch: 1690402531050
+        m_CustomEpoch: 1690429292312

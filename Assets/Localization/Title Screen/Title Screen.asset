@@ -16,30 +16,7 @@ MonoBehaviour:
   m_Tables:
   - {fileID: 11400000, guid: 33ea069c6ab58c3478ed2a0b06f0c944, type: 2}
   - {fileID: 11400000, guid: efce2c0af14130f4a99f95db41d4dbef, type: 2}
-  m_Extensions:
-  - id: 0
+  m_Extensions: []
   m_Group: String Table
   references:
     version: 1
-    00000000:
-      type: {class: GoogleSheetsExtension, ns: UnityEditor.Localization.Plugins.Google, asm: Unity.Localization.Editor}
-      data:
-        m_Collection: {fileID: 11400000}
-        m_SheetsServiceProvider: {fileID: 11400000, guid: 7d567444c20d1f146a41a746f27cd815, type: 2}
-        m_SpreadsheetId: 
-        m_SheetId: 0
-        m_Columns:
-        - id: 1
-        - id: 2
-        m_RemoveMissingPulledKeys: 1
-    00000001:
-      type: {class: KeyColumn, ns: UnityEditor.Localization.Plugins.Google.Columns, asm: Unity.Localization.Editor}
-      data:
-        m_Column: A
-    00000002:
-      type: {class: LocaleColumn, ns: UnityEditor.Localization.Plugins.Google.Columns, asm: Unity.Localization.Editor}
-      data:
-        m_Column: B
-        m_LocaleIdentifier:
-          m_Code: 
-        m_IncludeComments: 0
