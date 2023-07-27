@@ -41,6 +41,8 @@ namespace Pinbattlers.Menus
 
             m_upgradeCost.text = PlayerData.Instance.Abilities[page].Level.ToString();
             if (PlayerData.Instance.Stars < PlayerData.Instance.Abilities[page].Level) m_upgradeButton.interactable = false;
+
+            CheckForAbilityLevel();
         }
 
         public void OnNextPageButtonClick()
@@ -67,6 +69,16 @@ namespace Pinbattlers.Menus
         {
             PlayerData.Instance.UpgradeAbility(m_page);
             if (PlayerData.Instance.Stars < PlayerData.Instance.Abilities[m_page].Level) m_upgradeButton.interactable = false;
+            CheckForAbilityLevel();
+        }
+
+        private void CheckForAbilityLevel()
+        {
+            if (PlayerData.Instance.Abilities[m_page].Level == 5)
+            {
+                m_upgradeCost.text = "MAX";
+                m_upgradeButton.interactable = false;
+            }
         }
     }
 }
