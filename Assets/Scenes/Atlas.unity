@@ -13135,7 +13135,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2015443626}
         m_TargetAssemblyTypeName: Pinbattlers.Menus.GrimoireController, Assembly-CSharp
-        m_MethodName: Upgrade
+        m_MethodName: OnUpgradeButtonClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19138,7 +19138,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2015443626}
         m_TargetAssemblyTypeName: Pinbattlers.Menus.GrimoireController, Assembly-CSharp
-        m_MethodName: Equip
+        m_MethodName: OnEquipButtonClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20114,7 +20114,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2015443625
 RectTransform:
   m_ObjectHideFlags: 0
