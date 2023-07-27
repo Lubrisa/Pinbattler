@@ -20,7 +20,9 @@ namespace Pinbattlers.Menus
 
         public void FillContent()
         {
-            for (int i = 0; i < PlayerData.Instance.Relics.Count; i++)
+            if (m_content.childCount == PlayerData.Instance.Relics.Count) return;
+
+            for (int i = m_content.childCount; i < PlayerData.Instance.Relics.Count; i++)
             {
                 m_itemInstance = Instantiate(m_itemInstance, m_content);
                 m_itemInstance.FillContent(i, this);
