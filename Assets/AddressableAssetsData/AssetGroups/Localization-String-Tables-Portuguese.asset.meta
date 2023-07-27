@@ -1,6 +1,12 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Prefabs/Criaturas.meta
+guid: 22df100bdf231b34cab7b2f007f12fbc
+folderAsset: yes
+DefaultImporter:
+========
 guid: c3d9b7d730ef3514f8dd45c6f684b06b
 NativeFormatImporter:
+>>>>>>>> 36b8f7c7cc823be4046eb63e72e2670ea3ce3de6:Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-Portuguese.asset.meta
   externalObjects: {}
   mainObjectFileID: 11400000
   userData: 

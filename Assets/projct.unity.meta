@@ -1,7 +1,13 @@
 fileFormatVersion: 2
-guid: b19d940b86e5c204a850fe1007f12374
+<<<<<<<< HEAD:Assets/projct.unity.meta
+guid: 3abc87fbfd39bce4eb79062694c728b7
 DefaultImporter:
+========
+guid: c246ef7de36b5094797f092c7c49cf8d
+NativeFormatImporter:
+>>>>>>>> 36b8f7c7cc823be4046eb63e72e2670ea3ce3de6:Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-English.asset.meta
   externalObjects: {}
+  mainObjectFileID: 11400000
   userData: 
   assetBundleName: 
   assetBundleVariant: 
