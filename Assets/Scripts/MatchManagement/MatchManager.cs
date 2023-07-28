@@ -4,6 +4,7 @@ using Pinbattlers.Scriptables;
 using ScriptableObjectArchitecture;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Pinbattlers.Match
 {
@@ -15,10 +16,9 @@ namespace Pinbattlers.Match
 
         [field: SerializeField] public MapsData MapData { get; private set; }
 
-        [Header("Challenges & Modifiers")]
-        [SerializeField] private List<BaseChallenge> m_challenges;
+        [SerializeField] public List<BaseChallenge> Challenges { get; private set; }
 
-        [SerializeField] private List<BaseDifficultyModifier> m_modifiers;
+        [SerializeField] public List<BaseDifficultyModifier> Modifiers { get; private set; }
 
         [Header("Events")]
         private BaseMatchEvent m_event;
@@ -45,7 +45,7 @@ namespace Pinbattlers.Match
         [field: SerializeField] public int Score { get; private set; }
         [SerializeField] private StringEvent m_scoreTextUpdate;
 
-        [SerializeField] private GameOverMenuController m_gameOverController;
+        [SerializeField] private UnityEvent m_gameOver;
 
         #endregion Properties
 
@@ -59,32 +59,32 @@ namespace Pinbattlers.Match
         {
             foreach (BaseChallenge c in MapData.MapChallenges)
             {
-                if (!c.Concluded) m_challenges.Add(c);
+                if (!c.Concluded) Challenges.Add(c);
             }
 
             foreach (BaseDifficultyModifier m in MapData.MapModifiers)
             {
-                if (m.IsEnabled) m_modifiers.Add(m);
+                if (m.IsEnabled) Modifiers.Add(m);
                 m.Effect();
             }
         }
 
         private void Update()
         {
-            for (int i = 0; i < m_challenges.Count; i++)
+            for (int i = 0; i < Challenges.Count; i++)
             {
-                if (m_challenges[i].ConclusionVerification()) m_challenges.Remove(m_challenges[i]);
+                if (Challenges[i].ConclusionVerification()) Challenges.Remove(Challenges[i]);
             }
 
-            for (int i = 0; i < m_modifiers.Count; i++)
+            for (int i = 0; i < Modifiers.Count; i++)
             {
-                if (m_modifiers[i].MissionVerification())
+                if (Modifiers[i].MissionVerification())
                 {
-                    foreach (Consumable c in m_modifiers[i].Rewards)
+                    foreach (Consumable c in Modifiers[i].Rewards)
                     {
                         GameOverMenuController.Instance.Consumables.Add(c);
                     }
-                    m_modifiers.Remove(m_modifiers[i]);
+                    Modifiers.Remove(Modifiers[i]);
                 }
             }
 
@@ -107,8 +107,8 @@ namespace Pinbattlers.Match
 
         public void EndMatch()
         {
-            m_gameOverController.gameObject.SetActive(true);
-            m_gameOverController.FeedPlayerInventory();
+            m_gameOver.Invoke();
+            GameOverMenuController.Instance.FeedPlayerInventory();
         }
     }
 }
