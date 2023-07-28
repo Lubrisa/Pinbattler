@@ -2,11 +2,15 @@ using Pinbattlers.Player;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Zenject;
 
 namespace Pinbattlers.Menus
 {
     public class RelicsSessionController : MonoBehaviour, IInfoUpdatable
     {
+        [Inject]
+        private PlayerData m_instance;
+
         [SerializeField] private Transform m_content;
 
         [SerializeField] private TMP_Text m_relicName;
@@ -20,12 +24,12 @@ namespace Pinbattlers.Menus
 
         public void FillContent()
         {
-            if (m_content.childCount == PlayerData.Instance.Relics.Count) return;
+            if (m_content.childCount == m_instance.Relics.Count) return;
 
-            for (int i = m_content.childCount; i < PlayerData.Instance.Relics.Count; i++)
+            for (int i = m_content.childCount; i < m_instance.Relics.Count; i++)
             {
                 m_itemInstance = Instantiate(m_itemInstance, m_content);
-                m_itemInstance.FillContent(i, this);
+                m_itemInstance.FillContent(i, this, m_instance);
             }
 
             UpdateInfo(0);
@@ -35,18 +39,18 @@ namespace Pinbattlers.Menus
         {
             m_itemInspectedIndex = itemIndex;
 
-            m_relicName.text = PlayerData.Instance.Relics[itemIndex].Name;
-            m_relicLoreDescription.text = PlayerData.Instance.Relics[itemIndex].LoreDescription;
-            m_relicMechanicDescription.text = PlayerData.Instance.Relics[itemIndex].MechanicDescription;
-            m_relicIllustration.sprite = PlayerData.Instance.Relics[itemIndex].Icon;
+            m_relicName.text = m_instance.Relics[itemIndex].Name;
+            m_relicLoreDescription.text = m_instance.Relics[itemIndex].LoreDescription;
+            m_relicMechanicDescription.text = m_instance.Relics[itemIndex].MechanicDescription;
+            m_relicIllustration.sprite = m_instance.Relics[itemIndex].Icon;
 
-            if (PlayerData.Instance.Relics[itemIndex] == PlayerData.Instance.RelicEquiped) m_equipButton.interactable = false;
+            if (m_instance.Relics[itemIndex] == m_instance.RelicEquiped) m_equipButton.interactable = false;
             else m_equipButton.interactable = true;
         }
 
         public void Equip()
         {
-            PlayerData.Instance.EquipRelic(PlayerData.Instance.Relics[m_itemInspectedIndex]);
+            m_instance.EquipRelic(m_instance.Relics[m_itemInspectedIndex]);
             m_equipButton.interactable = false;
         }
     }

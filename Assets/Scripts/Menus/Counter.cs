@@ -2,11 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using Zenject;
 
 namespace Pinbattlers.Player.Resouces
 {
     public class Counter : MonoBehaviour
     {
+        [Inject]
+        private PlayerData m_instance;
+
         private enum MoneyType
         {
             Points,
@@ -26,9 +30,9 @@ namespace Pinbattlers.Player.Resouces
 
         public void SetValue()
         {
-            if (m_moneyType == MoneyType.Points) m_text.text = "Seus Pontos: " + PlayerData.Instance.Points;
-            else if (m_moneyType == MoneyType.Stars) m_text.text = "Suas Estrelas: " + PlayerData.Instance.Stars;
-            else m_text.text = "Suas Essências: " + PlayerData.Instance.Essences;
+            if (m_moneyType == MoneyType.Points) m_text.text = "Seus Pontos: " + m_instance.Points;
+            else if (m_moneyType == MoneyType.Stars) m_text.text = "Suas Estrelas: " + m_instance.Stars;
+            else m_text.text = "Suas Essências: " + m_instance.Essences;
         }
     }
 }
