@@ -8,7 +8,7 @@ namespace Pinbattlers.Scriptables
     {
         [field: SerializeField] public override string Description { get; protected set; }
 
-        public override bool Concluded { get; set; }
+        [field: SerializeField] public override bool Concluded { get; set; }
 
         [SerializeField] private MonsterData m_monster;
         [SerializeField] private int m_killsNeeded;
@@ -22,7 +22,7 @@ namespace Pinbattlers.Scriptables
         public override bool ConclusionVerification()
         {
             Debug.Log("Teste");
-            if (m_kills >= m_monster.QuantityKilled)
+            if (m_kills <= m_monster.QuantityKilled)
             {
                 Concluded = true;
                 return true;

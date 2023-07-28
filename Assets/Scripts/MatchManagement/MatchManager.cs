@@ -16,9 +16,9 @@ namespace Pinbattlers.Match
 
         [field: SerializeField] public MapsData MapData { get; private set; }
 
-        [SerializeField] public List<BaseChallenge> Challenges { get; private set; }
+        [field: SerializeField] public List<BaseChallenge> Challenges { get; private set; }
 
-        [SerializeField] public List<BaseDifficultyModifier> Modifiers { get; private set; }
+        [field: SerializeField] public List<BaseDifficultyModifier> Modifiers { get; private set; }
 
         [Header("Events")]
         private BaseMatchEvent m_event;
@@ -71,20 +71,26 @@ namespace Pinbattlers.Match
 
         private void Update()
         {
-            for (int i = 0; i < Challenges.Count; i++)
+            if (Challenges != null)
             {
-                if (Challenges[i].ConclusionVerification()) Challenges.Remove(Challenges[i]);
+                for (int i = 0; i < Challenges.Count; i++)
+                {
+                    if (Challenges[i].ConclusionVerification()) Challenges.Remove(Challenges[i]);
+                }
             }
 
-            for (int i = 0; i < Modifiers.Count; i++)
+            if (Modifiers != null)
             {
-                if (Modifiers[i].MissionVerification())
+                for (int i = 0; i < Modifiers.Count; i++)
                 {
-                    foreach (Consumable c in Modifiers[i].Rewards)
+                    if (Modifiers[i].MissionVerification())
                     {
-                        GameOverMenuController.Instance.Consumables.Add(c);
+                        foreach (Consumable c in Modifiers[i].Rewards)
+                        {
+                            GameOverMenuController.Instance.Consumables.Add(c);
+                        }
+                        Modifiers.Remove(Modifiers[i]);
                     }
-                    Modifiers.Remove(Modifiers[i]);
                 }
             }
 
