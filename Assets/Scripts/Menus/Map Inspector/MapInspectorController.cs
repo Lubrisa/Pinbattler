@@ -11,13 +11,18 @@ namespace Pinbattlers.Menus
     {
         [Inject(Id = "name")]
         private TMP_Text m_mapName;
+
         [Inject(Id = "description")]
         private TMP_Text m_mapDescription;
+
         private Image m_mapIllustration;
+
         [Inject(Id = "challenges")]
         private TMP_Text[] m_challenges;
+
         [Inject(Id = "modifiers")]
         private TMP_Text[] m_modifiers;
+
         [Inject(Id = "highscore")]
         private TMP_Text m_mapHighScore;
 
@@ -44,13 +49,13 @@ namespace Pinbattlers.Menus
             // Iterates through the challenges list.
             // If the map has a challenge in the index, the challenge description is copied to the text,
             // otherwise, the text becomes blank.
-            for(int i = 0; i < m_challenges.Length; i++)
+            for (int i = 0; i < m_challenges.Length; i++)
             {
                 if (i < MapData[mapIndex].MapChallenges.Length)
                 {
                     if (MapData[mapIndex].MapChallenges[i].Concluded) m_challenges[i].fontStyle = FontStyles.Strikethrough;
                     else m_challenges[i].fontStyle = FontStyles.Normal;
-                    m_challenges[i].text = MapData[mapIndex].MapChallenges[i].Description; 
+                    m_challenges[i].text = MapData[mapIndex].MapChallenges[i].Description;
                 }
                 else m_challenges[i].text = "";
             }
