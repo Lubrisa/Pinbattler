@@ -844,6 +844,7 @@ MonoBehaviour:
   m_RequiresColorTexture: 0
   m_Version: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!212 &68937020624190924
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3727,3 +3728,5 @@ GameObject:
   m_IsActive: 1
 =======
 >>>>>>> parent of 25fb848 (Salvaaaaa)
+=======
+>>>>>>> parent of 54e8642 (Merge branch 'main' of https://github.com/Lubrisa/PinbattlerGit)
