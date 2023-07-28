@@ -1,4 +1,4 @@
-using System.Collections;
+using Pinbattlers.Player.Resouces;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,8 +10,14 @@ namespace Pinbattlers.Scriptables
 
         public abstract bool IsEnabled { get; set; }
 
+        public abstract Consumable[] RewardPool { get; protected set; }
+
+        public abstract List<Consumable> Rewards { get; protected set; }
+
+        public abstract Relic RelicReward { get; protected set; }
+
         public abstract void Effect();
 
-        public abstract void MissionVerification();
+        public abstract bool MissionVerification();
     }
 }

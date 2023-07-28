@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Pinbattlers.Match
 {
-    public abstract class BaseMatchEvent : MonoBehaviour
+    public abstract class BaseMatchEvent : ScriptableObject
     {
         public abstract void Enter();
 

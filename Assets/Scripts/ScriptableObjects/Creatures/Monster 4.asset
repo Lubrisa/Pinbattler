@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 897ab560e09a4bb458e638a4101d4195, type: 3}
   m_Name: Monster 4
   m_EditorClassIdentifier: 
-  <Name>k__BackingField: "Sua m\xE3e"
-  <Illustration>k__BackingField: {fileID: 21300000, guid: 7288e4e3f34645a4ab3b9c595f60af8b, type: 3}
+  <Name>k__BackingField: 
+  <Illustration>k__BackingField: {fileID: 0}
   <Life>k__BackingField: 0
   <Attack>k__BackingField: 0
   <Defense>k__BackingField: 0
-  <Description>k__BackingField: "Opa, calma l\xE1 irm\xE3o, que isso?"
-  <QuantityKilled>k__BackingField: 1
+  <Description>k__BackingField: 
+  <QuantityKilled>k__BackingField: 0
   <States>k__BackingField: []
+  <IsChampion>k__BackingField: 0

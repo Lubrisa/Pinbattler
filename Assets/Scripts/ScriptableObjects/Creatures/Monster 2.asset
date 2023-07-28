@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Monster 2
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Abelha
-  <Illustration>k__BackingField: {fileID: 21300000, guid: 217fb6b9349779e47aef4b6009d28822, type: 3}
+  <Illustration>k__BackingField: {fileID: 0}
   <Life>k__BackingField: 0
   <Attack>k__BackingField: 0
   <Defense>k__BackingField: 0
-  <Description>k__BackingField: Bzzzzzzzz
+  <Description>k__BackingField: Null
   <QuantityKilled>k__BackingField: 1
   <States>k__BackingField: []
+  <IsChampion>k__BackingField: 0

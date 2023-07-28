@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: WastelandsPrecisionChallenge2
   m_EditorClassIdentifier: 
   <Description>k__BackingField: Placeholder 2
+  m_wasActivated: {fileID: 11400000, guid: 84b72e6dc121ab745a88786c532e6068, type: 2}

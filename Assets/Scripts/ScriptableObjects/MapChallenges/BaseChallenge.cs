@@ -10,6 +10,6 @@ namespace Pinbattlers.Scriptables
 
         public abstract bool Concluded { get; set; }
 
-        public abstract void ConclusionVerification();
+        public abstract bool ConclusionVerification();
     }
 }

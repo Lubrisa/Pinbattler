@@ -20,5 +20,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e882e75237f3e384fbff9a3c3fb3ed00, type: 2}
   <MapModifiers>k__BackingField:
   - {fileID: 11400000, guid: ef899aa4b2fe1df48948e933a99f72d6, type: 2}
-  - {fileID: 11400000, guid: 0946c2b6d3928834d824fe2b122f8b19, type: 2}
+  - {fileID: 0}
   <MapHighScore>k__BackingField: 20

@@ -13,3 +13,5 @@ MonoBehaviour:
   m_Name: WastelandsCombatChallenge0
   m_EditorClassIdentifier: 
   <Description>k__BackingField: Placeholder 0
+  m_monster: {fileID: 11400000, guid: e58fb7e48f523a64ba52dcde406248c9, type: 2}
+  m_killsNeeded: 1

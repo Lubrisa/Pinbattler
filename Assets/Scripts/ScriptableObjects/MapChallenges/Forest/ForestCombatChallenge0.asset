@@ -13,3 +13,5 @@ MonoBehaviour:
   m_Name: ForestCombatChallenge0
   m_EditorClassIdentifier: 
   <Description>k__BackingField: Placeholder
+  m_monster: {fileID: 11400000, guid: 1cc0a22c5f446514985c50c6a9e2d937, type: 2}
+  m_killsNeeded: 1

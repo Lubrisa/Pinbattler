@@ -1,3 +1,4 @@
+using ScriptableObjectArchitecture;
 using UnityEngine;
 
 namespace Pinbattlers.Scriptables
@@ -9,9 +10,16 @@ namespace Pinbattlers.Scriptables
 
         public override bool Concluded { get; set; }
 
-        public override void ConclusionVerification()
-        {
+        [SerializeField] private BoolVariable m_wasActivated;
 
+        public override bool ConclusionVerification()
+        {
+            if (m_wasActivated)
+            {
+                Concluded = true;
+                return true;
+            }
+            return false;
         }
     }
 }

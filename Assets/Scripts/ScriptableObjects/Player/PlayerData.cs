@@ -1,5 +1,6 @@
 using Pinbattlers.Player.Resouces;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 
@@ -45,6 +46,31 @@ namespace Pinbattlers.Player
             if (attributeIndex == 0) LifeModifier += 2;
             else if (attributeIndex == 1) AttackModifier += 2;
             else Defense += 2;
+        }
+
+        public void UpdateInventory(int points, int stars, int essences,
+            List<Consumable> consumables, List<Relic> relics, Ability ability)
+        {
+            Points += points;
+            Stars += stars;
+            Essences += essences;
+
+            if (ability != null && !Abilities.Contains(ability)) Abilities.Add(ability);
+
+            foreach (Relic r in relics)
+            {
+                Relics.Add(r);
+            }
+
+            foreach (Consumable c in consumables)
+            {
+                if (Consumables.Contains(c))
+                {
+                    int itemIndex = Consumables.IndexOf(c);
+                    Consumables[itemIndex].Quantity += c.Quantity;
+                }
+                else Consumables.Add(c);
+            }
         }
     }
 }

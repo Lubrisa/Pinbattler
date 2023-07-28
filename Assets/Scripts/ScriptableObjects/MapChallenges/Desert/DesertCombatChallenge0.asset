@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bf89dfa85900b24a926932347303caf, type: 3}
   m_Name: DesertCombatChallenge0
   m_EditorClassIdentifier: 
-  <Description>k__BackingField: Placeholder 0
+  <Description>k__BackingField: 
+  m_monster: {fileID: 11400000, guid: a491df68a26d0bf4b8dccf2d3bc76101, type: 2}
+  m_killsNeeded: 1
