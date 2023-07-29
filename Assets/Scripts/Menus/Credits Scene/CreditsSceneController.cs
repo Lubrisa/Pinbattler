@@ -14,14 +14,13 @@ public class CreditsSceneController : MonoBehaviour
         m_animator = GetComponent<Animator>();
 
         PlayerInputs playerInputs = new PlayerInputs();
-
         playerInputs.Computer.Enable();
         playerInputs.Computer.Skip.performed += SkipCredits;
     }
 
     private void Update()
     {
-        if(Input.anyKeyDown)
+        if (Input.anyKeyDown)
         {
             StartWarningAnimation();
         }
@@ -29,7 +28,7 @@ public class CreditsSceneController : MonoBehaviour
 
     public void StartWarningAnimation()
     {
-        if(!m_animator.GetBool("Warning"))
+        if (!m_animator.GetBool("Warning"))
         {
             m_animator.SetBool("Warning", true);
         }

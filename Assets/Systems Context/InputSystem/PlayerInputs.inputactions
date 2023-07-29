@@ -1,5 +1,5 @@
 {
-    "name": "Controls",
+    "name": "PlayerInputs",
     "maps": [
         {
             "name": "Computer",
@@ -36,6 +36,15 @@
                     "name": "Skip",
                     "type": "Button",
                     "id": "912d4db6-3c3b-4bb6-8107-4a2f132a94d6",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Pause",
+                    "type": "Button",
+                    "id": "5b7336f8-b8cf-4e15-baba-e3ff4b02e7cb",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -161,6 +170,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Skip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e5167875-b1d4-4e0b-beea-b4d1839f31e6",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pause",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

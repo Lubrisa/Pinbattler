@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3199036972774427884}
   - component: {fileID: 7058537882932888693}
   m_Layer: 0
-  m_Name: ContinueButton (1)
+  m_Name: OptionsButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -241,7 +241,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8172777072977345851}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3149743867952821555}
+        m_TargetAssemblyTypeName: Pinbattlers.Menus.PauseMenuController, Assembly-CSharp
+        m_MethodName: OnContinueButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1089873618131027884
 GameObject:
   m_ObjectHideFlags: 0
@@ -529,7 +541,7 @@ GameObject:
   - component: {fileID: 8481404460023788672}
   - component: {fileID: 4438118150363863604}
   m_Layer: 0
-  m_Name: ContinueButton (2)
+  m_Name: ExitButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -636,7 +648,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8481404460023788672}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3149743867952821555}
+        m_TargetAssemblyTypeName: Pinbattlers.Menus.PauseMenuController, Assembly-CSharp
+        m_MethodName: OnExitMatchButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1540483557078081044
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,7 +772,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 15}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &7218787786474511370
 MonoBehaviour:
@@ -1069,7 +1093,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4556011298096394316
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1242,8 +1266,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c3b9cde9135fc14eb8f8f8102ebd2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_menu: {fileID: 4556011298096394317}
   m_missionTextHolder: {fileID: 3456072049012115508, guid: 0c3bf82944574b349a6398e48603f815, type: 3}
   m_content: {fileID: 6921359315519509396}
+  m_confirmationMenu: {fileID: 2530384564233100527, guid: 7ed22859b582a9e4aa500526cceae5c2, type: 3}
 --- !u!1 &4586943985696001430
 GameObject:
   m_ObjectHideFlags: 0

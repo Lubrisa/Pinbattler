@@ -62,6 +62,15 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""5b7336f8-b8cf-4e15-baba-e3ff4b02e7cb"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -185,6 +194,17 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""action"": ""Skip"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e5167875-b1d4-4e0b-beea-b4d1839f31e6"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -209,6 +229,7 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
         m_Computer_Spring = m_Computer.FindAction("Spring", throwIfNotFound: true);
         m_Computer_Ability = m_Computer.FindAction("Ability", throwIfNotFound: true);
         m_Computer_Skip = m_Computer.FindAction("Skip", throwIfNotFound: true);
+        m_Computer_Pause = m_Computer.FindAction("Pause", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -272,6 +293,7 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
     private readonly InputAction m_Computer_Spring;
     private readonly InputAction m_Computer_Ability;
     private readonly InputAction m_Computer_Skip;
+    private readonly InputAction m_Computer_Pause;
     public struct ComputerActions
     {
         private @PlayerInputs m_Wrapper;
@@ -280,6 +302,7 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
         public InputAction @Spring => m_Wrapper.m_Computer_Spring;
         public InputAction @Ability => m_Wrapper.m_Computer_Ability;
         public InputAction @Skip => m_Wrapper.m_Computer_Skip;
+        public InputAction @Pause => m_Wrapper.m_Computer_Pause;
         public InputActionMap Get() { return m_Wrapper.m_Computer; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -301,6 +324,9 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                 @Skip.started -= m_Wrapper.m_ComputerActionsCallbackInterface.OnSkip;
                 @Skip.performed -= m_Wrapper.m_ComputerActionsCallbackInterface.OnSkip;
                 @Skip.canceled -= m_Wrapper.m_ComputerActionsCallbackInterface.OnSkip;
+                @Pause.started -= m_Wrapper.m_ComputerActionsCallbackInterface.OnPause;
+                @Pause.performed -= m_Wrapper.m_ComputerActionsCallbackInterface.OnPause;
+                @Pause.canceled -= m_Wrapper.m_ComputerActionsCallbackInterface.OnPause;
             }
             m_Wrapper.m_ComputerActionsCallbackInterface = instance;
             if (instance != null)
@@ -317,6 +343,9 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                 @Skip.started += instance.OnSkip;
                 @Skip.performed += instance.OnSkip;
                 @Skip.canceled += instance.OnSkip;
+                @Pause.started += instance.OnPause;
+                @Pause.performed += instance.OnPause;
+                @Pause.canceled += instance.OnPause;
             }
         }
     }
@@ -336,5 +365,6 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
         void OnSpring(InputAction.CallbackContext context);
         void OnAbility(InputAction.CallbackContext context);
         void OnSkip(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
     }
 }
