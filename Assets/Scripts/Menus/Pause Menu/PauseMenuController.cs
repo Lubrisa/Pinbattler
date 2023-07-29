@@ -15,6 +15,8 @@ namespace Pinbattlers.Menus
 
         [SerializeField] private GameObject m_confirmationMenu;
 
+        public bool OptionsMenuActive { get; set; }
+
         private void Start()
         {
             PlayerInputs playerInputs = new PlayerInputs();
@@ -30,7 +32,7 @@ namespace Pinbattlers.Menus
                 SetMissions();
                 Time.timeScale = 0;
             }
-            else
+            else if (!OptionsMenuActive)
             {
                 m_menu.SetActive(false);
                 EraseMissions();

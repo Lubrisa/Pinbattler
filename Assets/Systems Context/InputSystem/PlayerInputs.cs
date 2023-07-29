@@ -28,9 +28,18 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
             ""id"": ""57674850-5769-4e59-8fe5-d971c56a9302"",
             ""actions"": [
                 {
-                    ""name"": ""Flippers"",
-                    ""type"": ""Button"",
+                    ""name"": ""LeftFlipper"",
+                    ""type"": ""Value"",
                     ""id"": ""936e10ba-139c-4b20-a2fd-0f657311cdad"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""RightFlipper"",
+                    ""type"": ""Button"",
+                    ""id"": ""0c973f19-6a68-4759-81a0-1143e0ba6977"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -75,78 +84,12 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
             ],
             ""bindings"": [
                 {
-                    ""name"": ""FlipperAxis"",
-                    ""id"": ""bafa9aa3-6175-4297-8074-2783131a3041"",
-                    ""path"": ""1DAxis"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Flippers"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""negative"",
-                    ""id"": ""78f7f696-4500-47ee-a1ea-25a892e59f06"",
-                    ""path"": ""<Keyboard>/a"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Flippers"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""positive"",
-                    ""id"": ""7466fc45-9ba4-4a79-994b-7b1a74923ffb"",
-                    ""path"": ""<Keyboard>/d"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Flippers"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""FlipperAxis"",
-                    ""id"": ""ad6718ef-5092-400e-b0d1-86384aa63df3"",
-                    ""path"": ""1DAxis"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Flippers"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""negative"",
-                    ""id"": ""c8a8f945-1aa7-4216-9d74-1aef5670d423"",
-                    ""path"": ""<Keyboard>/leftArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Flippers"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""positive"",
-                    ""id"": ""f37217cc-8aa7-4495-bf44-66f6ee18ce97"",
-                    ""path"": ""<Keyboard>/rightArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Flippers"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
                     ""name"": """",
                     ""id"": ""dab5e23e-7584-4939-9464-d08cde34c8ce"",
                     ""path"": ""<Keyboard>/s"",
-                    ""interactions"": ""Hold"",
+                    ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Computer"",
                     ""action"": ""Spring"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -155,9 +98,9 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""name"": """",
                     ""id"": ""6c310f07-8d03-43f4-9d51-9db5420a77b5"",
                     ""path"": ""<Keyboard>/downArrow"",
-                    ""interactions"": ""Hold"",
+                    ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Computer"",
                     ""action"": ""Spring"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -168,7 +111,7 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/upArrow"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Computer"",
                     ""action"": ""Ability"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -179,7 +122,7 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Computer"",
                     ""action"": ""Ability"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -190,7 +133,7 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/escape"",
                     ""interactions"": ""Hold(duration=3)"",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Computer"",
                     ""action"": ""Skip"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -201,8 +144,52 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/escape"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Computer"",
                     ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""42584bf6-575c-4b6a-b678-7a28a65cb6fb"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Computer"",
+                    ""action"": ""LeftFlipper"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1f8b0055-268c-4a9f-9462-0550df09e447"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Computer"",
+                    ""action"": ""LeftFlipper"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3d5b0e93-7b92-494f-ad77-96816e2a2a9a"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Computer"",
+                    ""action"": ""RightFlipper"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""83050fea-e0a4-48df-aba5-3c768b73ea77"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Computer"",
+                    ""action"": ""RightFlipper"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -225,7 +212,8 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
 }");
         // Computer
         m_Computer = asset.FindActionMap("Computer", throwIfNotFound: true);
-        m_Computer_Flippers = m_Computer.FindAction("Flippers", throwIfNotFound: true);
+        m_Computer_LeftFlipper = m_Computer.FindAction("LeftFlipper", throwIfNotFound: true);
+        m_Computer_RightFlipper = m_Computer.FindAction("RightFlipper", throwIfNotFound: true);
         m_Computer_Spring = m_Computer.FindAction("Spring", throwIfNotFound: true);
         m_Computer_Ability = m_Computer.FindAction("Ability", throwIfNotFound: true);
         m_Computer_Skip = m_Computer.FindAction("Skip", throwIfNotFound: true);
@@ -289,7 +277,8 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
     // Computer
     private readonly InputActionMap m_Computer;
     private IComputerActions m_ComputerActionsCallbackInterface;
-    private readonly InputAction m_Computer_Flippers;
+    private readonly InputAction m_Computer_LeftFlipper;
+    private readonly InputAction m_Computer_RightFlipper;
     private readonly InputAction m_Computer_Spring;
     private readonly InputAction m_Computer_Ability;
     private readonly InputAction m_Computer_Skip;
@@ -298,7 +287,8 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
     {
         private @PlayerInputs m_Wrapper;
         public ComputerActions(@PlayerInputs wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Flippers => m_Wrapper.m_Computer_Flippers;
+        public InputAction @LeftFlipper => m_Wrapper.m_Computer_LeftFlipper;
+        public InputAction @RightFlipper => m_Wrapper.m_Computer_RightFlipper;
         public InputAction @Spring => m_Wrapper.m_Computer_Spring;
         public InputAction @Ability => m_Wrapper.m_Computer_Ability;
         public InputAction @Skip => m_Wrapper.m_Computer_Skip;
@@ -312,9 +302,12 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
         {
             if (m_Wrapper.m_ComputerActionsCallbackInterface != null)
             {
-                @Flippers.started -= m_Wrapper.m_ComputerActionsCallbackInterface.OnFlippers;
-                @Flippers.performed -= m_Wrapper.m_ComputerActionsCallbackInterface.OnFlippers;
-                @Flippers.canceled -= m_Wrapper.m_ComputerActionsCallbackInterface.OnFlippers;
+                @LeftFlipper.started -= m_Wrapper.m_ComputerActionsCallbackInterface.OnLeftFlipper;
+                @LeftFlipper.performed -= m_Wrapper.m_ComputerActionsCallbackInterface.OnLeftFlipper;
+                @LeftFlipper.canceled -= m_Wrapper.m_ComputerActionsCallbackInterface.OnLeftFlipper;
+                @RightFlipper.started -= m_Wrapper.m_ComputerActionsCallbackInterface.OnRightFlipper;
+                @RightFlipper.performed -= m_Wrapper.m_ComputerActionsCallbackInterface.OnRightFlipper;
+                @RightFlipper.canceled -= m_Wrapper.m_ComputerActionsCallbackInterface.OnRightFlipper;
                 @Spring.started -= m_Wrapper.m_ComputerActionsCallbackInterface.OnSpring;
                 @Spring.performed -= m_Wrapper.m_ComputerActionsCallbackInterface.OnSpring;
                 @Spring.canceled -= m_Wrapper.m_ComputerActionsCallbackInterface.OnSpring;
@@ -331,9 +324,12 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
             m_Wrapper.m_ComputerActionsCallbackInterface = instance;
             if (instance != null)
             {
-                @Flippers.started += instance.OnFlippers;
-                @Flippers.performed += instance.OnFlippers;
-                @Flippers.canceled += instance.OnFlippers;
+                @LeftFlipper.started += instance.OnLeftFlipper;
+                @LeftFlipper.performed += instance.OnLeftFlipper;
+                @LeftFlipper.canceled += instance.OnLeftFlipper;
+                @RightFlipper.started += instance.OnRightFlipper;
+                @RightFlipper.performed += instance.OnRightFlipper;
+                @RightFlipper.canceled += instance.OnRightFlipper;
                 @Spring.started += instance.OnSpring;
                 @Spring.performed += instance.OnSpring;
                 @Spring.canceled += instance.OnSpring;
@@ -361,7 +357,8 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
     }
     public interface IComputerActions
     {
-        void OnFlippers(InputAction.CallbackContext context);
+        void OnLeftFlipper(InputAction.CallbackContext context);
+        void OnRightFlipper(InputAction.CallbackContext context);
         void OnSpring(InputAction.CallbackContext context);
         void OnAbility(InputAction.CallbackContext context);
         void OnSkip(InputAction.CallbackContext context);

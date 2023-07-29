@@ -30,9 +30,9 @@ namespace Pinbattlers.Player.Resouces
 
         public void SetValue()
         {
-            if (m_moneyType == MoneyType.Points) m_text.text = "Seus Pontos: " + m_instance.Points;
-            else if (m_moneyType == MoneyType.Stars) m_text.text = "Suas Estrelas: " + m_instance.Stars;
-            else m_text.text = "Suas Essências: " + m_instance.Essences;
+            if (m_moneyType == MoneyType.Points) m_text.text = "Pontos: " + m_instance.Points;
+            else if (m_moneyType == MoneyType.Stars) m_text.text = "Estrelas: " + m_instance.Stars;
+            else m_text.text = "Essências: " + m_instance.Essences;
         }
     }
 }
