@@ -64,12 +64,11 @@ namespace Pinbattlers.Player
 
             foreach (Consumable c in consumables)
             {
-                if (Consumables.Contains(c))
+                foreach (Consumable con in Consumables)
                 {
-                    int itemIndex = Consumables.IndexOf(c);
-                    Consumables[itemIndex].Quantity += c.Quantity;
+                    if (con.Name == c.Name) con.Quantity += c.Quantity;
+                    else Consumables.Add(c);
                 }
-                else Consumables.Add(c);
             }
         }
     }

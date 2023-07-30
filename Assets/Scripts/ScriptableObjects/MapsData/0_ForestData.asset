@@ -20,3 +20,5 @@ MonoBehaviour:
   <MapModifiers>k__BackingField:
   - {fileID: 11400000, guid: b001b1b815eadfc46a5b06a714d6c79c, type: 2}
   <MapHighScore>k__BackingField: 10
+  <Unlocked>k__BackingField: 01
+  <Concluded>k__BackingField: 0

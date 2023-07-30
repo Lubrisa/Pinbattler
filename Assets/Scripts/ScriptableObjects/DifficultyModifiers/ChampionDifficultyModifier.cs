@@ -1,7 +1,6 @@
 using Pinbattlers.Enemies;
 using Pinbattlers.Menus;
 using Pinbattlers.Player.Resouces;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -20,6 +19,8 @@ namespace Pinbattlers.Scriptables
 
         [field: SerializeField] public override Relic RelicReward { get; protected set; }
 
+        [field: SerializeField] public override bool Concluded { get; protected set; }
+
         [field: SerializeField] private MonsterData m_monsterData;
         [SerializeField] private int m_killsNeeded;
         private int m_matchStartKills;
@@ -37,6 +38,7 @@ namespace Pinbattlers.Scriptables
             {
                 if (RelicReward != null) GameOverMenuController.Instance.Relics.Add(RelicReward);
                 Rewards = GenerateRewardPool();
+                if (!Concluded) Concluded = true;
                 return true;
             }
             else return false;

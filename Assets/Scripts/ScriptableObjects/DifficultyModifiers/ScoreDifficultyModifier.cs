@@ -19,6 +19,8 @@ namespace Pinbattlers.Scriptables
 
         [field: SerializeField] public override Relic RelicReward { get; protected set; }
 
+        [field: SerializeField] public override bool Concluded { get; protected set; }
+
         [SerializeField] private IntVariable m_fixedPointsMultiplier;
         [SerializeField] private int m_scoreToReach;
 
@@ -33,6 +35,7 @@ namespace Pinbattlers.Scriptables
             {
                 if (RelicReward != null) GameOverMenuController.Instance.Relics.Add(RelicReward);
                 Rewards = GenerateRewardPool();
+                if (!Concluded) Concluded = true;
                 return true;
             }
             return false;

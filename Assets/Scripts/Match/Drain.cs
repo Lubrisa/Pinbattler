@@ -8,8 +8,7 @@ public class Drain : MonoBehaviour
     {
         if (collision.transform.TryGetComponent(out PlayerController playerController))
         {
-            print("Dano dano");
-            playerController.TakeDamage(200);
+            playerController.TakeDamage(20);
         }
     }
 }

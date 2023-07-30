@@ -9019,6 +9019,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_confirmationMenuExit: {fileID: 6561965885024160762, guid: a6de3165b9fb5e943ad545bb1a555720, type: 3}
+  m_mapsNodes:
+  - {fileID: 774043388}
+  - {fileID: 1331815465}
+  - {fileID: 1003614527}
+  m_mapsData:
+  - {fileID: 11400000, guid: af4916b93f27e804fa75596836f7b1f1, type: 2}
+  - {fileID: 11400000, guid: 0722cb94392a79146bb9258bb4f8b9d8, type: 2}
+  - {fileID: 11400000, guid: 9ebab8a1089a6c242acb9d04279c2aa5, type: 2}
+  m_mapNodeSprites:
+  - {fileID: 21300000, guid: b8c4af151f4da19428437fbc025ac4bc, type: 3}
+  - {fileID: 21300000, guid: 6a6505ca32e6fd946b90b7c9a133d3e0, type: 3}
+  - {fileID: 21300000, guid: 09d1e9cca68b1184085b33ca63ece942, type: 3}
+  - {fileID: 21300000, guid: dd032a85c3c30ed41b42cfa92c637cf8, type: 3}
 --- !u!1 &895601009
 GameObject:
   m_ObjectHideFlags: 0

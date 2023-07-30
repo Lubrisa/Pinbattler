@@ -23,3 +23,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e0003fb75e892c24eae456e20e93b878, type: 2}
   - {fileID: 11400000, guid: 5e782fbd0fb3f4843a31f4a119878eca, type: 2}
   <MapHighScore>k__BackingField: 30
+  <Unlocked>k__BackingField: 00
+  <Concluded>k__BackingField: 0

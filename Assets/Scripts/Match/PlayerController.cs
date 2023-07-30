@@ -66,6 +66,7 @@ public class PlayerController : MonoBehaviour
 
         if (Life <= 0) Die();
 
+        Debug.Log((float)Life / m_maxLife);
         m_playerLifeUpdate.Invoke((float)Life / m_maxLife);
     }
 

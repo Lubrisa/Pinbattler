@@ -20,8 +20,10 @@ namespace Pinbattlers.Menus
         [Inject(Id = "challenges")]
         private TMP_Text[] m_challenges;
 
+        [SerializeField] private Toggle[] m_mapModifiersToggle;
+
         [Inject(Id = "modifiers")]
-        private TMP_Text[] m_modifiers;
+        private TMP_Text[] m_modifiersText;
 
         [Inject(Id = "highscore")]
         private TMP_Text m_mapHighScore;
@@ -46,6 +48,7 @@ namespace Pinbattlers.Menus
             m_mapDescription.text = MapData[mapIndex].MapDescription;
             m_mapIllustration.sprite = MapData[mapIndex].MapIllustration;
 
+            bool areChallengesConcluded = true;
             // Iterates through the challenges list.
             // If the map has a challenge in the index, the challenge description is copied to the text,
             // otherwise, the text becomes blank.
@@ -54,16 +57,25 @@ namespace Pinbattlers.Menus
                 if (i < MapData[mapIndex].MapChallenges.Length)
                 {
                     if (MapData[mapIndex].MapChallenges[i].Concluded) m_challenges[i].fontStyle = FontStyles.Strikethrough;
-                    else m_challenges[i].fontStyle = FontStyles.Normal;
+                    else
+                    {
+                        m_challenges[i].fontStyle = FontStyles.Normal;
+                        areChallengesConcluded = false;
+                    }
                     m_challenges[i].text = MapData[mapIndex].MapChallenges[i].Description;
                 }
                 else m_challenges[i].text = "";
             }
 
-            for (int i = 0; i < m_modifiers.Length; i++)
+            for (int i = 0; i < m_mapModifiersToggle.Length; i++)
             {
-                if (i < MapData[mapIndex].MapModifiers.Length) m_modifiers[i].text = MapData[mapIndex].MapModifiers[i].Description;
-                else m_modifiers[i].transform.parent.gameObject.SetActive(false);
+                if (i < MapData[mapIndex].MapModifiers.Length)
+                {
+                    m_mapModifiersToggle[i].isOn = false;
+                    if (!areChallengesConcluded) m_mapModifiersToggle[i].interactable = false;
+                    m_modifiersText[i].text = MapData[mapIndex].MapModifiers[i].Description;
+                }
+                else m_modifiersText[i].transform.parent.gameObject.SetActive(false);
             }
 
             m_mapHighScore.text = "Maior pontuação: " + MapData[mapIndex].MapHighScore.ToString();
@@ -71,7 +83,7 @@ namespace Pinbattlers.Menus
 
         public void OnModifierToggleValueChange(int modifierIndex)
         {
-            MapData[MapIndex].MapModifiers[modifierIndex].IsEnabled = !MapData[MapIndex].MapModifiers[modifierIndex].IsEnabled;
+            MapData[MapIndex].MapModifiers[modifierIndex].IsEnabled = m_mapModifiersToggle[modifierIndex].isOn;
         }
 
         public void LoadMap()

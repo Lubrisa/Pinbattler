@@ -15,5 +15,9 @@ namespace Pinbattlers.Menus
         [field: SerializeField] public BaseDifficultyModifier[] MapModifiers { get; private set; }
 
         [field: SerializeField] public int MapHighScore { get; set; }
+
+        [field: SerializeField] public bool[] Unlocked { get; set; }
+
+        [field: SerializeField] public bool Concluded { get; set; }
     }
 }

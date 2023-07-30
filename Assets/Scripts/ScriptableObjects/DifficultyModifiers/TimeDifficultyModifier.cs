@@ -19,6 +19,8 @@ namespace Pinbattlers.Scriptables
 
         [field: SerializeField] public override Relic RelicReward { get; protected set; }
 
+        [field: SerializeField] public override bool Concluded { get; protected set; }
+
         [field: SerializeField] private float m_timeLimit;
         private float m_remainingTime;
 
@@ -35,6 +37,7 @@ namespace Pinbattlers.Scriptables
             {
                 if (RelicReward != null) GameOverMenuController.Instance.Relics.Add(RelicReward);
                 Rewards = GenerateRewardPool();
+                if (!Concluded) Concluded = true;
                 return true;
             }
             else if (m_remainingTime > 0) m_remainingTime -= Time.deltaTime;

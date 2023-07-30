@@ -1,5 +1,7 @@
+using Pinbattlers.Match;
 using Pinbattlers.Player;
 using Pinbattlers.Player.Resouces;
+using Pinbattlers.Scriptables;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
@@ -51,7 +53,20 @@ namespace Pinbattlers.Menus
 
             Ability abilityToPass = null;
 
-            if (Ability != null && !m_instance.Abilities.Contains(Ability)) abilityToPass = Ability;
+            bool areChallengesConcluded = true;
+            foreach (BaseChallenge bc in MatchManager.Instance.Challenges)
+            {
+                if (!bc.Concluded)
+                {
+                    areChallengesConcluded = false;
+                    break;
+                }
+            }
+
+            if (Ability != null && areChallengesConcluded)
+            {
+                abilityToPass = Ability;
+            }
 
             m_instance.UpdateInventory(Score, Stars, Essences, Consumables, Relics, abilityToPass);
 

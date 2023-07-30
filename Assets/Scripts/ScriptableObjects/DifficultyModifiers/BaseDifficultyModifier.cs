@@ -16,6 +16,8 @@ namespace Pinbattlers.Scriptables
 
         public abstract Relic RelicReward { get; protected set; }
 
+        public abstract bool Concluded { get; protected set; }
+
         public abstract void Effect();
 
         public abstract bool MissionVerification();
