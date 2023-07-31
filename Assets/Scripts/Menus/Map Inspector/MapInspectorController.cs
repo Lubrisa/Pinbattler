@@ -9,31 +9,30 @@ namespace Pinbattlers.Menus
 {
     public class MapInspectorController : MonoBehaviour
     {
-        [Inject(Id = "name")]
         private TMP_Text m_mapName;
 
-        [Inject(Id = "description")]
         private TMP_Text m_mapDescription;
 
         private Image m_mapIllustration;
 
-        [Inject(Id = "challenges")]
         private TMP_Text[] m_challenges;
 
-        [SerializeField] private Toggle[] m_mapModifiersToggle;
+        private Toggle[] m_mapModifiersToggle;
 
-        [Inject(Id = "modifiers")]
         private TMP_Text[] m_modifiersText;
 
-        [Inject(Id = "highscore")]
         private TMP_Text m_mapHighScore;
 
         public static MapsData[] MapData { get; private set; }
         public static int MapIndex { get; private set; }
 
         [Inject]
-        private void Constructor(Image mapIllustration, MapsData[] mapData)
+        private void Constructor([Inject(Id = "name")] TMP_Text mapName, [Inject(Id = "description")] TMP_Text mapDescription,
+            [Inject(Id = "challenges")] TMP_Text[] mapChallenges, Image mapIllustration, MapsData[] mapData)
         {
+            m_mapName = mapName;
+            m_mapDescription = mapDescription;
+            m_challenges = mapChallenges;
             m_mapIllustration = mapIllustration;
             MapData = mapData;
         }
