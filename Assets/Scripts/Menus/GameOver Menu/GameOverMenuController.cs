@@ -77,29 +77,31 @@ namespace Pinbattlers.Menus
         {
             m_finalScoreText.text = "Pontuação Final:\n" + Score.ToString();
 
-            Instantiate(m_pointsReward, m_content);
-            m_pointsReward.SetInfo(this);
-            Instantiate(m_starsReward, m_content);
-            m_starsReward.SetInfo(this);
-            Instantiate(m_essencesReward, m_content);
-            m_essencesReward.SetInfo(this);
+            BaseRewardController reward;
+
+            reward = Instantiate(m_pointsReward, m_content);
+            reward.SetInfo(this);
+            reward = Instantiate(m_starsReward, m_content);
+            reward.SetInfo(this);
+            reward = Instantiate(m_essencesReward, m_content);
+            reward.SetInfo(this);
 
             if (Ability != null)
             {
-                Instantiate(m_abilityReward, m_content);
-                m_abilityReward.SetInfo(this);
+                reward = Instantiate(m_abilityReward, m_content);
+                reward.SetInfo(this);
             }
 
             foreach (Relic r in Relics)
             {
-                BaseRewardController reward = Instantiate(m_relicReward, m_content);
+                reward = Instantiate(m_relicReward, m_content);
                 reward.SetInfo(this);
                 RelicIndex++;
             }
 
             foreach (Consumable r in Consumables)
             {
-                BaseRewardController reward = Instantiate(m_consumableReward, m_content);
+                reward = Instantiate(m_consumableReward, m_content);
                 reward.SetInfo(this);
                 ConsumableIndex++;
             }

@@ -9,7 +9,7 @@ namespace Pinbattlers.Menus
     public class TitleScreenController : MonoBehaviour
     {
         [SerializeField] private int m_backgroundIndex;
-        [SerializeField] private Image m_background;
+        private Image m_background;
         [SerializeField] private Sprite[] m_backgroundSprites;
 
         [Inject]

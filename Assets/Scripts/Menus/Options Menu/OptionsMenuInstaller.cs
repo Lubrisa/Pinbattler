@@ -1,18 +1,15 @@
 using UnityEngine;
-using UnityEngine.Audio;
 using Zenject;
 
 namespace Pinbattlers.Menus
 {
     public class OptionsMenuInstaller : MonoInstaller
     {
-        [SerializeField] private GameObject[] m_sessions;
-        [SerializeField] private AudioMixer m_mixer;
+        [SerializeField] private RectTransform[] m_sessions;
 
         public override void InstallBindings()
         {
-            Container.Bind<GameObject[]>().FromInstance(m_sessions);
-            Container.Bind<AudioMixer>().FromInstance(m_mixer);
+            Container.Bind<RectTransform[]>().FromInstance(m_sessions);
         }
     }
 }

@@ -1,3 +1,4 @@
+using Pinbattlers.Match;
 using Pinbattlers.Player;
 using ScriptableObjectArchitecture;
 
@@ -17,6 +18,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private int m_attack;
     [SerializeField] private int m_defense;
 
+    [SerializeField] private int m_leftBalls;
+
     private Vector2 m_respawnPosition;
 
     private Sprite m_skin;
@@ -31,6 +34,8 @@ public class PlayerController : MonoBehaviour
         m_defense = m_playerData.Defense;
         m_skin = m_playerData.SkinEquiped;
         m_respawnPosition = transform.position;
+
+        m_leftBalls = 2;
     }
 
     private void Update()
@@ -79,9 +84,22 @@ public class PlayerController : MonoBehaviour
         m_playerLifeUpdate.Invoke((float)Life / m_maxLife);
     }
 
+    public void RecoverBall(int ballsRecovered)
+    {
+        m_leftBalls += m_leftBalls + ballsRecovered > 4 ? 4 - m_leftBalls : ballsRecovered;
+        MatchManager.Instance.ChangeRemainingBallsShowing(m_leftBalls);
+    }
+
     public void Die()
     {
         transform.position = m_respawnPosition;
         Heal(m_maxLife - Life);
+
+        if (m_leftBalls == 0) MatchManager.Instance.GameOver();
+        else
+        {
+            m_leftBalls -= 1;
+            MatchManager.Instance.ChangeRemainingBallsShowing(m_leftBalls);
+        }
     }
 }

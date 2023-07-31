@@ -41,7 +41,7 @@ namespace Pinbattlers.Scriptables
                 return true;
             }
             else if (m_remainingTime > 0) m_remainingTime -= Time.deltaTime;
-            else MatchManager.Instance.EndMatch();
+            else MatchManager.Instance.GameOver();
 
             return false;
         }

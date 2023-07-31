@@ -5,7 +5,7 @@ public class ExitMatchConfirmBehaviour : MonoBehaviour
 {
     public void OnConfirm()
     {
-        MatchManager.Instance.EndMatch();
+        MatchManager.Instance.GameOver();
         Destroy(gameObject);
     }
 

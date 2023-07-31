@@ -192,8 +192,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -313,7 +313,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &447060489 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8470148408179425983, guid: b13a3874599d39c459d024fd79295dbb, type: 3}
+  m_CorrespondingSourceObject: {fileID: 447060489, guid: b13a3874599d39c459d024fd79295dbb, type: 3}
   m_PrefabInstance: {fileID: 8470148407816984758}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 447060486}
@@ -482,6 +482,7 @@ GameObject:
   - component: {fileID: 659249985}
   - component: {fileID: 659249987}
   - component: {fileID: 659249986}
+  - component: {fileID: 659249988}
   m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
@@ -546,6 +547,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 659249984}
   m_CullTransparentMesh: 1
+--- !u!114 &659249988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659249984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0166d8ff8d905b048b2448179e1f5d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _components:
+  - {fileID: 659249986}
+  _identifier: 
+  _useSceneContext: 0
+  _context: {fileID: 0}
+  _bindType: 0
 --- !u!1 &695398147
 GameObject:
   m_ObjectHideFlags: 0
@@ -661,7 +680,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a96eb0149a2f61a4a9294867bcc2a26b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1bbd2b79b0e7d1f4791e557cb96539f2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -794,7 +813,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a96eb0149a2f61a4a9294867bcc2a26b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1bbd2b79b0e7d1f4791e557cb96539f2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -927,7 +946,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a96eb0149a2f61a4a9294867bcc2a26b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1bbd2b79b0e7d1f4791e557cb96539f2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1181,7 +1200,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_backgroundIndex: 0
-  m_background: {fileID: 0}
   m_backgroundSprites:
   - {fileID: 21300000, guid: f0370d071bd4ecb44869868a17700132, type: 3}
   - {fileID: 21300000, guid: e756e6110dfcd8d4baeed315bccd464e, type: 3}
@@ -1426,8 +1444,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1602,8 +1620,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1756,7 +1774,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _scriptableObjectInstallers: []
   _monoInstallers:
-  - {fileID: 1083976775}
   - {fileID: 447060489}
   _installerPrefabs: []
   _autoRun: 1
@@ -1965,7 +1982,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a96eb0149a2f61a4a9294867bcc2a26b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1bbd2b79b0e7d1f4791e557cb96539f2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2082,8 +2099,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2198,26 +2215,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1215608751}
     m_Modifications:
-    - target: {fileID: 3892498836289970894, guid: b13a3874599d39c459d024fd79295dbb, type: 3}
-      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
-      value: 6719541248
-      objectReference: {fileID: 0}
-    - target: {fileID: 8470148407713815177, guid: b13a3874599d39c459d024fd79295dbb, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8470148407713815177, guid: b13a3874599d39c459d024fd79295dbb, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8470148407722539188, guid: b13a3874599d39c459d024fd79295dbb, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8470148407722539188, guid: b13a3874599d39c459d024fd79295dbb, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8470148408179425968, guid: b13a3874599d39c459d024fd79295dbb, type: 3}
       propertyPath: m_Name
       value: OptionsMenu
@@ -2304,50 +2301,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8470148408179425969, guid: b13a3874599d39c459d024fd79295dbb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8470148408451992570, guid: b13a3874599d39c459d024fd79295dbb, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8470148408451992570, guid: b13a3874599d39c459d024fd79295dbb, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8470148409026824821, guid: b13a3874599d39c459d024fd79295dbb, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8470148409026824821, guid: b13a3874599d39c459d024fd79295dbb, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8470148409026824821, guid: b13a3874599d39c459d024fd79295dbb, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8470148409242174700, guid: b13a3874599d39c459d024fd79295dbb, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8470148409242174700, guid: b13a3874599d39c459d024fd79295dbb, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8470148409242174700, guid: b13a3874599d39c459d024fd79295dbb, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8470148409322665099, guid: b13a3874599d39c459d024fd79295dbb, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8470148409322665099, guid: b13a3874599d39c459d024fd79295dbb, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8470148409322665099, guid: b13a3874599d39c459d024fd79295dbb, type: 3}
-      propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

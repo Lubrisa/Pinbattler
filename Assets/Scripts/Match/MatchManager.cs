@@ -47,6 +47,8 @@ namespace Pinbattlers.Match
 
         [SerializeField] private UnityEvent m_gameOver;
 
+        [SerializeField] private GameObject[] m_remainingBalls;
+
         #endregion Properties
 
         private void Awake()
@@ -67,6 +69,8 @@ namespace Pinbattlers.Match
                 if (m.IsEnabled) Modifiers.Add(m);
                 m.Effect();
             }
+
+            ChangeRemainingBallsShowing(2);
         }
 
         private void Update()
@@ -111,7 +115,16 @@ namespace Pinbattlers.Match
             m_event = matchEvent;
         }
 
-        public void EndMatch()
+        public void ChangeRemainingBallsShowing(int remainingBalls)
+        {
+            for (int i = m_remainingBalls.Length - 1; i >= 0; i--)
+            {
+                if (i >= remainingBalls) m_remainingBalls[i].SetActive(false);
+                else if (!m_remainingBalls[i].activeSelf) m_remainingBalls[i].SetActive(true);
+            }
+        }
+
+        public void GameOver()
         {
             m_gameOver.Invoke();
             GameOverMenuController.Instance.FeedPlayerInventory();

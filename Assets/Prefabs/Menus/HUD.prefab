@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4456398065712833369}
   - component: {fileID: 4456398065712833368}
+  - component: {fileID: 4456398066328934456}
   m_Layer: 0
   m_Name: HealthBar
   m_TagString: Untagged
@@ -82,12 +83,45 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 100
-  m_WholeNumbers: 1
-  m_Value: 100
+  m_MaxValue: 1
+  m_WholeNumbers: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &4456398066328934456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4456398065712833374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d803b71d5100f2f43b3d93b8d7210303, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showDebugFields: 1
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 0}
+  _event: {fileID: 11400000, guid: 8b4529b563542df4aa0ecd57648e5bb3, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4456398065712833368}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Slider, UnityEngine.UI
+        m_MethodName: set_value
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _debugValue: 0
 --- !u!1 &4456398066081095686
 GameObject:
   m_ObjectHideFlags: 0
@@ -99,6 +133,7 @@ GameObject:
   - component: {fileID: 4456398066081095681}
   - component: {fileID: 4456398066081095683}
   - component: {fileID: 4456398066081095680}
+  - component: {fileID: 185320378}
   m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -224,6 +259,39 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &185320378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4456398066081095686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 636b72f8fc644b4418a9e8ad0f4f804f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 0}
+  _event: {fileID: 11400000, guid: f4e78b846f5615c448a8650498dc4adb, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4456398066081095680}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _debugValue: 
 --- !u!1 &4456398066191351185
 GameObject:
   m_ObjectHideFlags: 0
@@ -386,6 +454,7 @@ GameObject:
   - component: {fileID: 4456398066261842001}
   - component: {fileID: 4456398066261842006}
   - component: {fileID: 4456398066261842007}
+  - component: {fileID: 1579198185642061094}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -494,6 +563,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1579198185642061094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4456398066261842005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0744b68f59a4c994fb6f59d7fa320d95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4456398066313016956
 GameObject:
   m_ObjectHideFlags: 0

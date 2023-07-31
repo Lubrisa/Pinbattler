@@ -18,5 +18,6 @@ MonoBehaviour:
   <Rewards>k__BackingField:
   - {fileID: 11400000, guid: de212970d35e41948aa7a0810de220f7, type: 2}
   <RelicReward>k__BackingField: {fileID: 0}
+  <Concluded>k__BackingField: 0
   m_monsterData: {fileID: 11400000, guid: 1cc0a22c5f446514985c50c6a9e2d937, type: 2}
   m_killsNeeded: 1
