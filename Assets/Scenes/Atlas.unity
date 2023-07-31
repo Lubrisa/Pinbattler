@@ -2460,6 +2460,7 @@ GameObject:
   m_Component:
   - component: {fileID: 292867140}
   - component: {fileID: 292867141}
+  - component: {fileID: 292867142}
   m_Layer: 0
   m_Name: SceneContext
   m_TagString: Untagged
@@ -2496,6 +2497,7 @@ MonoBehaviour:
   _scriptableObjectInstallers: []
   _monoInstallers:
   - {fileID: 1240594014}
+  - {fileID: 292867142}
   _installerPrefabs: []
   _autoRun: 1
   OnPreInstall:
@@ -2513,6 +2515,23 @@ MonoBehaviour:
   _parentNewObjectsUnderSceneContext: 0
   _contractNames: []
   _parentContractNames: []
+--- !u!114 &292867142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292867139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7407eae8af4dd054099aec9020cef2b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_mapNodeSprites:
+  - {fileID: 21300000, guid: b8c4af151f4da19428437fbc025ac4bc, type: 3}
+  - {fileID: 21300000, guid: dd032a85c3c30ed41b42cfa92c637cf8, type: 3}
+  - {fileID: 21300000, guid: 6a6505ca32e6fd946b90b7c9a133d3e0, type: 3}
+  - {fileID: 21300000, guid: 09d1e9cca68b1184085b33ca63ece942, type: 3}
 --- !u!1 &324434594
 GameObject:
   m_ObjectHideFlags: 0
@@ -7349,6 +7368,7 @@ GameObject:
   - component: {fileID: 774043390}
   - component: {fileID: 774043389}
   - component: {fileID: 774043388}
+  - component: {fileID: 774043391}
   m_Layer: 5
   m_Name: MapNode
   m_TagString: Untagged
@@ -7481,6 +7501,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 774043386}
   m_CullTransparentMesh: 1
+--- !u!114 &774043391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774043386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45bfae2495947ae4bb981b59a35b30d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_mapData: {fileID: 11400000, guid: af4916b93f27e804fa75596836f7b1f1, type: 2}
 --- !u!1 &787310506
 GameObject:
   m_ObjectHideFlags: 0
@@ -8909,7 +8942,6 @@ GameObject:
   - component: {fileID: 881748431}
   - component: {fileID: 881748430}
   - component: {fileID: 881748429}
-  - component: {fileID: 881748432}
   m_Layer: 5
   m_Name: Atlas
   m_TagString: Untagged
@@ -9006,32 +9038,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &881748432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 881748427}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 755ca9fece8e2e94b996b47fee6b975a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_confirmationMenuExit: {fileID: 6561965885024160762, guid: a6de3165b9fb5e943ad545bb1a555720, type: 3}
-  m_mapsNodes:
-  - {fileID: 774043388}
-  - {fileID: 1331815465}
-  - {fileID: 1003614527}
-  m_mapsData:
-  - {fileID: 11400000, guid: af4916b93f27e804fa75596836f7b1f1, type: 2}
-  - {fileID: 11400000, guid: 0722cb94392a79146bb9258bb4f8b9d8, type: 2}
-  - {fileID: 11400000, guid: 9ebab8a1089a6c242acb9d04279c2aa5, type: 2}
-  m_mapNodeSprites:
-  - {fileID: 21300000, guid: b8c4af151f4da19428437fbc025ac4bc, type: 3}
-  - {fileID: 21300000, guid: 6a6505ca32e6fd946b90b7c9a133d3e0, type: 3}
-  - {fileID: 21300000, guid: 09d1e9cca68b1184085b33ca63ece942, type: 3}
-  - {fileID: 21300000, guid: dd032a85c3c30ed41b42cfa92c637cf8, type: 3}
 --- !u!1 &895601009
 GameObject:
   m_ObjectHideFlags: 0
@@ -10165,6 +10171,7 @@ GameObject:
   - component: {fileID: 1003614529}
   - component: {fileID: 1003614528}
   - component: {fileID: 1003614527}
+  - component: {fileID: 1003614530}
   m_Layer: 5
   m_Name: MapNode (2)
   m_TagString: Untagged
@@ -10297,6 +10304,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1003614525}
   m_CullTransparentMesh: 1
+--- !u!114 &1003614530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1003614525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45bfae2495947ae4bb981b59a35b30d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_mapData: {fileID: 11400000, guid: 9ebab8a1089a6c242acb9d04279c2aa5, type: 2}
 --- !u!1 &1006380229
 GameObject:
   m_ObjectHideFlags: 0
@@ -13826,6 +13846,7 @@ GameObject:
   - component: {fileID: 1331815467}
   - component: {fileID: 1331815466}
   - component: {fileID: 1331815465}
+  - component: {fileID: 1331815468}
   m_Layer: 5
   m_Name: MapNode (1)
   m_TagString: Untagged
@@ -13958,6 +13979,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1331815463}
   m_CullTransparentMesh: 1
+--- !u!114 &1331815468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331815463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45bfae2495947ae4bb981b59a35b30d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_mapData: {fileID: 11400000, guid: 0722cb94392a79146bb9258bb4f8b9d8, type: 2}
 --- !u!1 &1343995898
 GameObject:
   m_ObjectHideFlags: 0
@@ -15396,6 +15430,7 @@ GameObject:
   - component: {fileID: 1480419012}
   - component: {fileID: 1480419011}
   - component: {fileID: 1480419010}
+  - component: {fileID: 1480419013}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -15466,25 +15501,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 881748432}
-        m_TargetAssemblyTypeName: AtlasController, Assembly-CSharp
+      - m_Target: {fileID: 1480419013}
+        m_TargetAssemblyTypeName: ExitAtlasButtonController, Assembly-CSharp
         m_MethodName: OnExitButtonClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 6561965885024160762, guid: a6de3165b9fb5e943ad545bb1a555720, type: 3}
-        m_TargetAssemblyTypeName: AtlasController, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -15528,6 +15551,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1480419008}
   m_CullTransparentMesh: 1
+--- !u!114 &1480419013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480419008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55273b0edd1688f4e8f0a7b5022ef266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_exitAtlasConfirmationMenu: {fileID: 6561965885024160762, guid: a6de3165b9fb5e943ad545bb1a555720, type: 3}
 --- !u!1 &1488692166
 GameObject:
   m_ObjectHideFlags: 0
