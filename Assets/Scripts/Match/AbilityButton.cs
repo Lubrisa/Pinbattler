@@ -13,7 +13,7 @@ public class AbilityButton : MonoBehaviour
         Button button = GetComponent<Button>();
 
         if (m_instance.AbilityEquiped == null) button.interactable = false;
-        else button.image.sprite = m_instance.AbilityEquiped.Icon;
+        else button.image.sprite = m_instance.AbilityEquiped.IconSprite.IconSprite;
     }
 
     public void OnAbilityButtonClicked()

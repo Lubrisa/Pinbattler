@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4ff90f6a1061be4bae216cbc17d8012, type: 3}
+  m_Name: FreshPlayerData
+  m_EditorClassIdentifier: 
+  <Life>k__BackingField: 100
+  <LifeModifier>k__BackingField: 0
+  <Attack>k__BackingField: 10
+  <AttackModifier>k__BackingField: 0
+  <Defense>k__BackingField: 0
+  <Skins>k__BackingField: []
+  <SkinEquiped>k__BackingField: {fileID: 0}
+  <Abilities>k__BackingField: []
+  <AbilityEquiped>k__BackingField: {fileID: 0}
+  <Relics>k__BackingField: []
+  <RelicEquiped>k__BackingField: {fileID: 0}
+  <Consumables>k__BackingField: []
+  <Points>k__BackingField: 0
+  <Stars>k__BackingField: 0
+  <Essences>k__BackingField: 0

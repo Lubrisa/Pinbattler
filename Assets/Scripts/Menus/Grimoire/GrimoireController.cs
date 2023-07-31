@@ -30,7 +30,7 @@ namespace Pinbattlers.Menus
             m_page = page;
 
             m_abilityName.text = m_instance.Abilities[m_page].Name;
-            m_abilityIllustration.sprite = m_instance.Abilities[m_page].Icon;
+            m_abilityIllustration.sprite = m_instance.Abilities[m_page].IconSprite.IconSprite;
             m_abilityLoreDescription.text = m_instance.Abilities[m_page].LoreDescription;
             m_abilityMechanicDescription.text = m_instance.Abilities[m_page].MechanicDescription;
 

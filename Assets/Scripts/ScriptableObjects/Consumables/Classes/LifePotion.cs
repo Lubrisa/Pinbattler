@@ -7,7 +7,7 @@ namespace Pinbattlers.Player.Resouces
     [CreateAssetMenu(fileName = "LifePotion", menuName = "Consumable/LifePotion")]
     public class LifePotion : Consumable
     {
-        [field: SerializeField] public override Sprite Icon { get; protected set; }
+        [field: SerializeField] public override Icon IconSprite { get; protected set; }
         [field: SerializeField] public override string LoreDescription { get; protected set; }
         [field: SerializeField] public override string MechanicDescription { get; protected set; }
         [field: SerializeField] public override string Name { get; protected set; }

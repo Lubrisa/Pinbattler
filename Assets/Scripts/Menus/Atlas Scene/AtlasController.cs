@@ -16,19 +16,12 @@ namespace Pinbattlers.Menus
         {
             for (int i = 0; i < m_mapsNodes.Length; i++)
             {
-                bool unlocked = true;
-                foreach (bool b in m_mapsData[i].Unlocked)
+                if (!m_mapsData[i].Unlocked && !m_mapsData[i].CheckUnlock())
                 {
-                    if (!b)
-                    {
-                        unlocked = false;
-                        m_mapsNodes[i].image.sprite = m_mapNodeSprites[0];
-                        m_mapsNodes[i].interactable = false;
-                        break;
-                    }
+                    m_mapsNodes[i].image.sprite = m_mapNodeSprites[0];
+                    m_mapsNodes[i].interactable = false;
                 }
-
-                if (unlocked)
+                else
                 {
                     bool areChallengesConcluded = true;
                     foreach (BaseChallenge bc in m_mapsData[i].MapChallenges)
@@ -43,18 +36,8 @@ namespace Pinbattlers.Menus
 
                     if (areChallengesConcluded)
                     {
-                        bool areModifiersConcluded = true;
-                        foreach (BaseDifficultyModifier bdm in m_mapsData[i].MapModifiers)
-                        {
-                            if (!bdm.Concluded)
-                            {
-                                areModifiersConcluded = false;
-                                m_mapsNodes[i].image.sprite = m_mapNodeSprites[2];
-                                break;
-                            }
-                        }
-
-                        if (areModifiersConcluded) m_mapsNodes[i].image.sprite = m_mapNodeSprites[3];
+                        if (!m_mapsData[i].Concluded && !m_mapsData[i].CheckConclusion()) m_mapsNodes[i].image.sprite = m_mapNodeSprites[2];
+                        else m_mapsNodes[i].image.sprite = m_mapNodeSprites[3];
                     }
                 }
             }

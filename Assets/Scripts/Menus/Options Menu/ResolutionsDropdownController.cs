@@ -23,7 +23,12 @@ namespace Pinbattlers.Menus
             dropdown.RefreshShownValue();
         }
 
-        public void ChangeResolutionValue(int resolutionIndex) =>
+        public void ChangeResolutionValue(int resolutionIndex)
+        {
             Screen.SetResolution(Screen.resolutions[resolutionIndex].width, Screen.resolutions[resolutionIndex].height, Screen.fullScreen);
+
+            PlayerPrefs.SetInt("ResolutionWidth", Screen.currentResolution.width);
+            PlayerPrefs.SetInt("ResolutionHeight", Screen.currentResolution.height);
+        }
     }
 }

@@ -11,5 +11,10 @@ public class QualityDropdownController : MonoBehaviour
         qualityDropdown.RefreshShownValue();
     }
 
-    public void SetNewQualityLevel(int qualityIndex) => QualitySettings.SetQualityLevel(qualityIndex);
+    public void SetNewQualityLevel(int qualityIndex)
+    {
+        QualitySettings.SetQualityLevel(qualityIndex);
+
+        PlayerPrefs.SetInt("GraphicsQuality", qualityIndex);
+    }
 }

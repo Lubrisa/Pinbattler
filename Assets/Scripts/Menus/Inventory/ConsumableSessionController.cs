@@ -43,7 +43,7 @@ namespace Pinbattlers.Menus
             m_consumableName.text = m_instance.Consumables[itemIndex].Name;
             m_consumableLoreDescription.text = m_instance.Consumables[itemIndex].LoreDescription;
             m_consumableMechanicDescription.text = m_instance.Consumables[itemIndex].MechanicDescription;
-            m_consumableIllustration.sprite = m_instance.Consumables[itemIndex].Icon;
+            m_consumableIllustration.sprite = m_instance.Consumables[itemIndex].IconSprite.IconSprite;
             m_consumableQuantity.text = "Quantidade no Inventário: " + m_instance.Consumables[itemIndex].Quantity.ToString();
             m_consumableRarity.text = m_instance.Consumables[itemIndex].ItemRarity.RarityName;
         }

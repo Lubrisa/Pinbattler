@@ -502,6 +502,7 @@ MonoBehaviour:
   <Score>k__BackingField: 0
   <Stars>k__BackingField: 0
   <Essences>k__BackingField: 0
+  m_mapUnlockData: {fileID: 0}
   m_finalScoreText: {fileID: 1145641500}
   m_content: {fileID: 285067639}
   m_pointsReward: {fileID: 673474305517643592, guid: 0a29112c8a972c948b38446cfd00ec76, type: 3}

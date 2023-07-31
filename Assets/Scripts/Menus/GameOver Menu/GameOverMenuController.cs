@@ -25,6 +25,8 @@ namespace Pinbattlers.Menus
         [field: SerializeField] public int Stars { get; set; }
         [field: SerializeField] public int Essences { get; set; }
 
+        [SerializeField] private MapsData m_mapUnlockData;
+
         [SerializeField] private TMP_Text m_finalScoreText;
         [SerializeField] private Transform m_content;
 
@@ -63,10 +65,7 @@ namespace Pinbattlers.Menus
                 }
             }
 
-            if (Ability != null && areChallengesConcluded)
-            {
-                abilityToPass = Ability;
-            }
+            if (Ability != null && areChallengesConcluded) abilityToPass = Ability;
 
             m_instance.UpdateInventory(Score, Stars, Essences, Consumables, Relics, abilityToPass);
 

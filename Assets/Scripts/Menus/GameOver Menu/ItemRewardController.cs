@@ -23,18 +23,18 @@ public class ItemRewardController : BaseRewardController
         if (m_itemType == ItemType.Ability)
         {
             m_rewardName.text = controller.Ability.Name;
-            m_rewardIllustration.sprite = controller.Ability.Icon;
+            m_rewardIllustration.sprite = controller.Ability.IconSprite.IconSprite;
         }
         else if (m_itemType == ItemType.Relic)
         {
             m_rewardName.text = controller.Relics[controller.RelicIndex].Name;
-            m_rewardIllustration.sprite = controller.Relics[controller.RelicIndex].Icon;
+            m_rewardIllustration.sprite = controller.Relics[controller.RelicIndex].IconSprite.IconSprite;
             m_rewardDescription.text = controller.Relics[controller.RelicIndex].ItemRarity.RarityName;
         }
         else
         {
             m_rewardName.text = controller.Consumables[controller.ConsumableIndex].Name;
-            m_rewardIllustration.sprite = controller.Consumables[controller.ConsumableIndex].Icon;
+            m_rewardIllustration.sprite = controller.Consumables[controller.ConsumableIndex].IconSprite.IconSprite;
             m_rewardDescription.text = controller.Consumables[controller.ConsumableIndex].Quantity.ToString();
         }
     }

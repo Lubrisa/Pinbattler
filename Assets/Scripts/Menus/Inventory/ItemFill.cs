@@ -33,12 +33,12 @@ namespace Pinbattlers.Menus
             if (m_type == ItemType.Relic)
             {
                 m_itemName.text = m_instance.Relics[itemIndex].Name;
-                m_itemIllustration.sprite = m_instance.Relics[itemIndex].Icon;
+                m_itemIllustration.sprite = m_instance.Relics[itemIndex].IconSprite.IconSprite;
             }
             else
             {
                 m_itemName.text = m_instance.Consumables[itemIndex].Name;
-                m_itemIllustration.sprite = m_instance.Consumables[itemIndex].Icon;
+                m_itemIllustration.sprite = m_instance.Consumables[itemIndex].IconSprite.IconSprite;
             }
         }
 

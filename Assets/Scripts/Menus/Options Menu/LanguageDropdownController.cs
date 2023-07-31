@@ -34,6 +34,8 @@ namespace Pinbattlers.Menus
             m_localizationSettings.SetSelectedLocale(m_localizationSettings.GetAvailableLocales().Locales[languageIndex]);
             m_dropdown.value = languageIndex;
             m_dropdown.RefreshShownValue();
+
+            PlayerPrefs.SetInt("Language", languageIndex);
         }
     }
 }

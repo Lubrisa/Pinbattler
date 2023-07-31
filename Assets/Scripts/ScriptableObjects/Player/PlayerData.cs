@@ -1,12 +1,12 @@
 using Pinbattlers.Player.Resouces;
+using System;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
-using UnityEngine.AddressableAssets;
 
 namespace Pinbattlers.Player
 {
     [CreateAssetMenu(fileName = "Player", menuName = "EntityData/Player")]
+    [Serializable]
     public class PlayerData : ScriptableObject
     {
         [field: SerializeField] public int Life { get; private set; }

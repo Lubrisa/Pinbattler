@@ -41,8 +41,20 @@ public class VolumeSliderController : MonoBehaviour
 
     public void ChangeSoundValue(float value)
     {
-        if (m_soundType == SoundType.Master) m_audioMixer.SetFloat("Master", value);
-        else if (m_soundType == SoundType.Music) m_audioMixer.SetFloat("Music", value);
-        else m_audioMixer.SetFloat("SFX", value);
+        if (m_soundType == SoundType.Master)
+        {
+            m_audioMixer.SetFloat("Master", value);
+            PlayerPrefs.SetFloat("MasterVolume", value);
+        }
+        else if (m_soundType == SoundType.Music)
+        {
+            m_audioMixer.SetFloat("Music", value);
+            PlayerPrefs.SetFloat("MusicVolume", value);
+        }
+        else
+        {
+            m_audioMixer.SetFloat("SFX", value);
+            PlayerPrefs.SetFloat("SFXVolume", value);
+        }
     }
 }

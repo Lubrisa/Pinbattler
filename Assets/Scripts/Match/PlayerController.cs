@@ -1,7 +1,6 @@
 using Pinbattlers.Match;
 using Pinbattlers.Player;
 using ScriptableObjectArchitecture;
-
 using System.Collections.Generic;
 using UnityEngine;
 using Zenject;

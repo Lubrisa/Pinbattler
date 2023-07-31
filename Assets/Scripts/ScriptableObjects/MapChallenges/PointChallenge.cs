@@ -10,7 +10,7 @@ namespace Pinbattlers.Scriptables
 
         [SerializeField] private int m_scoreTarget;
 
-        public override bool Concluded { get; set; }
+        [field: SerializeField] public override bool Concluded { get; set; }
 
         public override bool ConclusionVerification()
         {

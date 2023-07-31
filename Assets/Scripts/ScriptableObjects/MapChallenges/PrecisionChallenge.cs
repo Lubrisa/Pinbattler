@@ -8,7 +8,7 @@ namespace Pinbattlers.Scriptables
     {
         [field: SerializeField] public override string Description { get; protected set; }
 
-        public override bool Concluded { get; set; }
+        [field: SerializeField] public override bool Concluded { get; set; }
 
         [SerializeField] private BoolVariable m_wasActivated;
 

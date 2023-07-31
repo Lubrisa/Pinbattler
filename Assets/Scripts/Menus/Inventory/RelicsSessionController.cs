@@ -42,7 +42,7 @@ namespace Pinbattlers.Menus
             m_relicName.text = m_instance.Relics[itemIndex].Name;
             m_relicLoreDescription.text = m_instance.Relics[itemIndex].LoreDescription;
             m_relicMechanicDescription.text = m_instance.Relics[itemIndex].MechanicDescription;
-            m_relicIllustration.sprite = m_instance.Relics[itemIndex].Icon;
+            m_relicIllustration.sprite = m_instance.Relics[itemIndex].IconSprite.IconSprite;
 
             if (m_instance.Relics[itemIndex] == m_instance.RelicEquiped) m_equipButton.interactable = false;
             else m_equipButton.interactable = true;
