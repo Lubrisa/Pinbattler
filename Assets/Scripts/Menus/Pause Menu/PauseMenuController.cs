@@ -36,7 +36,7 @@ namespace Pinbattlers.Menus
             {
                 m_menu.SetActive(false);
                 EraseMissions();
-                Time.timeScale = 0;
+                Time.timeScale = 1;
             }
         }
 
