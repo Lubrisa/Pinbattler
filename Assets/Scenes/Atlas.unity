@@ -1576,6 +1576,7 @@ GameObject:
   - component: {fileID: 151939355}
   - component: {fileID: 151939354}
   - component: {fileID: 151939356}
+  - component: {fileID: 151939357}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -1714,6 +1715,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_moneyType: 1
+--- !u!114 &151939357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151939352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: 4ba3ef4992cd51640abd17518d3291d7, type: 2}
+  _event: {fileID: 11400000, guid: 4ba3ef4992cd51640abd17518d3291d7, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 151939356}
+        m_TargetAssemblyTypeName: Pinbattlers.Player.Resouces.Counter, Assembly-CSharp
+        m_MethodName: SetValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &170624607
 GameObject:
   m_ObjectHideFlags: 0
@@ -1987,7 +2020,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53c3644f6640ff549af18aa5fd36d04e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_tooltip: {fileID: 3707220177896952644, guid: f252d865dc11cb04aa088259d90f0240, type: 3}
+  m_tooltip: {fileID: 2598760615806089982, guid: f252d865dc11cb04aa088259d90f0240, type: 3}
   m_tooltipInstance: {fileID: 0}
 --- !u!114 &212459385
 MonoBehaviour:
@@ -3579,7 +3612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53c3644f6640ff549af18aa5fd36d04e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_tooltip: {fileID: 3707220177896952644, guid: f252d865dc11cb04aa088259d90f0240, type: 3}
+  m_tooltip: {fileID: 2598760615806089982, guid: f252d865dc11cb04aa088259d90f0240, type: 3}
   m_tooltipInstance: {fileID: 0}
 --- !u!114 &380397940
 MonoBehaviour:
@@ -4621,6 +4654,7 @@ GameObject:
   - component: {fileID: 479747633}
   - component: {fileID: 479747632}
   - component: {fileID: 479747634}
+  - component: {fileID: 479747635}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -4759,6 +4793,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_moneyType: 2
+--- !u!114 &479747635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479747630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: 799735cadeef0b844be5233b2a49b511, type: 2}
+  _event: {fileID: 11400000, guid: 799735cadeef0b844be5233b2a49b511, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 479747634}
+        m_TargetAssemblyTypeName: Pinbattlers.Player.Resouces.Counter, Assembly-CSharp
+        m_MethodName: SetValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &480902865
 GameObject:
   m_ObjectHideFlags: 0
@@ -12144,6 +12210,7 @@ GameObject:
   - component: {fileID: 1168709652}
   - component: {fileID: 1168709651}
   - component: {fileID: 1168709653}
+  - component: {fileID: 1168709654}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -12282,6 +12349,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_moneyType: 1
+--- !u!114 &1168709654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168709649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 0}
+  _event: {fileID: 11400000, guid: 4ba3ef4992cd51640abd17518d3291d7, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1168709653}
+        m_TargetAssemblyTypeName: Pinbattlers.Player.Resouces.Counter, Assembly-CSharp
+        m_MethodName: SetValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1177752061
 GameObject:
   m_ObjectHideFlags: 0
@@ -12578,6 +12677,7 @@ GameObject:
   - component: {fileID: 1225136020}
   - component: {fileID: 1225136019}
   - component: {fileID: 1225136021}
+  - component: {fileID: 1225136022}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -12716,6 +12816,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_moneyType: 0
+--- !u!114 &1225136022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225136017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: 3ce4ed9597bf3324cb5fb1124937064b, type: 2}
+  _event: {fileID: 11400000, guid: 3ce4ed9597bf3324cb5fb1124937064b, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1225136021}
+        m_TargetAssemblyTypeName: Pinbattlers.Player.Resouces.Counter, Assembly-CSharp
+        m_MethodName: SetValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1240411025
 GameObject:
   m_ObjectHideFlags: 0
@@ -13494,6 +13626,7 @@ MonoBehaviour:
   m_upgradeLabel: {fileID: 850744232}
   m_upgradeButton: {fileID: 2010199533}
   m_type: 1
+  m_essencesUpdate: {fileID: 11400000, guid: 799735cadeef0b844be5233b2a49b511, type: 2}
 --- !u!1 &1288904323
 GameObject:
   m_ObjectHideFlags: 0
@@ -14782,7 +14915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53c3644f6640ff549af18aa5fd36d04e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_tooltip: {fileID: 3707220177896952644, guid: f252d865dc11cb04aa088259d90f0240, type: 3}
+  m_tooltip: {fileID: 2598760615806089982, guid: f252d865dc11cb04aa088259d90f0240, type: 3}
   m_tooltipInstance: {fileID: 0}
 --- !u!114 &1385085377
 MonoBehaviour:
@@ -15939,6 +16072,7 @@ MonoBehaviour:
   m_upgradeLabel: {fileID: 462627716}
   m_upgradeButton: {fileID: 324434596}
   m_type: 0
+  m_essencesUpdate: {fileID: 11400000, guid: 799735cadeef0b844be5233b2a49b511, type: 2}
 --- !u!1 &1504871376
 GameObject:
   m_ObjectHideFlags: 0
@@ -16402,6 +16536,7 @@ GameObject:
   - component: {fileID: 1548803955}
   - component: {fileID: 1548803954}
   - component: {fileID: 1548803956}
+  - component: {fileID: 1548803957}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -16540,6 +16675,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_moneyType: 2
+--- !u!114 &1548803957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548803952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: 799735cadeef0b844be5233b2a49b511, type: 2}
+  _event: {fileID: 11400000, guid: 799735cadeef0b844be5233b2a49b511, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1548803956}
+        m_TargetAssemblyTypeName: Pinbattlers.Player.Resouces.Counter, Assembly-CSharp
+        m_MethodName: SetValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1554885771
 GameObject:
   m_ObjectHideFlags: 0
@@ -16692,7 +16859,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1560637616
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20535,6 +20702,7 @@ GameObject:
   - component: {fileID: 1879254270}
   - component: {fileID: 1879254269}
   - component: {fileID: 1879254271}
+  - component: {fileID: 1879254272}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -20673,6 +20841,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_moneyType: 0
+--- !u!114 &1879254272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879254267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 0}
+  _event: {fileID: 11400000, guid: 3ce4ed9597bf3324cb5fb1124937064b, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1879254271}
+        m_TargetAssemblyTypeName: Pinbattlers.Player.Resouces.Counter, Assembly-CSharp
+        m_MethodName: SetValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1880258415
 GameObject:
   m_ObjectHideFlags: 0
@@ -21134,7 +21334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53c3644f6640ff549af18aa5fd36d04e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_tooltip: {fileID: 3707220177896952644, guid: f252d865dc11cb04aa088259d90f0240, type: 3}
+  m_tooltip: {fileID: 2598760615806089982, guid: f252d865dc11cb04aa088259d90f0240, type: 3}
   m_tooltipInstance: {fileID: 0}
 --- !u!114 &1912685010
 MonoBehaviour:
@@ -21882,6 +22082,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_page: {fileID: 11400000, guid: a2d0f5e66e970b747a2fbd1cdf998613, type: 2}
+  m_updateStars: {fileID: 11400000, guid: 4ba3ef4992cd51640abd17518d3291d7, type: 2}
 --- !u!1 &2017806268
 GameObject:
   m_ObjectHideFlags: 0
@@ -22700,6 +22901,7 @@ MonoBehaviour:
   m_upgradeLabel: {fileID: 1177980526}
   m_upgradeButton: {fileID: 1254271159}
   m_type: 2
+  m_essencesUpdate: {fileID: 11400000, guid: 799735cadeef0b844be5233b2a49b511, type: 2}
 --- !u!1 &2067665489
 GameObject:
   m_ObjectHideFlags: 0

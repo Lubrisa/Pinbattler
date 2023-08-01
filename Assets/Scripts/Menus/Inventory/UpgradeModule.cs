@@ -1,4 +1,5 @@
 using Pinbattlers.Player;
+using ScriptableObjectArchitecture;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -24,6 +25,8 @@ namespace Pinbattlers.Menus
         [SerializeField] private Button m_upgradeButton;
 
         [SerializeField] private AttributeType m_type;
+
+        [SerializeField] private GameEvent m_essencesUpdate;
 
         public void UpdateValues()
         {
@@ -80,6 +83,7 @@ namespace Pinbattlers.Menus
         public void Upgrade(int attributeIndex)
         {
             m_instance.UpgradeAttribute(attributeIndex);
+            m_essencesUpdate.Raise();
         }
     }
 }

@@ -16,11 +16,13 @@ namespace Pinbattlers.Menus
                 resolutions.Add(r.width.ToString() + "x" + r.height.ToString() + "Hz" + r.refreshRate.ToString());
 
                 if (r.height == Screen.height && r.width == Screen.width)
+                {
                     dropdown.value = resolutions.IndexOf(r.width.ToString() + "x" + r.height.ToString() + "Hz" + r.refreshRate.ToString());
+                    dropdown.RefreshShownValue();
+                }
             }
 
             dropdown.AddOptions(resolutions);
-            dropdown.RefreshShownValue();
         }
 
         public void ChangeResolutionValue(int resolutionIndex)

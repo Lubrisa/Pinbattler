@@ -18,6 +18,8 @@ namespace Pinbattlers.Menus
 
         [SerializeField] private IntVariable m_page;
 
+        [SerializeField] private GameEvent m_updateStars;
+
         [Inject]
         private void Constructor(
                 PlayerData playerData,
@@ -74,6 +76,8 @@ namespace Pinbattlers.Menus
                 m_upgradeButton.interactable = false;
                 m_upgradeCost.text = m_playerData.Abilities[m_page].Level == 5 ? "MAX" : m_playerData.Abilities[m_page].Level.ToString();
             }
+
+            m_updateStars.Raise();
         }
     }
 }
