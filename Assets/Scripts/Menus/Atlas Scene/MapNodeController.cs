@@ -1,42 +1,34 @@
-using Pinbattlers.Menus;
-using Pinbattlers.Scriptables;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
 
-public class MapNodeController : MonoBehaviour
+namespace Pinbattlers.Menus
 {
-    private Button m_node;
-    [SerializeField] private MapsData m_mapData;
-
-    [Inject]
-    private Sprite[] m_nodeSprites;
-
-    private void Start()
+    public class MapNodeController : MonoBehaviour
     {
-        m_node = GetComponent<Button>();
+        private Button m_node;
+        [SerializeField] private MapsData m_mapData;
 
-        if (!m_mapData.Unlocked && !m_mapData.CheckUnlock())
+        [Inject]
+        private Sprite[] m_nodeSprites;
+
+        private void Start()
         {
-            m_node.image.sprite = m_nodeSprites[0];
-            m_node.interactable = false;
-        }
-        else
-        {
-            bool areChallengesConcluded = true;
-            foreach (BaseChallenge bc in m_mapData.MapChallenges)
+            m_node = GetComponent<Button>();
+
+            if (!m_mapData.Unlocked())
             {
-                if (!bc.Concluded)
-                {
-                    areChallengesConcluded = false;
-                    m_node.image.sprite = m_nodeSprites[1];
-                }
+                m_node.image.sprite = m_nodeSprites[0];
+                m_node.interactable = false;
             }
-
-            if (areChallengesConcluded)
+            else
             {
-                if (!m_mapData.Concluded && !m_mapData.CheckConclusion()) m_node.image.sprite = m_nodeSprites[2];
-                else m_node.image.sprite = m_nodeSprites[3];
+                if (!m_mapData.Concluded()) m_node.image.sprite = m_nodeSprites[1];
+                else
+                {
+                    if (!m_mapData.Cleared()) m_node.image.sprite = m_nodeSprites[2];
+                    else m_node.image.sprite = m_nodeSprites[3];
+                }
             }
         }
     }

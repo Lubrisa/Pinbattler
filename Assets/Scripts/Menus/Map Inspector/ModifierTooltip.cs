@@ -1,25 +1,24 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 namespace Pinbattlers.Menus
 {
-    public class ModifierTooltip : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+    public class ModifierTooltip : MonoBehaviour
     {
-        [SerializeField] private GameObject m_tooltip;
-        [SerializeField] private TMP_Text m_tooltiptext;
+        private TMP_Text m_text;
 
-        [SerializeField] private int index;
+        private RectTransform m_rectTransform;
+        [SerializeField] private Vector3 m_offset;
 
-        public void OnPointerEnter(PointerEventData eventData)
+        private void OnEnable()
         {
-            m_tooltip.SetActive(true);
-            //m_tooltiptext.text = MapInspectorController.MapData[MapInspectorController.MapIndex].MapModifiers[index].Description;
+            m_text = GetComponentInChildren<TextMeshProUGUI>();
+            m_rectTransform = GetComponent<RectTransform>();
         }
 
-        public void OnPointerExit(PointerEventData eventData)
+        public void SetText(string text)
         {
-            m_tooltip.SetActive(false);
+            m_text.text = text;
         }
     }
 }

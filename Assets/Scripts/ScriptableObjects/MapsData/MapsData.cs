@@ -19,47 +19,37 @@ namespace Pinbattlers.Menus
 
         [SerializeField] private MapsData[] m_mapDependency;
 
-        [field: SerializeField] public bool Unlocked { get; private set; }
-
-        [field: SerializeField] public bool Concluded { get; private set; }
-
-        public bool CheckUnlock()
+        public bool Unlocked()
         {
             for (int i = 0; i < m_mapDependency.Length; i++)
             {
-                bool areChallengesConcluded = true;
-
                 foreach (BaseChallenge bc in m_mapDependency[i].MapChallenges)
                 {
-                    if (!bc.Concluded)
-                    {
-                        areChallengesConcluded = false;
-                        break;
-                    }
+                    if (!bc.Concluded) return false;
                 }
-
-                if (areChallengesConcluded) Unlocked = true;
             }
 
-            return Unlocked;
+            return true;
         }
 
-        public bool CheckConclusion()
+        public bool Concluded()
         {
-            bool wasConcluded = true;
-
-            for (int i = 0; i < MapModifiers.Length; i++)
+            foreach (BaseChallenge bc in MapChallenges)
             {
-                if (!MapModifiers[i].Concluded)
-                {
-                    wasConcluded = false;
-                    break;
-                }
+                if (!bc.Concluded) return false;
             }
 
-            Concluded = wasConcluded;
+            return true;
+        }
 
-            return Concluded;
+        public bool Cleared()
+        {
+            foreach (BaseDifficultyModifier bdm in MapModifiers)
+            {
+                if (!bdm.Concluded) return false;
+            }
+
+            return true;
         }
     }
 }

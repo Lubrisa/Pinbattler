@@ -55,17 +55,7 @@ namespace Pinbattlers.Menus
 
             Ability abilityToPass = null;
 
-            bool areChallengesConcluded = true;
-            foreach (BaseChallenge bc in MatchManager.Instance.Challenges)
-            {
-                if (!bc.Concluded)
-                {
-                    areChallengesConcluded = false;
-                    break;
-                }
-            }
-
-            if (Ability != null && areChallengesConcluded) abilityToPass = Ability;
+            if (Ability != null && m_mapUnlockData.Cleared()) abilityToPass = Ability;
 
             m_instance.UpdateInventory(Score, Stars, Essences, Consumables, Relics, abilityToPass);
 
