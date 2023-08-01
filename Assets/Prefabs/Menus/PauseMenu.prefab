@@ -696,6 +696,7 @@ GameObject:
   - component: {fileID: 4094867634559089877}
   - component: {fileID: 1908617525635412067}
   - component: {fileID: 6683944131608459615}
+  - component: {fileID: 4556011299562855960}
   m_Layer: 0
   m_Name: MatchMissionsPanel
   m_TagString: Untagged
@@ -761,6 +762,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &4556011299562855960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540483557078081044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94a6cade35ded5448946ea559da80781, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_missionTextHolder: {fileID: 3456072049012115508, guid: 0c3bf82944574b349a6398e48603f815, type: 3}
 --- !u!1 &2314695538186576539
 GameObject:
   m_ObjectHideFlags: 0
@@ -772,6 +786,7 @@ GameObject:
   - component: {fileID: 6921359315519509396}
   - component: {fileID: 7218787786474511370}
   - component: {fileID: 5545399421752085897}
+  - component: {fileID: 4556011299562855963}
   m_Layer: 0
   m_Name: Content
   m_TagString: Untagged
@@ -796,7 +811,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0.000053730644}
-  m_SizeDelta: {x: 0, y: 15}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &7218787786474511370
 MonoBehaviour:
@@ -838,6 +853,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 0
   m_VerticalFit: 2
+--- !u!114 &4556011299562855963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2314695538186576539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0166d8ff8d905b048b2448179e1f5d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _components:
+  - {fileID: 6921359315519509396}
+  _identifier: 
+  _useSceneContext: 0
+  _context: {fileID: 0}
+  _bindType: 0
 --- !u!1 &3726893407470026162
 GameObject:
   m_ObjectHideFlags: 0
@@ -1190,6 +1223,7 @@ GameObject:
   - component: {fileID: 4556011298582112049}
   - component: {fileID: 4556011298582112050}
   - component: {fileID: 3149743867952821555}
+  - component: {fileID: 4556011299562855959}
   m_Layer: 0
   m_Name: PauseMenu
   m_TagString: Untagged
@@ -1290,10 +1324,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c3b9cde9135fc14eb8f8f8102ebd2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_menu: {fileID: 4556011298096394317}
-  m_missionTextHolder: {fileID: 3456072049012115508, guid: 0c3bf82944574b349a6398e48603f815, type: 3}
-  m_content: {fileID: 6921359315519509396}
   m_confirmationMenu: {fileID: 2530384564233100527, guid: 7ed22859b582a9e4aa500526cceae5c2, type: 3}
+--- !u!114 &4556011299562855959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4556011298582112012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0166d8ff8d905b048b2448179e1f5d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _components:
+  - {fileID: 4556011298096394316}
+  _identifier: PauseMenu
+  _useSceneContext: 0
+  _context: {fileID: 0}
+  _bindType: 0
 --- !u!1 &4586943985696001430
 GameObject:
   m_ObjectHideFlags: 0

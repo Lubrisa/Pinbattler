@@ -25,11 +25,11 @@ public class MenuBlock : MonoBehaviour
 
         if (m_menuType == MenuType.Grimoire)
         {
-            if (m_playerData.Abilities == null) m_button.interactable = false;
+            if (m_playerData.Abilities == null || m_playerData.Abilities.Count == 0) m_button.interactable = false;
         }
         else if (m_menuType == MenuType.Inventory)
         {
-            if (m_playerData.Relics == null) m_button.interactable = false;
+            if (m_playerData.Relics == null || m_playerData.Relics.Count == 0) m_button.interactable = false;
         }
         else
         {

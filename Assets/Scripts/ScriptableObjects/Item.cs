@@ -5,19 +5,13 @@ namespace Pinbattlers.Player.Resouces
 {
     public abstract class Item : ScriptableObject
     {
-        public abstract Icon IconSprite { get; protected set; }
+        public abstract Sprite IconSprite { get; protected set; }
         public abstract string LoreDescription { get; protected set; }
         public abstract string MechanicDescription { get; protected set; }
         public abstract string Name { get; protected set; }
         public abstract Rarity ItemRarity { get; protected set; }
 
         public abstract void Effect();
-
-        [Serializable]
-        public class Icon
-        {
-            [field: SerializeField] public Sprite IconSprite { get; private set; }
-        }
 
         [Serializable]
         public class Rarity

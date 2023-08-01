@@ -166,7 +166,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89715ad69b973a14899afa2c6730b30b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scriptableObjectInstallers: []
+  _scriptableObjectInstallers:
+  - {fileID: 11400000, guid: 9917c72d40f4c5947a7bd76ff165434b, type: 2}
   _monoInstallers:
   - {fileID: 302517139}
   _installerPrefabs: []
@@ -1298,9 +1299,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d9df9ae58e07254bb2ae0c118fc6c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <MapData>k__BackingField: {fileID: 11400000, guid: af4916b93f27e804fa75596836f7b1f1, type: 2}
-  <Challenges>k__BackingField: []
-  <Modifiers>k__BackingField: []
   m_modifierEvent: {fileID: 0}
   m_fixedScoreModifier: {fileID: 11400000, guid: 1405dd97884ef714da4fb258ae089fdc, type: 2}
   m_temporaryScoreModifier: {fileID: 11400000, guid: 4ea5521a94434b44784dd8704b4e304e, type: 2}
@@ -1957,10 +1955,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1477640971}
-    - target: {fileID: 7058537882932888693, guid: 772d7361c72bdbf40ac2e5f60e83eb2f, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetActive
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 772d7361c72bdbf40ac2e5f60e83eb2f, type: 3}
 --- !u!1001 &6451765831633851089

@@ -48,9 +48,11 @@ namespace Pinbattlers.Menus
             m_page.Value += value != 0 ? m_page + value : value;
 
             m_abilityName.text = m_playerData.Abilities[m_page].Name;
-            m_abilityIllustration.sprite = m_playerData.Abilities[m_page].IconSprite.IconSprite;
+            m_abilityIllustration.sprite = m_playerData.Abilities[m_page].IconSprite;
             m_abilityLoreDescription.text = m_playerData.Abilities[m_page].LoreDescription;
             m_abilityMechanicDescription.text = m_playerData.Abilities[m_page].MechanicDescription;
+
+            if (m_page + 1 == m_playerData.Abilities.Count - 1) m_nextPageButton.interactable = false;
         }
 
         public void OnNextPageButtonClick()

@@ -75,6 +75,6 @@ namespace Pinbattlers.Menus
             }
         }
 
-        public void OnTravelButtonClick() => SceneManager.LoadScene(MapPath);
+        public void OnTravelButtonClick() => SceneManager.LoadScene(MapPath + 2);
     }
 }
