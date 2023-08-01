@@ -1,4 +1,3 @@
-using ScriptableEvents.Events;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
