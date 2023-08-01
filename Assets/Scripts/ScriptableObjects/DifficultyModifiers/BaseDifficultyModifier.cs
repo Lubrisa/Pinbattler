@@ -117,9 +117,9 @@ namespace Pinbattlers.Scriptables
         {
             List<Consumable> consumablesToReturn = new List<Consumable>();
 
-            for (int i = 0; i < Rewards.Relics.Length; i++)
+            for (int i = 0; i < Rewards.Consumables.Length; i++)
             {
-                if (Rewards.Relics[i].ItemRarity.RarityType == rarity)
+                if (Rewards.Consumables[i].ItemRarity.RarityType == rarity)
                 {
                     consumablesToReturn.Add(Rewards.Consumables[i]);
                 }
@@ -142,26 +142,25 @@ namespace Pinbattlers.Scriptables
         [Serializable]
         public class Reward
         {
-            // Reward in Points (a range between two values to generate a aleatory number)
+            // Reward in Points (a range between two values to generate a aleatory number).
             [field: SerializeField] public int[] PointsRewardRange { get; private set; } = new int[2];
 
-            // Reward in Essences (a range between two values to generate a aleatory number)
+            // Reward in Essences (a range between two values to generate a aleatory number).
             [field: SerializeField] public int[] EssencesRewardRange { get; private set; } = new int[2];
 
-            // Reward in Star
+            // Reward in Star.
             [field: SerializeField] public int Star { get; private set; }
 
-            // Relics Pool
+            // Relics Pool.
             [field: SerializeField] public Relic[] Relics { get; private set; }
 
-            // Consumables Pool
+            // Consumables Pool.
             [field: SerializeField] public Consumable[] Consumables { get; private set; }
 
             [field: SerializeField] public int ConsumablesQuantity { get; private set; }
 
-            // Rarities drop chance
+            // Rarities drop chance & drop quantity for each rarity.
             [field: SerializeField] public int CommomDropChance { get; private set; }
-
             [field: SerializeField] public int[] CommomDropQuantity { get; private set; } = new int[2];
 
             [field: SerializeField] public int UncommomDropChance { get; private set; }
