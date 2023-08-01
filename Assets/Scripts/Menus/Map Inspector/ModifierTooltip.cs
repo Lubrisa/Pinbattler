@@ -14,7 +14,7 @@ namespace Pinbattlers.Menus
         public void OnPointerEnter(PointerEventData eventData)
         {
             m_tooltip.SetActive(true);
-            m_tooltiptext.text = MapInspectorController.MapData[MapInspectorController.MapIndex].MapModifiers[index].Description;
+            //m_tooltiptext.text = MapInspectorController.MapData[MapInspectorController.MapIndex].MapModifiers[index].Description;
         }
 
         public void OnPointerExit(PointerEventData eventData)

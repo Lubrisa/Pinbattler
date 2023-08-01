@@ -343,6 +343,7 @@ GameObject:
   - component: {fileID: 30771098}
   - component: {fileID: 30771100}
   - component: {fileID: 30771099}
+  - component: {fileID: 30771101}
   m_Layer: 5
   m_Name: MapIllustration
   m_TagString: Untagged
@@ -407,6 +408,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 30771097}
   m_CullTransparentMesh: 1
+--- !u!114 &30771101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30771097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0166d8ff8d905b048b2448179e1f5d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _components:
+  - {fileID: 30771099}
+  _identifier: 
+  _useSceneContext: 0
+  _context: {fileID: 0}
+  _bindType: 0
 --- !u!1 &55838577
 GameObject:
   m_ObjectHideFlags: 0
@@ -1982,9 +2001,9 @@ RectTransform:
   m_Father: {fileID: 621947239}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 265, y: -420}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 190, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &212459383
@@ -2094,9 +2113,9 @@ RectTransform:
   m_Father: {fileID: 742111865}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 250, y: -75}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &223699155
@@ -2461,6 +2480,7 @@ GameObject:
   - component: {fileID: 292867140}
   - component: {fileID: 292867141}
   - component: {fileID: 292867142}
+  - component: {fileID: 292867143}
   m_Layer: 0
   m_Name: SceneContext
   m_TagString: Untagged
@@ -2496,7 +2516,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _scriptableObjectInstallers: []
   _monoInstallers:
-  - {fileID: 1240594014}
+  - {fileID: 292867143}
   - {fileID: 292867142}
   _installerPrefabs: []
   _autoRun: 1
@@ -2532,6 +2552,34 @@ MonoBehaviour:
   - {fileID: 21300000, guid: dd032a85c3c30ed41b42cfa92c637cf8, type: 3}
   - {fileID: 21300000, guid: 6a6505ca32e6fd946b90b7c9a133d3e0, type: 3}
   - {fileID: 21300000, guid: 09d1e9cca68b1184085b33ca63ece942, type: 3}
+--- !u!114 &292867143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292867139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 444d98d53a5e55546ad9b3bc97ac9213, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_challenges:
+  - {fileID: 223699155}
+  - {fileID: 1874531875}
+  - {fileID: 787310508}
+  - {fileID: 1868017247}
+  - {fileID: 963939019}
+  m_modifiersToggle:
+  - {fileID: 1912685008}
+  - {fileID: 1385085375}
+  - {fileID: 380397938}
+  - {fileID: 212459383}
+  m_modifiers:
+  - {fileID: 1691664616}
+  - {fileID: 1345231113}
+  - {fileID: 1633051859}
+  - {fileID: 1432586694}
 --- !u!1 &324434594
 GameObject:
   m_ObjectHideFlags: 0
@@ -3464,9 +3512,9 @@ RectTransform:
   m_Father: {fileID: 621947239}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 265, y: -300}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 190, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &380397938
@@ -5963,6 +6011,7 @@ GameObject:
   - component: {fileID: 604246015}
   - component: {fileID: 604246017}
   - component: {fileID: 604246016}
+  - component: {fileID: 604246018}
   m_Layer: 5
   m_Name: MapName
   m_TagString: Untagged
@@ -6090,6 +6139,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 604246014}
   m_CullTransparentMesh: 1
+--- !u!114 &604246018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604246014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0166d8ff8d905b048b2448179e1f5d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _components:
+  - {fileID: 604246016}
+  _identifier: 
+  _useSceneContext: 0
+  _context: {fileID: 0}
+  _bindType: 0
 --- !u!1 &621947238
 GameObject:
   m_ObjectHideFlags: 0
@@ -7451,13 +7518,14 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1240594015}
-        m_TargetAssemblyTypeName: Pinbattlers.Menus.MapInspectorController, Assembly-CSharp
-        m_MethodName: UpdateInfo
-        m_Mode: 3
+      - m_Target: {fileID: 11400000, guid: 2139dd1ba4b491a42a644fd880ce2dbe, type: 2}
+        m_TargetAssemblyTypeName: ScriptableEvents.BaseScriptableEvent`1[[Pinbattlers.Menus.MapsData,
+          Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 11400000, guid: af4916b93f27e804fa75596836f7b1f1, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Pinbattlers.Menus.MapsData, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -7546,9 +7614,9 @@ RectTransform:
   m_Father: {fileID: 742111865}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 250, y: -375}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &787310508
@@ -8590,6 +8658,7 @@ GameObject:
   - component: {fileID: 837603624}
   - component: {fileID: 837603626}
   - component: {fileID: 837603625}
+  - component: {fileID: 837603627}
   m_Layer: 5
   m_Name: HighScore
   m_TagString: Untagged
@@ -8715,6 +8784,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 837603623}
   m_CullTransparentMesh: 1
+--- !u!114 &837603627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837603623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0166d8ff8d905b048b2448179e1f5d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _components:
+  - {fileID: 837603625}
+  _identifier: MapHighScore
+  _useSceneContext: 0
+  _context: {fileID: 0}
+  _bindType: 0
 --- !u!1 &850744230
 GameObject:
   m_ObjectHideFlags: 0
@@ -9750,9 +9837,9 @@ RectTransform:
   m_Father: {fileID: 742111865}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 250, y: -675}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &963939019
@@ -10254,13 +10341,14 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1240594015}
-        m_TargetAssemblyTypeName: Pinbattlers.Menus.MapInspectorController, Assembly-CSharp
-        m_MethodName: UpdateInfo
-        m_Mode: 3
+      - m_Target: {fileID: 11400000, guid: 2139dd1ba4b491a42a644fd880ce2dbe, type: 2}
+        m_TargetAssemblyTypeName: ScriptableEvents.BaseScriptableEvent`1[[Pinbattlers.Menus.MapsData,
+          Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 11400000, guid: 9ebab8a1089a6c242acb9d04279c2aa5, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Pinbattlers.Menus.MapsData, Assembly-CSharp
           m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
@@ -11477,6 +11565,7 @@ GameObject:
   - component: {fileID: 1122110667}
   - component: {fileID: 1122110669}
   - component: {fileID: 1122110668}
+  - component: {fileID: 1122110670}
   m_Layer: 5
   m_Name: MapDescription
   m_TagString: Untagged
@@ -11602,6 +11691,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1122110666}
   m_CullTransparentMesh: 1
+--- !u!114 &1122110670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122110666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0166d8ff8d905b048b2448179e1f5d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _components:
+  - {fileID: 1122110668}
+  _identifier: MapDescription
+  _useSceneContext: 0
+  _context: {fileID: 0}
+  _bindType: 0
 --- !u!1 &1137589259
 GameObject:
   m_ObjectHideFlags: 0
@@ -12566,7 +12673,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1240594013
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12605,28 +12712,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 1240594012}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 444d98d53a5e55546ad9b3bc97ac9213, type: 3}
+  m_Script: {fileID: 11500000, guid: 185dc35f5354d914db40d89e249f7d8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_mapsData:
-  - {fileID: 11400000, guid: af4916b93f27e804fa75596836f7b1f1, type: 2}
-  - {fileID: 11400000, guid: 0722cb94392a79146bb9258bb4f8b9d8, type: 2}
-  - {fileID: 11400000, guid: 9ebab8a1089a6c242acb9d04279c2aa5, type: 2}
-  m_mapName: {fileID: 604246016}
-  m_mapDescription: {fileID: 1122110668}
-  m_mapIllustration: {fileID: 30771099}
-  m_challenges:
-  - {fileID: 223699155}
-  - {fileID: 1874531875}
-  - {fileID: 787310508}
-  - {fileID: 1868017247}
-  - {fileID: 963939019}
-  m_modifiers:
-  - {fileID: 1691664616}
-  - {fileID: 1345231113}
-  - {fileID: 1633051859}
-  - {fileID: 1432586694}
-  m_mapHighScore: {fileID: 837603625}
+  scriptableEvent: {fileID: 0}
+  scriptableEvents:
+  - {fileID: 11400000, guid: 2139dd1ba4b491a42a644fd880ce2dbe, type: 2}
+  onRaised:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1240594015}
+        m_TargetAssemblyTypeName: Pinbattlers.Menus.MapInspectorController, Assembly-CSharp
+        m_MethodName: UpdateInfo
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1240594015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12639,11 +12745,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e664e80de2d8a8647b8444f9fa3968ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_mapModifiersToggle:
-  - {fileID: 1912685008}
-  - {fileID: 1385085375}
-  - {fileID: 380397938}
-  - {fileID: 212459383}
 --- !u!1 &1245628586
 GameObject:
   m_ObjectHideFlags: 0
@@ -13929,13 +14030,14 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1240594015}
-        m_TargetAssemblyTypeName: Pinbattlers.Menus.MapInspectorController, Assembly-CSharp
-        m_MethodName: UpdateInfo
-        m_Mode: 3
+      - m_Target: {fileID: 11400000, guid: 2139dd1ba4b491a42a644fd880ce2dbe, type: 2}
+        m_TargetAssemblyTypeName: ScriptableEvents.BaseScriptableEvent`1[[Pinbattlers.Menus.MapsData,
+          Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 11400000, guid: 0722cb94392a79146bb9258bb4f8b9d8, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Pinbattlers.Menus.MapsData, Assembly-CSharp
           m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
@@ -14464,9 +14566,9 @@ RectTransform:
   m_Father: {fileID: 621947239}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 265, y: -180}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 190, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1385085375
@@ -19649,9 +19751,9 @@ RectTransform:
   m_Father: {fileID: 742111865}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 250, y: -525}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1868017247
@@ -19892,9 +19994,9 @@ RectTransform:
   m_Father: {fileID: 742111865}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 250, y: -225}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1874531875
@@ -20521,9 +20623,9 @@ RectTransform:
   m_Father: {fileID: 621947239}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 265, y: -60}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 190, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1912685008
