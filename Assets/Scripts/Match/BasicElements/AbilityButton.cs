@@ -16,6 +16,8 @@ namespace Pinbattlers.Match
 
             if (m_instance.AbilityEquiped == null) button.interactable = false;
             else button.image.sprite = m_instance.AbilityEquiped.IconSprite;
+
+            button.onClick.AddListener(OnAbilityButtonClicked);
         }
 
         public void OnAbilityButtonClicked()

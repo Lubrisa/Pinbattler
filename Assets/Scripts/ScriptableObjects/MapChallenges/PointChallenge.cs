@@ -1,4 +1,5 @@
 using Pinbattlers.Match;
+using Pinbattlers.Menus;
 using UnityEngine;
 
 namespace Pinbattlers.Scriptables
@@ -14,12 +15,15 @@ namespace Pinbattlers.Scriptables
 
         public override bool ConclusionVerification()
         {
-            if (m_scoreTarget <= MatchManager.Instance.Score)
+            Debug.Log("Pontos que deve alcançar: " + m_scoreTarget);
+            if (m_scoreTarget <= ScoreManager.Score)
             {
+                GameOverMenuController.Instance.Stars += 1;
                 Concluded = true;
                 return true;
             }
-            else return false;
+            else
+                return false;
         }
     }
 }

@@ -198,6 +198,55 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c3b9cde9135fc14eb8f8f8102ebd2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &33805760 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3726896818395981373, guid: 61e6a9a592b797a47beab808029814eb, type: 3}
+  m_PrefabInstance: {fileID: 3726896819792970012}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &33805761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33805760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 0}
+  _event: {fileID: 11400000, guid: cb3008a02f0aac44cab41534d660fef2, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 33805760}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 507072588}
+        m_TargetAssemblyTypeName: Pinbattlers.Menus.GameOverMenuController, Assembly-CSharp
+        m_MethodName: UpdateInfo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &130297285
 GameObject:
   m_ObjectHideFlags: 0
@@ -280,11 +329,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 257137769b16fc3428299c572debd415, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &367397915 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4456398067757003491, guid: cdd22a6a40036da479a2ae09df810ce2, type: 3}
-  m_PrefabInstance: {fileID: 4456398066328934453}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &378283480 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8252195031069539541, guid: 4d9ee8c9046e4e64f9f6948b1df9c1b5, type: 3}
@@ -355,6 +399,29 @@ PolygonCollider2D:
       - {x: 20, y: -14}
       - {x: 20, y: 15}
       - {x: -20, y: 15}
+--- !u!1 &476172552 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3726896820068468842, guid: 61e6a9a592b797a47beab808029814eb, type: 3}
+  m_PrefabInstance: {fileID: 3726896819792970012}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &476172553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476172552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0166d8ff8d905b048b2448179e1f5d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _components:
+  - {fileID: 285067639}
+  _identifier: GameOverContent
+  _useSceneContext: 0
+  _context: {fileID: 0}
+  _bindType: 0
 --- !u!4 &502199778 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 802506245574861754, guid: a2381e06c729d9844b9314ad86b55458, type: 3}
@@ -403,21 +470,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74b75548372330846b9da575cfa47edd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Consumables>k__BackingField: []
-  <Relics>k__BackingField: []
-  <Ability>k__BackingField: {fileID: 0}
   <Score>k__BackingField: 0
   <Stars>k__BackingField: 0
   <Essences>k__BackingField: 0
-  m_mapUnlockData: {fileID: 0}
-  m_finalScoreText: {fileID: 1145641500}
-  m_content: {fileID: 285067639}
+  <Consumables>k__BackingField: []
+  <Relics>k__BackingField: []
+  <Ability>k__BackingField: {fileID: 0}
   m_pointsReward: {fileID: 673474305517643592, guid: 0a29112c8a972c948b38446cfd00ec76, type: 3}
   m_starsReward: {fileID: 6294320538976988097, guid: 7378d84e9db0d20488d4d9647d08b32c, type: 3}
   m_essencesReward: {fileID: 3261448709574490010, guid: 944a31eab913e38409e9c5bbc3e24c39, type: 3}
   m_abilityReward: {fileID: 4654372737047071988, guid: aeddb2f8568a2a445a576c541ae308b4, type: 3}
   m_relicReward: {fileID: 907125537382943290, guid: 81d7386119761244c9856a9fb2b258a0, type: 3}
   m_consumableReward: {fileID: 8111326722866248738, guid: 2d90048f048573049b3fe714f6e3c3be, type: 3}
+  m_finalScoreText: {fileID: 1145641500}
+  m_content: {fileID: 285067639}
 --- !u!1 &513651759
 GameObject:
   m_ObjectHideFlags: 0
@@ -452,11 +518,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &656139484 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4456398066420264938, guid: cdd22a6a40036da479a2ae09df810ce2, type: 3}
-  m_PrefabInstance: {fileID: 4456398066328934453}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &656857790
 GameObject:
   m_ObjectHideFlags: 0
@@ -532,6 +593,29 @@ Transform:
   m_Father: {fileID: 1031058149}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &789581132 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3726896818781559558, guid: 61e6a9a592b797a47beab808029814eb, type: 3}
+  m_PrefabInstance: {fileID: 3726896819792970012}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &789581135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789581132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0166d8ff8d905b048b2448179e1f5d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _components:
+  - {fileID: 1145641500}
+  _identifier: FinalScore
+  _useSceneContext: 0
+  _context: {fileID: 0}
+  _bindType: 0
 --- !u!1 &848092224
 GameObject:
   m_ObjectHideFlags: 0
@@ -886,11 +970,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1109133854 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4456398066794019088, guid: cdd22a6a40036da479a2ae09df810ce2, type: 3}
-  m_PrefabInstance: {fileID: 4456398066328934453}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1126446345 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6451765830612805592, guid: 7e90992b7f755f343affeab9bae3d805, type: 3}
@@ -901,7 +980,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3726896818781559552, guid: 61e6a9a592b797a47beab808029814eb, type: 3}
   m_PrefabInstance: {fileID: 3726896819792970012}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 789581132}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
@@ -1265,9 +1344,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1724726337}
-  - component: {fileID: 1724726338}
+  - component: {fileID: 1724726339}
   m_Layer: 0
-  m_Name: MatchManager
+  m_Name: MissionManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1287,7 +1366,7 @@ Transform:
   m_Father: {fileID: 1031058149}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1724726338
+--- !u!114 &1724726339
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1296,63 +1375,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1724726336}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d9df9ae58e07254bb2ae0c118fc6c4c, type: 3}
+  m_Script: {fileID: 11500000, guid: 1dfe927d56b278d40b41f6b1514c949e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_modifierEvent: {fileID: 0}
-  m_fixedScoreModifier: {fileID: 11400000, guid: 1405dd97884ef714da4fb258ae089fdc, type: 2}
-  m_temporaryScoreModifier: {fileID: 11400000, guid: 4ea5521a94434b44784dd8704b4e304e, type: 2}
-  <Score>k__BackingField: 0
-  m_scoreTextUpdate:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: f4e78b846f5615c448a8650498dc4adb, type: 2}
-        m_TargetAssemblyTypeName: ScriptableObjectArchitecture.GameEventBase`1[[System.String,
-          mscorlib
-        m_MethodName: Raise
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_gameOver:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1833805601}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-  m_remainingBalls:
-  - {fileID: 656139484}
-  - {fileID: 367397915}
-  - {fileID: 1109133854}
-  - {fileID: 1770305141}
---- !u!1 &1770305141 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4456398066212800144, guid: cdd22a6a40036da479a2ae09df810ce2, type: 3}
-  m_PrefabInstance: {fileID: 4456398066328934453}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1815787643 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2925506765760983580, guid: 33248f981cfa2ba48b2ab2b6e3bead1d, type: 3}
   m_PrefabInstance: {fileID: 2925506765155322471}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1833805601 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3726896818395981373, guid: 61e6a9a592b797a47beab808029814eb, type: 3}
-  m_PrefabInstance: {fileID: 3726896819792970012}
   m_PrefabAsset: {fileID: 0}
 --- !u!224 &1833805602 stripped
 RectTransform:
@@ -1571,6 +1600,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 802506245574861755, guid: a2381e06c729d9844b9314ad86b55458, type: 3}
+      propertyPath: m_gameOver
+      value: 
+      objectReference: {fileID: 11400000, guid: cb3008a02f0aac44cab41534d660fef2, type: 2}
+    - target: {fileID: 802506245574861755, guid: a2381e06c729d9844b9314ad86b55458, type: 3}
+      propertyPath: m_playerLifeUpdate
+      value: 
+      objectReference: {fileID: 11400000, guid: 8b4529b563542df4aa0ecd57648e5bb3, type: 2}
+    - target: {fileID: 802506245574861755, guid: a2381e06c729d9844b9314ad86b55458, type: 3}
+      propertyPath: m_playerRemainingBallsUpdate
+      value: 
+      objectReference: {fileID: 11400000, guid: 42afea1239546be42ad6bf4c2680effb, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2381e06c729d9844b9314ad86b55458, type: 3}
 --- !u!1001 &2925506765155322471

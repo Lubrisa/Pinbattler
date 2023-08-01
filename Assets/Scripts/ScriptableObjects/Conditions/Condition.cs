@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using Pinbattlers.Player;
 using UnityEngine;
 
 public abstract class Condition : ScriptableObject
@@ -7,8 +6,6 @@ public abstract class Condition : ScriptableObject
     public abstract float MaxDuration { get; protected set; }
 
     public abstract float RemainingTime { get; protected set; }
-
-    public abstract bool IsStackable { get; protected set; }
 
     public abstract int StackFactor { get; protected set; }
 

@@ -13,11 +13,28 @@ MonoBehaviour:
   m_Name: 0ChampionModifier
   m_EditorClassIdentifier: 
   <Description>k__BackingField: Placeholder
-  <IsEnabled>k__BackingField: 0
-  <RewardPool>k__BackingField: []
+  <IsEnabled>k__BackingField: 1
   <Rewards>k__BackingField:
-  - {fileID: 11400000, guid: de212970d35e41948aa7a0810de220f7, type: 2}
-  <RelicReward>k__BackingField: {fileID: 0}
-  <Concluded>k__BackingField: 0
+    <PointsRewardRange>k__BackingField: 0a00000014000000
+    <EssencesRewardRange>k__BackingField: 0a00000014000000
+    <Star>k__BackingField: 1
+    <Relics>k__BackingField:
+    - {fileID: 11400000, guid: 5774c7d773d12dc44af59c3588fa33f9, type: 2}
+    - {fileID: 11400000, guid: d8ba892d6b0dfb44c9c85f788ef2692b, type: 2}
+    <Consumables>k__BackingField:
+    - {fileID: 11400000, guid: de212970d35e41948aa7a0810de220f7, type: 2}
+    - {fileID: 11400000, guid: 620dde89256b0104f9810f0f07980a31, type: 2}
+    <ConsumablesQuantity>k__BackingField: 1
+    <CommomDropChance>k__BackingField: 100
+    <CommomDropQuantity>k__BackingField: 0a00000014000000
+    <UncommomDropChance>k__BackingField: 40
+    <UncommomDropQuantity>k__BackingField: 0a00000014000000
+    <RareDropChance>k__BackingField: 60
+    <RareDropQuantity>k__BackingField: 0a00000014000000
+    <LegendaryDropChance>k__BackingField: 80
+    <LegendaryDropQuantity>k__BackingField: 0a00000014000000
+  <Concluded>k__BackingField: 1
   m_monsterData: {fileID: 11400000, guid: 1cc0a22c5f446514985c50c6a9e2d937, type: 2}
+  m_championPrefab: {fileID: 2852734914550352826, guid: 4dbabda364c94684ea6d51c19533585d, type: 3}
+  m_changeMonsterSpawn: {fileID: 11400000, guid: 9f36df0d364dad74a8112d0bda2319b1, type: 2}
   m_killsNeeded: 1

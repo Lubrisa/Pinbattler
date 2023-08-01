@@ -55,18 +55,18 @@ namespace Pinbattlers.Player
             Stars += stars;
             Essences += essences;
 
-            if (ability != null && !Abilities.Contains(ability)) Abilities.Add(ability);
+            if (ability != null) Abilities.Add(ability);
 
             foreach (Relic r in relics)
             {
                 Relics.Add(r);
             }
 
-            foreach (Consumable c in consumables)
+            foreach (var v in consumables)
             {
-                foreach (Consumable con in Consumables)
+                foreach (Consumable c in Consumables)
                 {
-                    if (con.Name == c.Name) con.Quantity += c.Quantity;
+                    if (v.Name == c.Name) c.Quantity += v.Quantity;
                     else Consumables.Add(c);
                 }
             }

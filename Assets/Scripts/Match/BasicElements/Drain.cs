@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using Pinbattlers.Player;
 using UnityEngine;
 
 public class Drain : MonoBehaviour

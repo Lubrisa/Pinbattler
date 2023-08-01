@@ -12,9 +12,7 @@ namespace Pinbattlers.Menus
         [field: SerializeField] public string MapDescription { get; private set; }
         [field: SerializeField] public Sprite MapIllustration { get; private set; }
         [field: SerializeField] public BaseChallenge[] MapChallenges { get; private set; }
-
         [field: SerializeField] public BaseDifficultyModifier[] MapModifiers { get; private set; }
-
         [field: SerializeField] public int MapHighScore { get; set; }
 
         [SerializeField] private MapsData[] m_mapDependency;

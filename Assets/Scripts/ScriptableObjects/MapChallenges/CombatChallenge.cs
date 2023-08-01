@@ -1,4 +1,5 @@
 using Pinbattlers.Enemies;
+using Pinbattlers.Menus;
 using UnityEngine;
 
 namespace Pinbattlers.Scriptables
@@ -21,9 +22,10 @@ namespace Pinbattlers.Scriptables
 
         public override bool ConclusionVerification()
         {
-            Debug.Log("Teste");
+            Debug.Log("Monstros que deve derrotar: " + m_kills);
             if (m_kills <= m_monster.QuantityKilled)
             {
+                GameOverMenuController.Instance.Stars += 1;
                 Concluded = true;
                 return true;
             }

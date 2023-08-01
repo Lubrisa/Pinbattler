@@ -9,10 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bf89dfa85900b24a926932347303caf, type: 3}
-  m_Name: ForestCombatChallenge0
+  m_Script: {fileID: 11500000, guid: a56a9b97a78f01f4b97f217c74f00246, type: 3}
+  m_Name: TimedScoreMultiplier
   m_EditorClassIdentifier: 
-  <Description>k__BackingField: Placeholder
-  <Concluded>k__BackingField: 1
-  m_monster: {fileID: 11400000, guid: 1cc0a22c5f446514985c50c6a9e2d937, type: 2}
-  m_killsNeeded: 1
+  _value: 1
+  _readOnly: 0
+  _raiseWarning: 1
+  _isClamped: 0
+  _minClampedValue: 0
+  _maxClampedValue: 0
+  _event:
+    m_PersistentCalls:
+      m_Calls: []

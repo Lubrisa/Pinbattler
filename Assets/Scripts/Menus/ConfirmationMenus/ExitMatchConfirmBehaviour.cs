@@ -1,11 +1,14 @@
 using Pinbattlers.Match;
+using ScriptableObjectArchitecture;
 using UnityEngine;
 
 public class ExitMatchConfirmBehaviour : MonoBehaviour
 {
+    [SerializeField] private GameEvent m_gameOver;
+
     public void OnConfirm()
     {
-        MatchManager.Instance.GameOver();
+        m_gameOver.Raise();
         Destroy(gameObject);
     }
 

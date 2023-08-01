@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d803b71d5100f2f43b3d93b8d7210303, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _showDebugFields: 1
+  _showDebugFields: 0
   _enableGizmoDebugging: 1
   _debugColor: {r: 0, g: 1, b: 1, a: 1}
   _previouslyRegisteredEvent: {fileID: 0}
@@ -133,7 +133,8 @@ GameObject:
   - component: {fileID: 4456398066081095681}
   - component: {fileID: 4456398066081095683}
   - component: {fileID: 4456398066081095680}
-  - component: {fileID: 185320378}
+  - component: {fileID: 7327806649364804154}
+  - component: {fileID: 7851630264377092469}
   m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -259,7 +260,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &185320378
+--- !u!114 &7327806649364804154
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -268,20 +269,34 @@ MonoBehaviour:
   m_GameObject: {fileID: 4456398066081095686}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 636b72f8fc644b4418a9e8ad0f4f804f, type: 3}
+  m_Script: {fileID: 11500000, guid: 727234e538a254140a2d595badf6c793, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_fixedScoreModifier: {fileID: 11400000, guid: 4ea5521a94434b44784dd8704b4e304e, type: 2}
+  m_temporaryScoreModifier: {fileID: 11400000, guid: 1405dd97884ef714da4fb258ae089fdc, type: 2}
+--- !u!114 &7851630264377092469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4456398066081095686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 094217878ac039741aa004dbc1f81b20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _showDebugFields: 0
   _enableGizmoDebugging: 1
   _debugColor: {r: 0, g: 1, b: 1, a: 1}
   _previouslyRegisteredEvent: {fileID: 0}
-  _event: {fileID: 11400000, guid: f4e78b846f5615c448a8650498dc4adb, type: 2}
+  _event: {fileID: 11400000, guid: 6d1833cfaf8fd61479a391f0c111b64d, type: 2}
   _response:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4456398066081095680}
-        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
-        m_MethodName: set_text
+      - m_Target: {fileID: 7327806649364804154}
+        m_TargetAssemblyTypeName: Pinbattlers.Match.ScoreManager, Assembly-CSharp
+        m_MethodName: AddScore
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -291,7 +306,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _debugValue: 
+  _debugValue: 0
 --- !u!1 &4456398066191351185
 GameObject:
   m_ObjectHideFlags: 0
@@ -1290,6 +1305,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4456398067037899503}
+  - component: {fileID: 1295328166}
+  - component: {fileID: 1295328167}
   m_Layer: 0
   m_Name: BallLeft
   m_TagString: Untagged
@@ -1320,6 +1337,52 @@ RectTransform:
   m_AnchoredPosition: {x: 715, y: -196}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1295328166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4456398067037899500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64e0e2049cf196f46a9af8e9ef166468, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_remainingBalls: []
+--- !u!114 &1295328167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4456398067037899500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 094217878ac039741aa004dbc1f81b20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 0}
+  _event: {fileID: 11400000, guid: 42afea1239546be42ad6bf4c2680effb, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1295328166}
+        m_TargetAssemblyTypeName: RemainingBallsController, Assembly-CSharp
+        m_MethodName: ChangeRemainingBallsShowing
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _debugValue: 0
 --- !u!1 &4456398067314226677
 GameObject:
   m_ObjectHideFlags: 0

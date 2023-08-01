@@ -63,6 +63,7 @@ namespace Pinbattlers.Menus
                 if (i < mapData.MapModifiers.Length)
                 {
                     m_mapDificultyModifiers[i].isOn = false;
+                    mapData.MapModifiers[i].IsEnabled = false;
                     m_mapDificultyModifiers[i].interactable = mapData.Cleared();
 
                     TMP_Text modifierDescription = m_mapDificultyModifiers[i].gameObject.
