@@ -3,13 +3,12 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using Zenject;
 
 namespace Pinbattlers.Menus
 {
     public class ItemFill : MonoBehaviour, IPointerClickHandler
     {
-        private PlayerData m_instance;
+        private PlayerData m_playerData;
 
         private enum ItemType
         {
@@ -22,29 +21,29 @@ namespace Pinbattlers.Menus
         [SerializeField] private Image m_itemIllustration;
 
         private int m_itemIndex;
-        private IInfoUpdatable m_controller;
+        private IInfoUpdatable m_container;
 
-        public void FillContent(int itemIndex, IInfoUpdatable controller, PlayerData instance)
+        public void FillContent(int itemIndex, IInfoUpdatable container, PlayerData playerData)
         {
-            m_instance = instance;
+            m_playerData = playerData;
             m_itemIndex = itemIndex;
-            m_controller = controller;
+            m_container = container;
 
             if (m_type == ItemType.Relic)
             {
-                m_itemName.text = m_instance.Relics[itemIndex].Name;
-                m_itemIllustration.sprite = m_instance.Relics[itemIndex].IconSprite.IconSprite;
+                m_itemName.text = m_playerData.Relics[itemIndex].Name;
+                m_itemIllustration.sprite = m_playerData.Relics[itemIndex].IconSprite.IconSprite;
             }
             else
             {
-                m_itemName.text = m_instance.Consumables[itemIndex].Name;
-                m_itemIllustration.sprite = m_instance.Consumables[itemIndex].IconSprite.IconSprite;
+                m_itemName.text = m_playerData.Consumables[itemIndex].Name;
+                m_itemIllustration.sprite = m_playerData.Consumables[itemIndex].IconSprite.IconSprite;
             }
         }
 
         public void OnPointerClick(PointerEventData eventData)
         {
-            m_controller.UpdateInfo(m_itemIndex);
+            m_container.UpdateInfo(m_itemIndex);
         }
     }
 }

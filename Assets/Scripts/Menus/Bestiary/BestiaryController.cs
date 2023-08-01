@@ -1,26 +1,41 @@
 using Pinbattlers.Enemies;
-using Pinbattlers.Player;
 using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Zenject;
 
 namespace Pinbattlers.Menus
 {
     public class BestiaryController : MonoBehaviour
     {
-        [SerializeField] private TMP_Text m_enemyName;
-        [SerializeField] private Image m_enemyIllustration;
-        [SerializeField] private TMP_Text m_enemyLore;
-        [SerializeField] private TMP_Text m_enemyQuantityKilled;
-
-        [SerializeField] private Button m_nextPageButton;
-        [SerializeField] private Button m_previousPageButton;
-
+        private TMP_Text m_enemyName;
+        private Image m_enemyIllustration;
+        private TMP_Text m_enemyLore;
+        private TMP_Text m_enemyQuantityKilled;
+        private Button m_nextPageButton;
+        private Button m_previousPageButton;
         [SerializeField] private MonsterDataArray[] m_enemiesData;
 
         private int m_session;
         private int m_page;
+
+        [Inject]
+        public void Constructor(
+            [Inject(Id = "EnemyName")] TextMeshProUGUI enemyName,
+            [Inject(Id = "EnemyLore")] TextMeshProUGUI enemyLore,
+            [Inject(Id = "EnemyIcon")] Image enemyIllustration,
+            [Inject(Id = "EnemyDefeated")] TextMeshProUGUI enemyQuantityKilled,
+            [Inject(Id = "EnemyNextPage")] Button nextPage,
+            [Inject(Id = "EnemyPreviousPage")] Button previousPage)
+        {
+            m_enemyName = enemyName;
+            m_enemyLore = enemyLore;
+            m_enemyIllustration = enemyIllustration;
+            m_enemyQuantityKilled = enemyQuantityKilled;
+            m_nextPageButton = nextPage;
+            m_previousPageButton = previousPage;
+        }
 
         public void UpdateInfo(int page)
         {
@@ -65,9 +80,9 @@ namespace Pinbattlers.Menus
         }
 
         [Serializable]
-        private class MonsterDataArray
+        private sealed class MonsterDataArray
         {
-            public MonsterData[] Data;
+            [SerializeField] public MonsterData[] Data;
         }
     }
 }
