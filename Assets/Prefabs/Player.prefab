@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c7f381483fb41f14e935b2d6d9fec62f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -120,7 +120,7 @@ Rigidbody2D:
   m_Material: {fileID: 6200000, guid: 1d0e8202d4834c94c86af9314fc7df8f, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &802506245574861755
 MonoBehaviour:
@@ -134,23 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b6ae778b82d5744c8c3f7e169c2b654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_maxLife: 0
-  <Life>k__BackingField: 0
-  m_attack: 0
-  m_defense: 0
-  m_playerLifeUpdate:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: 8b4529b563542df4aa0ecd57648e5bb3, type: 2}
-        m_TargetAssemblyTypeName: ScriptableObjectArchitecture.GameEventBase`1[[System.Single,
-          mscorlib
-        m_MethodName: Raise
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  m_playerLifeUpdate: {fileID: 11400000, guid: 8b4529b563542df4aa0ecd57648e5bb3, type: 2}
+  m_playerRemainingBallsUpdate: {fileID: 11400000, guid: 42afea1239546be42ad6bf4c2680effb, type: 2}
+  m_gameOver: {fileID: 11400000, guid: cb3008a02f0aac44cab41534d660fef2, type: 2}
+  m_death: {fileID: 11400000, guid: 39d7908b9376e334c95edcc7c402b4e7, type: 2}

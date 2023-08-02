@@ -24,6 +24,7 @@ namespace Pinbattlers.Player
         [SerializeField] private FloatGameEvent m_playerLifeUpdate;
         [SerializeField] private IntGameEvent m_playerRemainingBallsUpdate;
         [SerializeField] private GameEvent m_gameOver;
+        [SerializeField] private GameEvent m_death;
 
         #endregion Properties
 
@@ -111,7 +112,7 @@ namespace Pinbattlers.Player
 
         public void ChangeBallValue(int ballChange)
         {
-            m_leftBalls += Mathf.Clamp(m_leftBalls + ballChange, -1, 4);
+            m_leftBalls = Mathf.Clamp(m_leftBalls + ballChange, -1, 4);
             m_playerRemainingBallsUpdate.Raise(m_leftBalls);
         }
 
@@ -120,6 +121,8 @@ namespace Pinbattlers.Player
             transform.position = m_respawnPosition;
             Heal(m_maxLife - Life);
             ChangeBallValue(-1);
+
+            m_death.Raise();
 
             if (m_leftBalls < 0) m_gameOver.Raise();
         }
