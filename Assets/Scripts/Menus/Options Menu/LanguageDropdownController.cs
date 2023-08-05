@@ -26,10 +26,10 @@ namespace Pinbattlers.Menus
 
             m_dropdown.AddOptions(list);
 
-            UpdateValue(m_localizationSettings.GetAvailableLocales().Locales.IndexOf(m_localizationSettings.GetSelectedLocale()));
+            SetNewLanguageValue(m_localizationSettings.GetAvailableLocales().Locales.IndexOf(m_localizationSettings.GetSelectedLocale()));
         }
 
-        public void UpdateValue(int languageIndex)
+        public void SetNewLanguageValue(int languageIndex)
         {
             m_localizationSettings.SetSelectedLocale(m_localizationSettings.GetAvailableLocales().Locales[languageIndex]);
             m_dropdown.value = languageIndex;

@@ -84,5 +84,7 @@ namespace Pinbattlers.Menus
         {
             [SerializeField] public MonsterData[] Data;
         }
+
+        
     }
 }

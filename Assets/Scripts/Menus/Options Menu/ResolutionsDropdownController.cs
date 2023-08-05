@@ -25,7 +25,7 @@ namespace Pinbattlers.Menus
             dropdown.AddOptions(resolutions);
         }
 
-        public void ChangeResolutionValue(int resolutionIndex)
+        public void SetNewResolutionValue(int resolutionIndex)
         {
             Screen.SetResolution(Screen.resolutions[resolutionIndex].width, Screen.resolutions[resolutionIndex].height, Screen.fullScreen);
 

@@ -62,13 +62,13 @@ namespace Pinbattlers.Menus
             }
         }
 
-        public void OnEquipButtonClick()
+        public void EquipAbility()
         {
             m_playerData.EquipAbility(m_playerData.Abilities[m_page]);
             m_equipButton.interactable = false;
         }
 
-        public void OnUpgradeButtonClick()
+        public void UpgradeAbility()
         {
             m_playerData.UpgradeAbility(m_page);
             if (m_playerData.Stars < m_playerData.Abilities[m_page].Level || m_playerData.Abilities[m_page].Level == 5)

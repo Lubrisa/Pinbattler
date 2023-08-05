@@ -39,7 +39,7 @@ public class VolumeSliderController : MonoBehaviour
         }
     }
 
-    public void ChangeSoundValue(float value)
+    public void SetSoundValue(float value)
     {
         if (m_soundType == SoundType.Master)
         {

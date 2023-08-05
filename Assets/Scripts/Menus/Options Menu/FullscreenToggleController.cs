@@ -12,7 +12,7 @@ public class FullscreenToggleController : MonoBehaviour
         fullscreenToggle.isOn = Screen.fullScreen;
     }
 
-    public void SetFullscreenValue(bool value)
+    public void SetNewFullscreenValue(bool value)
     {
         Screen.fullScreen = value;
         PlayerPrefs.SetInt("Fullscreen", value ? 0 : 1);

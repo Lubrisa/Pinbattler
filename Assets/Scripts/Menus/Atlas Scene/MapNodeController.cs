@@ -6,8 +6,8 @@ namespace Pinbattlers.Menus
 {
     public class MapNodeController : MonoBehaviour
     {
-        private Button m_node;
         [SerializeField] private MapsData m_mapData;
+        private Button m_node;
 
         [Inject]
         private Sprite[] m_nodeSprites;

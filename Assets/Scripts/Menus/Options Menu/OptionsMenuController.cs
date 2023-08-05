@@ -5,8 +5,8 @@ namespace Pinbattlers.Menus
 {
     public class OptionsMenuController : MonoBehaviour
     {
-        private int m_activeSessionIndex;
         private RectTransform[] m_sessions;
+        private int m_activeSessionIndex;
 
         [Inject]
         private void Contructor(RectTransform[] sessions)

@@ -55,14 +55,14 @@ namespace Pinbattlers.Menus
             if (m_page + 1 == m_playerData.Abilities.Count - 1) m_nextPageButton.interactable = false;
         }
 
-        public void OnNextPageButtonClick()
+        public void GoToNextPage()
         {
             if (m_page + 1 == m_playerData.Abilities.Count - 1) m_nextPageButton.interactable = false;
             if (!m_previousPageButton.interactable) m_previousPageButton.interactable = true;
             UpdateInfo(1);
         }
 
-        public void OnPreviousPageButtonClick()
+        public void GoToPreviousPage()
         {
             if (m_page - 1 == 0) m_previousPageButton.interactable = false;
             if (!m_nextPageButton.interactable) m_nextPageButton.interactable = true;
