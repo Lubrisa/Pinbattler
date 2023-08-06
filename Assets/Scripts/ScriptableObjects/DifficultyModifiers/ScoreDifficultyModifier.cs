@@ -18,11 +18,13 @@ namespace Pinbattlers.Scriptables
 
         [field: SerializeField] public override bool Concluded { get; protected set; }
 
+        [SerializeField] private BoolVariable m_doubleRewards;
         [SerializeField] private IntVariable m_fixedPointsMultiplier;
         [SerializeField] private int m_scoreToReach;
 
         public override void StartEffect()
         {
+            m_doubleRewards.Value = true;
             m_fixedPointsMultiplier.Value /= 2;
         }
 

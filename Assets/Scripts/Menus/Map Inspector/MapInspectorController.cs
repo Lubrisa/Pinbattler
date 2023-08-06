@@ -1,3 +1,4 @@
+using ScriptableObjectArchitecture;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -17,6 +18,8 @@ namespace Pinbattlers.Menus
         private Toggle[] m_mapDificultyModifiers;
 
         public int MapPath { get; set; }
+
+        [SerializeField] private IntVariable m_fixedScoreMultiplier;
 
         [Inject]
         private void Constructor(

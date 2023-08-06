@@ -29,7 +29,7 @@ namespace Pinbattlers.Scriptables
             int essencesReward = new System.Random().Next(Rewards.EssencesRewardRange[0], Rewards.EssencesRewardRange[1] + 1);
             GameOverMenuController.Instance.Essences += essencesReward;
 
-            GameOverMenuController.Instance.Stars += Rewards.Star;
+            if (!Concluded) GameOverMenuController.Instance.Stars += Rewards.Star;
 
             if (VerifyRelicDrop(out Relic choosenRelic)) GameOverMenuController.Instance.Relics.Add(choosenRelic);
 
@@ -161,6 +161,7 @@ namespace Pinbattlers.Scriptables
 
             // Rarities drop chance & drop quantity for each rarity.
             [field: SerializeField] public int CommomDropChance { get; private set; }
+
             [field: SerializeField] public int[] CommomDropQuantity { get; private set; } = new int[2];
 
             [field: SerializeField] public int UncommomDropChance { get; private set; }

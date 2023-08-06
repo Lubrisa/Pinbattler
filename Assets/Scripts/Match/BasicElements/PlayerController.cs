@@ -99,7 +99,7 @@ namespace Pinbattlers.Player
 
         private void ApplyConditions()
         {
-            for (int i = 4; i >= 0; i--)
+            for (int i = 2; i >= 0; i--)
             {
                 m_conditions[i].UpdateCondition();
                 if (m_conditions[i].RemainingTime <= 0)

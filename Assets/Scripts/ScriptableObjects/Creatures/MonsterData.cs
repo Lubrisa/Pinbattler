@@ -13,7 +13,7 @@ namespace Pinbattlers.Enemies
         [field: SerializeField] public int Defense { get; private set; }
         [field: SerializeField] public float MoveSpeed { get; private set; }
         [field: SerializeField] public string Description { get; private set; }
-        [field: SerializeField] public int QuantityKilled { get; private set; }
+        [field: SerializeField] public int QuantityKilled { get; set; }
         [field: SerializeField] public List<BaseState> States { get; private set; }
     }
 }

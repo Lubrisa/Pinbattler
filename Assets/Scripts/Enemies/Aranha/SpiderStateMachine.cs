@@ -99,7 +99,7 @@ public class SpiderStateMachine : BaseStateMachine, IEnemy
     {
         if (!IsAttacking)
         {
-            CurrentLife -= damage;
+            CurrentLife -= (damage - Defense > 0) ? damage - Defense : 1;
 
             m_lifeBar.value = (float)CurrentLife / MaxLife;
 
@@ -111,6 +111,8 @@ public class SpiderStateMachine : BaseStateMachine, IEnemy
     {
         m_givePoints.Raise(m_pointsReward);
         GameOverMenuController.Instance.Essences += m_essencesReward;
+
+        m_monsterData.QuantityKilled++;
 
         Destroy(this.gameObject);
     }

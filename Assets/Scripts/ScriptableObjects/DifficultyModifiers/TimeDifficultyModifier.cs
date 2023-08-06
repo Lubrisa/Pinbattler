@@ -1,8 +1,5 @@
 using Pinbattlers.Match;
-using Pinbattlers.Menus;
-using Pinbattlers.Player.Resouces;
 using ScriptableObjectArchitecture;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Pinbattlers.Scriptables

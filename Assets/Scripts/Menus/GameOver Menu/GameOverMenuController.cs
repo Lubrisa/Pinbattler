@@ -47,6 +47,7 @@ namespace Pinbattlers.Menus
         #endregion RewardControllers
 
         [SerializeField] private IntVariable m_fixedScoreModifier;
+        [SerializeField] private BoolVariable m_doubleRewards;
 
         [SerializeField] private TMP_Text m_finalScoreText;
         [SerializeField] private Transform m_content;
@@ -66,6 +67,8 @@ namespace Pinbattlers.Menus
 
         public void UpdateInfo()
         {
+            if (m_doubleRewards.Value) DoubleRewards();
+
             m_finalScoreText.text = "Pontuação:\n" + Score.ToString() + " x " + m_fixedScoreModifier.Value.ToString() +
                 "\nPontuação Final: " + (Score * m_fixedScoreModifier.Value).ToString();
 
@@ -123,7 +126,19 @@ namespace Pinbattlers.Menus
 
             if (Score > m_mapData.MapHighScore) m_mapData.MapHighScore = Score;
 
+            if (m_doubleRewards.Value) m_doubleRewards.Value = false;
+
             FeedPlayerInventory();
+        }
+
+        private void DoubleRewards()
+        {
+            Essences *= 2;
+
+            foreach (Consumable c in Consumables)
+            {
+                c.Quantity *= 2;
+            }
         }
 
         [ContextMenu("FeedInventory")]

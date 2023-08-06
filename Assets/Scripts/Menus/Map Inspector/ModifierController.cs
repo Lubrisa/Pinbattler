@@ -1,3 +1,5 @@
+using Pinbattlers.Scriptables;
+using ScriptableObjectArchitecture;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -7,6 +9,8 @@ namespace Pinbattlers.Menus
     {
         [SerializeField] private ModifierTooltip m_tooltip;
         [SerializeField] private ModifierTooltip m_tooltipInstance;
+
+        [SerializeField] private IntVariable m_fixedScoreMultiplier;
 
         private int m_index;
         public MapsData MapData { get; set; }
@@ -38,6 +42,14 @@ namespace Pinbattlers.Menus
             Destroy(m_tooltipInstance.gameObject);
         }
 
-        public void OnModifierToggleValueChange(bool value) => MapData.MapModifiers[m_index].IsEnabled = value;
+        public void OnModifierToggleValueChange(bool value)
+        {
+            MapData.MapModifiers[m_index].IsEnabled = value;
+
+            if (MapData.MapModifiers[m_index].name != nameof(ScoreDifficultyModifier))
+            {
+                m_fixedScoreMultiplier.Value += (value == true) ? 1 : -1;
+            }
+        }
     }
 }

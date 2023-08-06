@@ -1412,6 +1412,7 @@ MonoBehaviour:
   m_relicReward: {fileID: 907125537382943290, guid: 81d7386119761244c9856a9fb2b258a0, type: 3}
   m_consumableReward: {fileID: 8111326722866248738, guid: 2d90048f048573049b3fe714f6e3c3be, type: 3}
   m_fixedScoreModifier: {fileID: 11400000, guid: 4ea5521a94434b44784dd8704b4e304e, type: 2}
+  m_doubleRewards: {fileID: 11400000, guid: 77eddcbba86f94b43b3949a439ab6150, type: 2}
   m_finalScoreText: {fileID: 1145641500}
   m_content: {fileID: 285067639}
 --- !u!114 &507072589
@@ -2154,6 +2155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_saverTimer: {fileID: 11400000, guid: 990812a91b531b444a81bb6914f78c44, type: 2}
+  m_saverIncrease: 0
 --- !u!212 &935420310
 SpriteRenderer:
   m_ObjectHideFlags: 0

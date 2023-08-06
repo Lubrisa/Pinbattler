@@ -3,7 +3,9 @@ guid: 44f7fd0f289e0e849a0d7189356f35a6
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - m_doubleRewards: {fileID: 11400000, guid: 77eddcbba86f94b43b3949a439ab6150, type: 2}
+  - m_fixedPointsMultiplier: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
