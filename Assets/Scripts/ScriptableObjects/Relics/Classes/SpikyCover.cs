@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Pinbattlers.Player.Resouces
 {
     [Serializable]
-    [CreateAssetMenu(fileName = "SpikyCover", menuName = "Relic/SpikyCover")]
+    [CreateAssetMenu(fileName = "SpikyCover", menuName = "Collectible/Relic/SpikyCover")]
     public class SpikyCover : Relic
     {
         [field: SerializeField] public override string Name { get; protected set; }

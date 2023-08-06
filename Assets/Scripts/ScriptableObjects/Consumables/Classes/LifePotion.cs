@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Pinbattlers.Player.Resouces
 {
     [Serializable]
-    [CreateAssetMenu(fileName = "LifePotion", menuName = "Consumable/LifePotion")]
+    [CreateAssetMenu(fileName = "LifePotion", menuName = "Collectible/Consumable/LifePotion")]
     public class LifePotion : Consumable
     {
         [field: SerializeField] public override Sprite IconSprite { get; protected set; }

@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Pinbattlers.Player.Resouces
 {
     [Serializable]
-    [CreateAssetMenu(fileName = "IronHull", menuName = "Relic/IronHull")]
+    [CreateAssetMenu(fileName = "IronHull", menuName = "Collectible/Relic/IronHull")]
     public class IronHull : Relic
     {
         [field: SerializeField] public override string Name { get; protected set; }

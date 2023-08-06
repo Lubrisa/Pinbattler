@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Pinbattlers.Player.Resouces
 {
     [Serializable]
-    [CreateAssetMenu(fileName = "Snowball", menuName = "Ability/Snowball")]
+    [CreateAssetMenu(fileName = "Snowball", menuName = "Collectible/Ability/Snowball")]
     public class Snowball : Ability
     {
         [field: SerializeField] public override string Name { get; protected set; }

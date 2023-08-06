@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Pinbattlers.Player.Resouces
 {
     [Serializable]
-    [CreateAssetMenu(fileName = "AbilityRecover", menuName = "Consumable/AbilityRecover")]
+    [CreateAssetMenu(fileName = "AbilityRecover", menuName = "Collectible/Consumable/AbilityRecover")]
     public class AbilityRecover : Consumable
     {
         [field: SerializeField] public override Sprite IconSprite { get; protected set; }

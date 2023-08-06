@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Pinbattlers.Player.Resouces
 {
     [Serializable]
-    [CreateAssetMenu(fileName = "Fireball", menuName = "Ability/Fireball")]
+    [CreateAssetMenu(fileName = "Fireball", menuName = "Collectible/Ability/Fireball")]
     public class Fireball : Ability
     {
         [field: SerializeField] public override string Name { get; protected set; }
