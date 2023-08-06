@@ -1,4 +1,6 @@
 using Pinbattlers.Enemies;
+using Pinbattlers.Menus;
+using ScriptableObjectArchitecture;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,6 +18,10 @@ public class TatuStateMachine : BaseStateMachine, IEnemy
     public override bool Attacked { get; set; }
 
     private Slider m_lifeBar;
+
+    [SerializeField] private IntGameEvent m_givePoints;
+    [SerializeField] private int m_pointsReward;
+    [SerializeField] private int m_essencesReward;
 
     protected override void Start()
     {
@@ -49,9 +55,20 @@ public class TatuStateMachine : BaseStateMachine, IEnemy
 
     public void Damage(int damage)
     {
+        CurrentLife -= (damage - Defense > 0) ? damage - Defense : 1;
+
+        m_lifeBar.value = (float)CurrentLife / MaxLife;
+
+        if (CurrentLife <= 0) Die();
     }
 
     public void Die()
     {
+        m_givePoints.Raise(m_pointsReward);
+        GameOverMenuController.Instance.Essences += m_essencesReward;
+
+        m_monsterData.QuantityKilled++;
+
+        Destroy(this.gameObject);
     }
 }

@@ -6975,7 +6975,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &704104667
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12378,7 +12378,7 @@ MonoBehaviour:
   _showDebugFields: 0
   _enableGizmoDebugging: 1
   _debugColor: {r: 0, g: 1, b: 1, a: 1}
-  _previouslyRegisteredEvent: {fileID: 0}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: 4ba3ef4992cd51640abd17518d3291d7, type: 2}
   _event: {fileID: 11400000, guid: 4ba3ef4992cd51640abd17518d3291d7, type: 2}
   _response:
     m_PersistentCalls:
@@ -20872,7 +20872,7 @@ MonoBehaviour:
   _showDebugFields: 0
   _enableGizmoDebugging: 1
   _debugColor: {r: 0, g: 1, b: 1, a: 1}
-  _previouslyRegisteredEvent: {fileID: 0}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: 3ce4ed9597bf3324cb5fb1124937064b, type: 2}
   _event: {fileID: 11400000, guid: 3ce4ed9597bf3324cb5fb1124937064b, type: 2}
   _response:
     m_PersistentCalls:
