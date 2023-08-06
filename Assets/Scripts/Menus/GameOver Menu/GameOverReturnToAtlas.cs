@@ -5,6 +5,6 @@ public class GameOverReturnToAtlas : MonoBehaviour
 {
     public void OnClick()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
     }
 }

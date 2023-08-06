@@ -17,7 +17,7 @@ MonoBehaviour:
   <Life>k__BackingField: 0
   <Attack>k__BackingField: 0
   <Defense>k__BackingField: 0
+  <MoveSpeed>k__BackingField: 0
   <Description>k__BackingField: Null
-  <QuantityKilled>k__BackingField: 1
+  <QuantityKilled>k__BackingField: 0
   <States>k__BackingField: []
-  <IsChampion>k__BackingField: 0

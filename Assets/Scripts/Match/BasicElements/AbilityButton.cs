@@ -6,7 +6,7 @@ using Zenject;
 
 namespace Pinbattlers.Match
 {
-    public class Abilitym_abilityButton : MonoBehaviour
+    public class AbilityButton : MonoBehaviour
     {
         [Inject]
         private PlayerData m_playerData;

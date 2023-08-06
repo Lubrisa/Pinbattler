@@ -49,6 +49,8 @@ namespace Pinbattlers.Menus
                 m_itemInstance = Instantiate(m_itemInstance, m_content);
                 m_itemInstance.FillContent(i, this, m_playerData);
             }
+
+            UpdateInfo(0);
         }
 
         public void UpdateInfo(int itemIndex)
