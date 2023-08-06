@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6071817457439229535
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6071817457439229505}
+  - component: {fileID: 6071817457439229534}
+  m_Layer: 0
+  m_Name: SavingSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6071817457439229505
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6071817457439229535}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1103.6185, y: 548.19257, z: -97.25018}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6071817457439229534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6071817457439229535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecb807ef4b0a82f45b9fb7e99197b3c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_playerData: {fileID: 11400000, guid: 8fea82cabf82ae9479ead00c45eca3f8, type: 2}
+  m_freshPlayerData: {fileID: 11400000, guid: 17e5540433d996f47a19b2276ce0440b, type: 2}
+  m_mapsData:
+  - {fileID: 11400000, guid: af4916b93f27e804fa75596836f7b1f1, type: 2}
+  - {fileID: 11400000, guid: 0722cb94392a79146bb9258bb4f8b9d8, type: 2}
+  - {fileID: 11400000, guid: 9ebab8a1089a6c242acb9d04279c2aa5, type: 2}
+  m_freshMapsData:
+  - {fileID: 11400000, guid: af3d9e26eb4583243b6d83053dab6321, type: 2}
+  - {fileID: 11400000, guid: 5885265cfce9f1d43b2036d1d9450c76, type: 2}
+  - {fileID: 11400000, guid: 18ed352e782e7e84691dfd34018bdcdc, type: 2}
+  m_monstersData:
+  - {fileID: 11400000, guid: 1cc0a22c5f446514985c50c6a9e2d937, type: 2}
+  - {fileID: 11400000, guid: a491df68a26d0bf4b8dccf2d3bc76101, type: 2}
+  - {fileID: 11400000, guid: 058a57cde0c52d648a5bb0ae944e4a93, type: 2}
+  - {fileID: 11400000, guid: e58fb7e48f523a64ba52dcde406248c9, type: 2}
+  - {fileID: 11400000, guid: b3f522700746e684bb725cfe8e532807, type: 2}
+  - {fileID: 11400000, guid: 86339eef1fb58ca41b334d116e4a2497, type: 2}
+  m_localizationSettings: {fileID: 11400000, guid: 92200754a8a025f489caac3d5bd27080, type: 2}

@@ -12,14 +12,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Atlas.unity
     guid: 992fff0ff499a4c469baf8add4d6a0ee
   - enabled: 1
-    path: Assets/Scenes/Maps/Forest/Forest.unity
-    guid: dac9d2e2c569dfb42bbb3b7b83c9a8a1
-  - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 60daa76e29bf616449e933c794bcdeff
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Maps/Forest/Forest.unity
+    guid: dac9d2e2c569dfb42bbb3b7b83c9a8a1
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: ed5908038ce462b4b9dcc35880d3337d, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: 1179227243a1a7944a0abe3bc272bcda, type: 2}
