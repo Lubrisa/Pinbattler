@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Aranha
   <Illustration>k__BackingField: {fileID: 0}
-  <Life>k__BackingField: 0
-  <Attack>k__BackingField: 0
+  <Life>k__BackingField: 100
+  <Attack>k__BackingField: 10
   <Defense>k__BackingField: 0
+  <MoveSpeed>k__BackingField: 0.1
   <Description>k__BackingField: Null
   <QuantityKilled>k__BackingField: 12
   <States>k__BackingField: []

@@ -9,11 +9,14 @@ namespace Pinbattlers.Player
     {
         #region Properties
 
+        public static PlayerController Instance { get; private set; }
+        [SerializeField] private bool m_isOneCopy;
+
         [Inject]
         private PlayerData m_playerData;
 
         private int m_maxLife;
-        public int Life { get; private set; }
+        [field: SerializeField] public int Life { get; private set; }
         private int m_attack;
         private int m_defense;
         private int m_leftBalls;
@@ -30,18 +33,52 @@ namespace Pinbattlers.Player
 
         #region Initialization
 
+        private void Awake()
+        {
+            if (Instance == null) Instance = this;
+        }
+
         private void Start()
         {
-            // Setting main attributes
-            Life = m_playerData.Life + m_playerData.LifeModifier;
-            m_maxLife = Life;
-            m_leftBalls = 4;
-            m_playerRemainingBallsUpdate.Raise(m_leftBalls);
-            m_attack = m_playerData.Attack + m_playerData.AttackModifier;
-            m_defense = m_playerData.Defense;
+            // Setting respawn position.
             m_respawnPosition = transform.position;
-            // Setting skin
-            GetComponent<SpriteRenderer>().sprite = m_playerData.SkinEquiped; ;
+        }
+
+        private void OnEnable()
+        {
+            if (Instance != this && m_isOneCopy) CopyDataFromOriginalInstance();
+            else
+            {
+                // Setting main attributes.
+                Life = m_playerData.Life + m_playerData.LifeModifier;
+                m_maxLife = Life;
+                m_leftBalls = 4;
+                m_playerRemainingBallsUpdate.Raise(m_leftBalls);
+                m_attack = m_playerData.Attack + m_playerData.AttackModifier;
+                m_defense = m_playerData.Defense;
+                // Setting skin.
+                GetComponent<SpriteRenderer>().sprite = m_playerData.SkinEquiped;
+            }
+        }
+
+        public void CopyDataFromOriginalInstance()
+        {
+            // The player data.
+            m_playerData = Instance.m_playerData;
+            // Attributes.
+            m_maxLife = Instance.m_maxLife;
+            Life = Instance.Life;
+            m_attack = Instance.m_attack;
+            m_defense = Instance.m_defense;
+            m_leftBalls = Instance.m_leftBalls;
+            m_conditions = Instance.m_conditions;
+            // Events.
+            m_playerLifeUpdate = Instance.m_playerLifeUpdate;
+            m_playerRemainingBallsUpdate = Instance.m_playerRemainingBallsUpdate;
+            m_gameOver = Instance.m_gameOver;
+            m_death = Instance.m_death;
+
+            Instance = this;
         }
 
         #endregion Initialization

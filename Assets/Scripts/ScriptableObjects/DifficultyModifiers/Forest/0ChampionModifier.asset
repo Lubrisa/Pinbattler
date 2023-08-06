@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 0ChampionModifier
   m_EditorClassIdentifier: 
   <Description>k__BackingField: Placeholder
-  <IsEnabled>k__BackingField: 1
+  <IsEnabled>k__BackingField: 0
   <Rewards>k__BackingField:
     <PointsRewardRange>k__BackingField: 0a00000014000000
     <EssencesRewardRange>k__BackingField: 0a00000014000000
@@ -33,7 +33,7 @@ MonoBehaviour:
     <RareDropQuantity>k__BackingField: 0a00000014000000
     <LegendaryDropChance>k__BackingField: 80
     <LegendaryDropQuantity>k__BackingField: 0a00000014000000
-  <Concluded>k__BackingField: 1
+  <Concluded>k__BackingField: 0
   m_monsterData: {fileID: 11400000, guid: 1cc0a22c5f446514985c50c6a9e2d937, type: 2}
   m_championPrefab: {fileID: 2852734914550352826, guid: 4dbabda364c94684ea6d51c19533585d, type: 3}
   m_changeMonsterSpawn: {fileID: 11400000, guid: 9f36df0d364dad74a8112d0bda2319b1, type: 2}

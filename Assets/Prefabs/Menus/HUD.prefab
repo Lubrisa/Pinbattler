@@ -1349,7 +1349,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64e0e2049cf196f46a9af8e9ef166468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_remainingBalls: []
+  m_remainingBalls:
+  - {fileID: 4456398066420264938}
+  - {fileID: 4456398067757003491}
+  - {fileID: 4456398066794019088}
+  - {fileID: 4456398066212800144}
 --- !u!114 &1295328167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1371,7 +1375,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1295328166}
-        m_TargetAssemblyTypeName: RemainingBallsController, Assembly-CSharp
+        m_TargetAssemblyTypeName: Pinbattlers.Match.RemainingBallsController, Assembly-CSharp
         m_MethodName: ChangeRemainingBallsShowing
         m_Mode: 0
         m_Arguments:

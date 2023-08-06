@@ -13,12 +13,16 @@ namespace Pinbattlers.Match
 
         private TMP_Text m_scoreText;
 
-        private void Start() => m_scoreText = GetComponent<TMP_Text>();
+        private void Start()
+        {
+            m_scoreText = GetComponent<TMP_Text>();
+            AddScore(0);
+        }
 
         public void AddScore(int score)
         {
             Score += score * m_fixedScoreModifier.Value * m_temporaryScoreModifier.Value;
-            m_scoreText.text = "Pontuação: " + score.ToString();
+            m_scoreText.text = "Pontuação: " + Score.ToString();
         }
 
         public void AddTemporaryMultiplier(int multiplierBonus, float timeToEnd)

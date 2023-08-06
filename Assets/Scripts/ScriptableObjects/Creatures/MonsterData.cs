@@ -11,6 +11,7 @@ namespace Pinbattlers.Enemies
         [field: SerializeField] public int Life { get; private set; }
         [field: SerializeField] public int Attack { get; private set; }
         [field: SerializeField] public int Defense { get; private set; }
+        [field: SerializeField] public float MoveSpeed { get; private set; }
         [field: SerializeField] public string Description { get; private set; }
         [field: SerializeField] public int QuantityKilled { get; private set; }
         [field: SerializeField] public List<BaseState> States { get; private set; }
