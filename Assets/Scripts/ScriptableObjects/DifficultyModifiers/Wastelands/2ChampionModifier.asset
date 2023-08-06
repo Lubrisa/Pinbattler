@@ -14,3 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Description>k__BackingField: Placeholder
   <IsEnabled>k__BackingField: 0
+  <Rewards>k__BackingField:
+    <PointsRewardRange>k__BackingField: 0000000000000000
+    <EssencesRewardRange>k__BackingField: 0000000000000000
+    <Star>k__BackingField: 0
+    <Relics>k__BackingField: []
+    <Consumables>k__BackingField: []
+    <ConsumablesQuantity>k__BackingField: 0
+    <CommomDropChance>k__BackingField: 0
+    <CommomDropQuantity>k__BackingField: 0000000000000000
+    <UncommomDropChance>k__BackingField: 0
+    <UncommomDropQuantity>k__BackingField: 0000000000000000
+    <RareDropChance>k__BackingField: 0
+    <RareDropQuantity>k__BackingField: 0000000000000000
+    <LegendaryDropChance>k__BackingField: 0
+    <LegendaryDropQuantity>k__BackingField: 0000000000000000
+  <Concluded>k__BackingField: 0
+  m_monsterData: {fileID: 0}
+  m_championPrefab: {fileID: 0}
+  m_changeMonsterSpawn: {fileID: 0}
+  m_killsNeeded: 10

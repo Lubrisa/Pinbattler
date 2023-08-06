@@ -2234,7 +2234,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _components:
   - {fileID: 223699155}
-  _identifier: MapModifiers
+  _identifier: MapChallenges
   _useSceneContext: 0
   _context: {fileID: 0}
   _bindType: 0
@@ -7998,7 +7998,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _components:
   - {fileID: 787310508}
-  _identifier: MapModifiers
+  _identifier: MapChallenges
   _useSceneContext: 0
   _context: {fileID: 0}
   _bindType: 0
@@ -10323,7 +10323,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _components:
   - {fileID: 963939019}
-  _identifier: MapModifiers
+  _identifier: MapChallenges
   _useSceneContext: 0
   _context: {fileID: 0}
   _bindType: 0
@@ -13112,7 +13112,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e664e80de2d8a8647b8444f9fa3968ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_fixedScoreMultiplier: {fileID: 0}
+  m_mapChallenges: []
+  m_fixedScoreMultiplier: {fileID: 11400000, guid: 4ea5521a94434b44784dd8704b4e304e, type: 2}
 --- !u!1 &1245628586
 GameObject:
   m_ObjectHideFlags: 0
@@ -20011,6 +20012,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6071817457439229534, guid: 6c80e990c99181f4b9bb31c337869fc1, type: 3}
+      propertyPath: m_playerData
+      value: 
+      objectReference: {fileID: 11400000, guid: 17e5540433d996f47a19b2276ce0440b, type: 2}
     - target: {fileID: 6071817457439229535, guid: 6c80e990c99181f4b9bb31c337869fc1, type: 3}
       propertyPath: m_Name
       value: SavingSystem
@@ -20549,7 +20554,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _components:
   - {fileID: 1868017247}
-  _identifier: MapModifiers
+  _identifier: MapChallenges
   _useSceneContext: 0
   _context: {fileID: 0}
   _bindType: 0
@@ -20811,7 +20816,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _components:
   - {fileID: 1874531875}
-  _identifier: MapModifiers
+  _identifier: MapChallenges
   _useSceneContext: 0
   _context: {fileID: 0}
   _bindType: 0

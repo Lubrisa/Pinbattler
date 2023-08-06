@@ -14,7 +14,7 @@ namespace Pinbattlers.Menus
         private Image m_mapIllustration;
         private TMP_Text m_mapHighScore;
 
-        private TMP_Text[] m_mapChallenges;
+        [SerializeField] private TMP_Text[] m_mapChallenges;
         private Toggle[] m_mapDificultyModifiers;
 
         public int MapPath { get; set; }

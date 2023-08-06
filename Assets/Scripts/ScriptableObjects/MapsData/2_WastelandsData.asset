@@ -14,16 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MapName>k__BackingField: "Desola\xE7\xE3o"
   <MapDescription>k__BackingField: Placeholder
-  <MapIllustration>k__BackingField: {fileID: 21300000, guid: cbc03f46f37bed94ab0c860a00c2d35d, type: 3}
+  <MapIllustration>k__BackingField: {fileID: 0}
   <MapChallenges>k__BackingField:
-  - {fileID: 11400000, guid: 95ca237b10ced58468f5a243971a10ac, type: 2}
   - {fileID: 11400000, guid: 9f99fb1013d276e41a18dee7e4f738ad, type: 2}
+  - {fileID: 11400000, guid: 95ca237b10ced58468f5a243971a10ac, type: 2}
   - {fileID: 11400000, guid: a14615621e12e4d409ee9ea780d176a2, type: 2}
   <MapModifiers>k__BackingField:
   - {fileID: 11400000, guid: e0003fb75e892c24eae456e20e93b878, type: 2}
   - {fileID: 11400000, guid: 5e782fbd0fb3f4843a31f4a119878eca, type: 2}
-  <MapHighScore>k__BackingField: 30
+  - {fileID: 11400000, guid: 4bcdf2815210f0e4aba279d4873b0e86, type: 2}
+  <MapHighScore>k__BackingField: 0
   m_mapDependency:
   - {fileID: 11400000, guid: af4916b93f27e804fa75596836f7b1f1, type: 2}
-  <Unlocked>k__BackingField: 0
-  <Concluded>k__BackingField: 0

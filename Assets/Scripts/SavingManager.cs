@@ -8,6 +8,7 @@ using Zenject;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 using Pinbattlers.Enemies;
+using Pinbattlers.Scriptables;
 
 public class SavingManager : MonoBehaviour
 {
@@ -17,7 +18,6 @@ public class SavingManager : MonoBehaviour
     [SerializeField] private PlayerData m_freshPlayerData;
 
     [SerializeField] private MapsData[] m_mapsData;
-    [SerializeField] private MapsData[] m_freshMapsData;
 
     [SerializeField] private MonsterData[] m_monstersData;
 
@@ -205,40 +205,9 @@ public class SavingManager : MonoBehaviour
     [ContextMenu("ResetSave")]
     public void ResetSave()
     {
-        // Erase player file.
-        if (Directory.Exists(Application.persistentDataPath + "/PlayerData"))
-        {
-            if (File.Exists(Application.persistentDataPath + " /PlayerData/player_data.text"))
-            {
-                File.Delete(Application.persistentDataPath + "/PlayerData/player_data.text");
-            }
-        }
-        else Directory.CreateDirectory(Application.persistentDataPath + "/PlayerData");
-
-        // Erase maps file.
-        if (Directory.Exists(Application.persistentDataPath + "/MapsData"))
-        {
-            for (int i = m_mapsData.Length - 1; i >= 0; i--)
-            {
-                if (File.Exists(Application.persistentDataPath + $"/MapsData/{m_mapsData[i].MapName}.text"))
-                    File.Delete(Application.persistentDataPath + $"/MapsData/{m_mapsData[i].MapName}.text");
-            }
-        }
-        else Directory.CreateDirectory(Application.persistentDataPath + "/MapsData");
-
-        if (Directory.Exists(Application.persistentDataPath + "/MonstersData"))
-        {
-            for (int i = m_monstersData.Length - 1; i >= 0; i--)
-            {
-                if (File.Exists(Application.persistentDataPath + $"/MonstersData/{m_monstersData[i].Name}.text"))
-                    File.Delete(Application.persistentDataPath + $"/MonstersData/{m_monstersData[i].Name}.text");
-            }
-        }
-        else Directory.CreateDirectory(Application.persistentDataPath + "/MonstersData");
-
         // Set player prefs to its default values.
         ResetOptions();
-        // Resets the player data and the maps data.
+        // Resets the player data, the maps and the monsters data.
         ResetPlayerData();
         ResetMapsData();
         ResetMonstersData();
@@ -261,35 +230,64 @@ public class SavingManager : MonoBehaviour
 
     private void ResetPlayerData()
     {
-        Debug.Log("Resetando player");
+        // Erase player file.
+        if (Directory.Exists(Application.persistentDataPath + "/PlayerData"))
+        {
+            if (File.Exists(Application.persistentDataPath + " /PlayerData/player_data.text"))
+            {
+                File.Delete(Application.persistentDataPath + "/PlayerData/player_data.text");
+            }
+        }
+        else Directory.CreateDirectory(Application.persistentDataPath + "/PlayerData");
+
         m_playerData = m_freshPlayerData;
-        FileStream playerFile = File.Create(Application.persistentDataPath + "/PlayerData/player_data.txt");
-        new BinaryFormatter().Serialize(playerFile, JsonUtility.ToJson(m_playerData));
-        playerFile.Close();
+        SavePlayerInfo();
     }
 
     private void ResetMapsData()
     {
-        Debug.Log("Resetando mapas");
+        // Erase maps file.
+        if (Directory.Exists(Application.persistentDataPath + "/MapsData"))
+        {
+            for (int i = m_mapsData.Length - 1; i >= 0; i--)
+            {
+                if (File.Exists(Application.persistentDataPath + $"/MapsData/{m_mapsData[i].MapName}.text"))
+                    File.Delete(Application.persistentDataPath + $"/MapsData/{m_mapsData[i].MapName}.text");
+            }
+        }
+        else Directory.CreateDirectory(Application.persistentDataPath + "/MapsData");
+
         for (int i = 0; i < m_mapsData.Length; i++)
         {
-            m_mapsData[i] = m_freshMapsData[i];
-            FileStream mapFile = File.Create(Application.persistentDataPath + $"/MapsData/{m_mapsData[i].MapName}.text");
-            new BinaryFormatter().Serialize(mapFile, JsonUtility.ToJson(m_mapsData[i]));
-            mapFile.Close();
+            foreach (BaseChallenge bc in m_mapsData[i].MapChallenges)
+            {
+                bc.Concluded = false;
+            }
+            foreach (BaseDifficultyModifier bdm in m_mapsData[i].MapModifiers)
+            {
+                bdm.Reset();
+            }
         }
+        SaveMapsInfo();
     }
 
     private void ResetMonstersData()
     {
-        Debug.Log("Resetando monstros");
+        if (Directory.Exists(Application.persistentDataPath + "/MonstersData"))
+        {
+            for (int i = m_monstersData.Length - 1; i >= 0; i--)
+            {
+                if (File.Exists(Application.persistentDataPath + $"/MonstersData/{m_monstersData[i].Name}.text"))
+                    File.Delete(Application.persistentDataPath + $"/MonstersData/{m_monstersData[i].Name}.text");
+            }
+        }
+        else Directory.CreateDirectory(Application.persistentDataPath + "/MonstersData");
+
         for (int i = 0; i < m_monstersData.Length; i++)
         {
             m_monstersData[i].QuantityKilled = 0;
-            FileStream mapFile = File.Create(Application.persistentDataPath + $"/MapsData/{m_monstersData[i].name}.text");
-            new BinaryFormatter().Serialize(mapFile, JsonUtility.ToJson(m_monstersData[i]));
-            mapFile.Close();
         }
+        SaveMonstersInfo();
     }
 
     [ContextMenu("ForceDataReset")]

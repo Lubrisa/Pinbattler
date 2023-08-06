@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: DesertPointChallenge1
   m_EditorClassIdentifier: 
   <Description>k__BackingField: 
-  m_scoreTarget: 0
+  m_scoreTarget: 100
+  <Concluded>k__BackingField: 0

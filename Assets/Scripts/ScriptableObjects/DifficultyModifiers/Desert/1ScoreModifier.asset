@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44f7fd0f289e0e849a0d7189356f35a6, type: 3}
-  m_Name: 2ScoreModifier
+  m_Name: 1ScoreModifier
   m_EditorClassIdentifier: 
   <Description>k__BackingField: 
   <IsEnabled>k__BackingField: 0
@@ -31,5 +31,5 @@ MonoBehaviour:
     <LegendaryDropQuantity>k__BackingField: 0000000000000000
   <Concluded>k__BackingField: 0
   m_doubleRewards: {fileID: 11400000, guid: 77eddcbba86f94b43b3949a439ab6150, type: 2}
-  m_fixedPointsMultiplier: {fileID: 0}
-  m_scoreToReach: 500
+  m_fixedPointsMultiplier: {fileID: 11400000, guid: 4ea5521a94434b44784dd8704b4e304e, type: 2}
+  m_scoreToReach: 200

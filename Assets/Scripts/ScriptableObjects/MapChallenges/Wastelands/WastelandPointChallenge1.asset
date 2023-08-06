@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: WastelandPointChallenge1
   m_EditorClassIdentifier: 
   <Description>k__BackingField: Placeholder 1
-  <ScoreTarget>k__BackingField: 0
+  m_scoreTarget: 500
+  <Concluded>k__BackingField: 0

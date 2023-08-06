@@ -21,6 +21,8 @@ namespace Pinbattlers.Scriptables
 
         public abstract bool MissionVerification();
 
+        public virtual void Reset() => Concluded = false;
+
         protected virtual void GenerateRewards()
         {
             int pointsReward = new System.Random().Next(Rewards.PointsRewardRange[0], Rewards.PointsRewardRange[1] + 1);
