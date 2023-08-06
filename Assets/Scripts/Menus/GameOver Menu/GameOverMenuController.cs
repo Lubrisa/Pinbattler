@@ -1,5 +1,6 @@
 using Pinbattlers.Player;
 using Pinbattlers.Player.Resouces;
+using ScriptableObjectArchitecture;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -45,6 +46,8 @@ namespace Pinbattlers.Menus
 
         #endregion RewardControllers
 
+        [SerializeField] private IntVariable m_fixedScoreModifier;
+
         [SerializeField] private TMP_Text m_finalScoreText;
         [SerializeField] private Transform m_content;
 
@@ -63,7 +66,10 @@ namespace Pinbattlers.Menus
 
         public void UpdateInfo()
         {
-            m_finalScoreText.text = "Pontuação Final:\n" + Score.ToString();
+            m_finalScoreText.text = "Pontuação:\n" + Score.ToString() + " x " + m_fixedScoreModifier.Value.ToString() +
+                "\nPontuação Final: " + (Score * m_fixedScoreModifier.Value).ToString();
+
+            Score *= m_fixedScoreModifier.Value;
 
             BaseRewardController reward;
             if (Score > 0)

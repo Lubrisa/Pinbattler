@@ -1,4 +1,5 @@
 using ScriptableObjectArchitecture;
+using System.Collections;
 using TMPro;
 using UnityEngine;
 
@@ -6,7 +7,6 @@ namespace Pinbattlers.Match
 {
     public class ScoreManager : MonoBehaviour
     {
-        [SerializeField] private IntVariable m_fixedScoreModifier;
         [SerializeField] private IntVariable m_temporaryScoreModifier;
         private float m_temporaryMultiplierRemainingTime;
         public static int Score { get; private set; }
@@ -21,8 +21,14 @@ namespace Pinbattlers.Match
 
         public void AddScore(int score)
         {
-            Score += score * m_fixedScoreModifier.Value * m_temporaryScoreModifier.Value;
+            Score += score * m_temporaryScoreModifier.Value;
             m_scoreText.text = "Pontuação: " + Score.ToString();
+
+            if (m_temporaryScoreModifier > 1)
+            {
+                m_scoreText.text += "\nMultiplicador X" + m_temporaryScoreModifier.Value +
+                    "\nTempo restante: " + m_temporaryMultiplierRemainingTime.ToString() + "s";
+            }
         }
 
         public void AddTemporaryMultiplier(int multiplierBonus, float timeToEnd)
@@ -31,12 +37,24 @@ namespace Pinbattlers.Match
             {
                 m_temporaryScoreModifier.Value = Mathf.Clamp(m_temporaryScoreModifier + multiplierBonus, 0, 5);
                 m_temporaryMultiplierRemainingTime += timeToEnd;
+                if (m_temporaryScoreModifier == 1) StartCoroutine(nameof(ScoreMultiplierTimer));
             }
         }
 
-        private void Update()
+        private IEnumerator ScoreMultiplierTimer()
         {
-            if (m_temporaryMultiplierRemainingTime > 0) m_temporaryMultiplierRemainingTime -= Time.deltaTime;
+            while (m_temporaryScoreModifier > 0)
+            {
+                m_temporaryMultiplierRemainingTime -= Time.deltaTime;
+
+                m_scoreText.text = "Pontuação: " + Score.ToString() +
+                    "\nMultiplicador X" + m_temporaryScoreModifier.Value +
+                    "\nTempo restante: " + m_temporaryMultiplierRemainingTime.ToString() + "s";
+
+                yield return new WaitForEndOfFrame();
+            }
+
+            m_temporaryScoreModifier.Value = 1;
         }
     }
 }
