@@ -1,5 +1,7 @@
 using ScriptableObjectArchitecture;
+using System.Collections;
 using System.Collections.Generic;
+using TMPro.Examples;
 using UnityEngine;
 using Zenject;
 
@@ -16,13 +18,16 @@ namespace Pinbattlers.Player
         private PlayerData m_playerData;
 
         private int m_maxLife;
-        [field: SerializeField] public int Life { get; private set; }
+        public int Life { get; private set; }
         private int m_attack;
         private int m_defense;
         private int m_leftBalls;
         private Vector2 m_respawnPosition;
 
         private List<Condition> m_conditions;
+
+        [SerializeField] private FloatVariable m_saverTime;
+        private bool m_isSaverActive;
 
         [SerializeField] private FloatGameEvent m_playerLifeUpdate;
         [SerializeField] private IntGameEvent m_playerRemainingBallsUpdate;
@@ -59,6 +64,8 @@ namespace Pinbattlers.Player
                 // Setting skin.
                 GetComponent<SpriteRenderer>().sprite = m_playerData.SkinEquiped;
             }
+
+            m_saverTime.AddListener(StartSaverTimer);
         }
 
         public void CopyDataFromOriginalInstance()
@@ -153,11 +160,34 @@ namespace Pinbattlers.Player
             m_playerRemainingBallsUpdate.Raise(m_leftBalls);
         }
 
+        public void StartSaverTimer()
+        {
+            if (!m_isSaverActive && m_saverTime.Value > 0)
+            {
+                m_isSaverActive = true;
+                m_saverTime.RemoveListener(StartSaverTimer);
+                StartCoroutine(nameof(SaverTimer));
+            }
+        }
+
+        private IEnumerator SaverTimer()
+        {
+            while (m_saverTime.Value > 0)
+            {
+                m_saverTime.Value -= Time.deltaTime;
+                yield return new WaitForEndOfFrame();
+            }
+
+            m_isSaverActive = false;
+            m_saverTime.AddListener(StartSaverTimer);
+        }
+
         public void Die()
         {
             transform.position = m_respawnPosition;
             Heal(m_maxLife - Life);
-            ChangeBallValue(-1);
+
+            if (!m_isSaverActive) ChangeBallValue(-1);
 
             m_death.Raise();
 

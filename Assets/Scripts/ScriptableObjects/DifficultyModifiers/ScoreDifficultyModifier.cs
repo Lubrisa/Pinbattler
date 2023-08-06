@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace Pinbattlers.Scriptables
 {
-    [CreateAssetMenu(fileName = "MapIDScoreModifier", menuName = "DifficultyModifiers/ScoreDifficultyModifier")]
+    [CreateAssetMenu(fileName = "MapIDScoreModifier", menuName = "Quests/DifficultyModifiers/ScoreDifficultyModifier")]
     public class ScoreDifficultyModifier : BaseDifficultyModifier
     {
         [field: SerializeField] public override string Description { get; protected set; }

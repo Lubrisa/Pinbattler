@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Pinbattlers.Scriptables
 {
-    [CreateAssetMenu(fileName = "MapNamePrecisionChallengeID", menuName = "Challenges/PrecisionChallenge")]
+    [CreateAssetMenu(fileName = "MapNamePrecisionChallengeID", menuName = "Quests/Challenges/PrecisionChallenge")]
     public class PrecisionChallenge : BaseChallenge
     {
         [field: SerializeField] public override string Description { get; protected set; }

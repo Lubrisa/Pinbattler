@@ -1,13 +1,10 @@
 using Pinbattlers.Match;
-using Pinbattlers.Menus;
-using Pinbattlers.Player.Resouces;
 using ScriptableObjectArchitecture;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Pinbattlers.Scriptables
 {
-    [CreateAssetMenu(fileName = "MapIDEventEnviromentModifier", menuName = "DifficultyModifiers/EventEnviromentDifficultyModifier")]
+    [CreateAssetMenu(fileName = "MapIDEventEnviromentModifier", menuName = "Quests/DifficultyModifiers/EventEnviromentDifficultyModifier")]
     public class EventEnviromentDifficultyModifier : BaseDifficultyModifier
     {
         [field: SerializeField] public override string Description { get; protected set; }

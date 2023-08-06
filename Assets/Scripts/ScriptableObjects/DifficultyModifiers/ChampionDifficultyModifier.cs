@@ -1,13 +1,10 @@
 using Pinbattlers.Enemies;
-using Pinbattlers.Menus;
-using Pinbattlers.Player.Resouces;
 using ScriptableObjectArchitecture;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Pinbattlers.Scriptables
 {
-    [CreateAssetMenu(fileName = "MapIDChampionModifier", menuName = "DifficultyModifiers/ChampionDifficultyModifier")]
+    [CreateAssetMenu(fileName = "MapIDChampionModifier", menuName = "Quests/DifficultyModifiers/ChampionDifficultyModifier")]
     public class ChampionDifficultyModifier : BaseDifficultyModifier
     {
         [field: SerializeField] public override string Description { get; protected set; }
