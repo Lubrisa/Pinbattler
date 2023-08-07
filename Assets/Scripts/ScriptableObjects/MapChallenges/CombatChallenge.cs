@@ -22,7 +22,6 @@ namespace Pinbattlers.Scriptables
 
         public override bool ConclusionVerification()
         {
-            Debug.Log("Monstros que deve derrotar: " + m_kills);
             if (m_kills <= m_monster.QuantityKilled)
             {
                 GameOverMenuController.Instance.Stars += 1;

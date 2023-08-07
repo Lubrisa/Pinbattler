@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0b04cc912f709c45bd0ebeab6bbea2e, type: 3}
+  m_Script: {fileID: 11500000, guid: cabf800cec3217d4aab3944f5baf80cb, type: 3}
   m_Name: 0_ForestData
   m_EditorClassIdentifier: 
-  <MapName>k__BackingField: Floresta
-  <MapDescription>k__BackingField: Placeholder
+  <MapName>k__BackingField: Forest
+  <MapDescription>k__BackingField: 
   <MapIllustration>k__BackingField: {fileID: 0}
   <MapChallenges>k__BackingField:
   - {fileID: 11400000, guid: 750464a0873e03841ae0477bd7d956a1, type: 2}

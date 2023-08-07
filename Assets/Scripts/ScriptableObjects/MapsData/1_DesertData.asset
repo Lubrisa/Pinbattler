@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0b04cc912f709c45bd0ebeab6bbea2e, type: 3}
+  m_Script: {fileID: 11500000, guid: cabf800cec3217d4aab3944f5baf80cb, type: 3}
   m_Name: 1_DesertData
   m_EditorClassIdentifier: 
-  <MapName>k__BackingField: Deserto
-  <MapDescription>k__BackingField: Placeholder
+  <MapName>k__BackingField: 
+  <MapDescription>k__BackingField: 
   <MapIllustration>k__BackingField: {fileID: 0}
   <MapChallenges>k__BackingField:
   - {fileID: 11400000, guid: 47aff0820d30a5d4aa617b8cfc244131, type: 2}
@@ -23,4 +23,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9ff3b041a4d395447b8dd3d7efb6b826, type: 2}
   <MapHighScore>k__BackingField: 0
   m_mapDependency:
-  - {fileID: 11400000, guid: af4916b93f27e804fa75596836f7b1f1, type: 2}
+  - {fileID: 11400000, guid: 1b5b479c55f58124e8b3221d5e29a3db, type: 2}

@@ -6,6 +6,6 @@ using UnityEngine;
         ScriptableEventConstants.MenuNameCustom + "/MapData Scriptable Event Listener",
         ScriptableEventConstants.MenuOrderCustom + 0
     )]
-public class MapDataListener : BaseScriptableEventListener<MapsData>
+public class MapDataListener : BaseScriptableEventListener<MapData>
 {
 }

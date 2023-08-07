@@ -7778,19 +7778,19 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 11400000, guid: 2139dd1ba4b491a42a644fd880ce2dbe, type: 2}
-        m_TargetAssemblyTypeName: ScriptableEvents.BaseScriptableEvent`1[[Pinbattlers.Menus.MapsData,
+        m_TargetAssemblyTypeName: ScriptableEvents.BaseScriptableEvent`1[[Pinbattlers.Menus.MapData,
           Assembly-CSharp
         m_MethodName: Raise
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: af4916b93f27e804fa75596836f7b1f1, type: 2}
-          m_ObjectArgumentAssemblyTypeName: Pinbattlers.Menus.MapsData, Assembly-CSharp
+          m_ObjectArgument: {fileID: 11400000, guid: 1b5b479c55f58124e8b3221d5e29a3db, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Pinbattlers.Menus.MapData, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -7846,7 +7846,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45bfae2495947ae4bb981b59a35b30d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_mapData: {fileID: 11400000, guid: af4916b93f27e804fa75596836f7b1f1, type: 2}
+  m_mapData: {fileID: 11400000, guid: 1b5b479c55f58124e8b3221d5e29a3db, type: 2}
 --- !u!1 &787310506
 GameObject:
   m_ObjectHideFlags: 0
@@ -10339,7 +10339,6 @@ GameObject:
   - component: {fileID: 998706559}
   - component: {fileID: 998706558}
   - component: {fileID: 998706557}
-  - component: {fileID: 998706560}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -10411,18 +10410,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 998706560}
-        m_TargetAssemblyTypeName: SaveGame, Assembly-CSharp
-        m_MethodName: Save
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 2015443624}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -10473,19 +10460,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 998706555}
   m_CullTransparentMesh: 1
---- !u!114 &998706560
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 998706555}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53f809489940c4b44a66949a92231a77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_saveType: 0
 --- !u!1 &1003614525
 GameObject:
   m_ObjectHideFlags: 0
@@ -10594,13 +10568,13 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 11400000, guid: 2139dd1ba4b491a42a644fd880ce2dbe, type: 2}
-        m_TargetAssemblyTypeName: ScriptableEvents.BaseScriptableEvent`1[[Pinbattlers.Menus.MapsData,
+        m_TargetAssemblyTypeName: ScriptableEvents.BaseScriptableEvent`1[[Pinbattlers.Menus.MapData,
           Assembly-CSharp
         m_MethodName: Raise
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: 9ebab8a1089a6c242acb9d04279c2aa5, type: 2}
-          m_ObjectArgumentAssemblyTypeName: Pinbattlers.Menus.MapsData, Assembly-CSharp
+          m_ObjectArgumentAssemblyTypeName: Pinbattlers.Menus.MapData, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -14336,13 +14310,13 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 11400000, guid: 2139dd1ba4b491a42a644fd880ce2dbe, type: 2}
-        m_TargetAssemblyTypeName: ScriptableEvents.BaseScriptableEvent`1[[Pinbattlers.Menus.MapsData,
+        m_TargetAssemblyTypeName: ScriptableEvents.BaseScriptableEvent`1[[Pinbattlers.Menus.MapData,
           Assembly-CSharp
         m_MethodName: Raise
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: 0722cb94392a79146bb9258bb4f8b9d8, type: 2}
-          m_ObjectArgumentAssemblyTypeName: Pinbattlers.Menus.MapsData, Assembly-CSharp
+          m_ObjectArgumentAssemblyTypeName: Pinbattlers.Menus.MapData, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -18422,7 +18396,6 @@ GameObject:
   - component: {fileID: 1678684343}
   - component: {fileID: 1678684342}
   - component: {fileID: 1678684341}
-  - component: {fileID: 1678684344}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -18494,19 +18467,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1678684344}
-        m_TargetAssemblyTypeName: SaveGame, Assembly-CSharp
-        m_MethodName: Save
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 341755936}
+      - m_Target: {fileID: 2015443624}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -18556,19 +18517,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1678684339}
   m_CullTransparentMesh: 1
---- !u!114 &1678684344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1678684339}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53f809489940c4b44a66949a92231a77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_saveType: 0
 --- !u!1 &1680165978
 GameObject:
   m_ObjectHideFlags: 0
@@ -20016,6 +19964,10 @@ PrefabInstance:
       propertyPath: m_playerData
       value: 
       objectReference: {fileID: 11400000, guid: 17e5540433d996f47a19b2276ce0440b, type: 2}
+    - target: {fileID: 6071817457439229534, guid: 6c80e990c99181f4b9bb31c337869fc1, type: 3}
+      propertyPath: m_mapsData.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 1b5b479c55f58124e8b3221d5e29a3db, type: 2}
     - target: {fileID: 6071817457439229535, guid: 6c80e990c99181f4b9bb31c337869fc1, type: 3}
       propertyPath: m_Name
       value: SavingSystem

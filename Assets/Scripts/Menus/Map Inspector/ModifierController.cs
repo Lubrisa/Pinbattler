@@ -13,7 +13,7 @@ namespace Pinbattlers.Menus
         [SerializeField] private IntVariable m_fixedScoreMultiplier;
 
         private int m_index;
-        public MapsData MapData { get; set; }
+        public MapData MapData { get; set; }
 
         public void SetIndex()
         {

@@ -38,7 +38,7 @@ namespace Pinbattlers.Menus
             m_mapDificultyModifiers = mapDificultyModifiers;
         }
 
-        public void OnUpdateInfoRequest(MapsData mapData)
+        public void OnUpdateInfoRequest(MapData mapData)
         {
             m_mapName.text = mapData.MapName;
             m_mapDescription.text = mapData.MapDescription;
@@ -79,6 +79,6 @@ namespace Pinbattlers.Menus
             }
         }
 
-        public void OnTravelButtonClick() => SceneManager.LoadScene(MapPath + 2);
+        public void OnTravelButtonClick() => SceneManager.LoadScene(MapPath);
     }
 }

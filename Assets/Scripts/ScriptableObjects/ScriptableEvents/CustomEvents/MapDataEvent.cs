@@ -8,7 +8,7 @@ namespace ScriptableEvents.Events
         menuName = ScriptableEventConstants.MenuNameCustom + "/MapData Scriptable Event",
         order = ScriptableEventConstants.MenuOrderCustom + 3
     )]
-    public class MapDataEvent : BaseScriptableEvent<MapsData>
+    public class MapDataEvent : BaseScriptableEvent<MapData>
     {
     }
 }

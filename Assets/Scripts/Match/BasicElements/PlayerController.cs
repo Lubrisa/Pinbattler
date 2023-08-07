@@ -1,7 +1,6 @@
 using ScriptableObjectArchitecture;
 using System.Collections;
 using System.Collections.Generic;
-using TMPro.Examples;
 using UnityEngine;
 using Zenject;
 
@@ -47,6 +46,7 @@ namespace Pinbattlers.Player
         {
             // Setting respawn position.
             m_respawnPosition = transform.position;
+            m_playerRemainingBallsUpdate.Raise(m_leftBalls);
         }
 
         private void OnEnable()
@@ -57,10 +57,10 @@ namespace Pinbattlers.Player
                 // Setting main attributes.
                 Life = m_playerData.Life + m_playerData.LifeModifier;
                 m_maxLife = Life;
-                m_leftBalls = 4;
                 m_playerRemainingBallsUpdate.Raise(m_leftBalls);
                 m_attack = m_playerData.Attack + m_playerData.AttackModifier;
                 m_defense = m_playerData.Defense;
+                m_leftBalls = 2;
                 // Setting skin.
                 GetComponent<SpriteRenderer>().sprite = m_playerData.SkinEquiped;
             }

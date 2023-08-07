@@ -1,5 +1,4 @@
 using Pinbattlers.Menus;
-using Pinbattlers.Player.Resouces;
 using Pinbattlers.Scriptables;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,7 +9,7 @@ namespace Pinbattlers.Match
     public class MissionsManager : MonoBehaviour
     {
         [Inject]
-        private MapsData m_mapData;
+        private MapData m_mapData;
 
         private List<BaseChallenge> m_challenges = new List<BaseChallenge>();
         private List<BaseDifficultyModifier> m_modifiers = new List<BaseDifficultyModifier>();

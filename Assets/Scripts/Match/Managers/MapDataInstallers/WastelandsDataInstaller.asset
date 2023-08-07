@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ddef56a9628c4d540a1c67f2b96cf79a, type: 3}
-  m_Name: ForestDataInstaller
+  m_Name: WastelandsDataInstaller
   m_EditorClassIdentifier: 
-  m_mapData: {fileID: 11400000, guid: 1b5b479c55f58124e8b3221d5e29a3db, type: 2}
+  m_mapData: {fileID: 11400000, guid: 9ebab8a1089a6c242acb9d04279c2aa5, type: 2}

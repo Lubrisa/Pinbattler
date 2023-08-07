@@ -17,7 +17,7 @@ public class SavingManager : MonoBehaviour
     [SerializeField] private PlayerData m_playerData;
     [SerializeField] private PlayerData m_freshPlayerData;
 
-    [SerializeField] private MapsData[] m_mapsData;
+    [SerializeField] private MapData[] m_mapsData;
 
     [SerializeField] private MonsterData[] m_monstersData;
 
@@ -82,7 +82,7 @@ public class SavingManager : MonoBehaviour
             Directory.CreateDirectory(path);
         }
 
-        foreach (MapsData md in m_mapsData)
+        foreach (MapData md in m_mapsData)
         {
             string filePath = path + $"/{md.MapName}.txt";
 

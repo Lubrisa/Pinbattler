@@ -15,7 +15,6 @@ namespace Pinbattlers.Scriptables
 
         public override bool ConclusionVerification()
         {
-            Debug.Log("Pontos que deve alcançar: " + m_scoreTarget);
             if (m_scoreTarget <= ScoreManager.Score)
             {
                 GameOverMenuController.Instance.Stars += 1;

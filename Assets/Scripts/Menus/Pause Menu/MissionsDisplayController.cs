@@ -1,5 +1,4 @@
 using Pinbattlers.Scriptables;
-using ScriptableObjectArchitecture;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -10,16 +9,19 @@ namespace Pinbattlers.Menus
     public class MissionsDisplayController : MonoBehaviour
     {
         [Inject]
-        private MapsData m_mapData;
+        private MapData m_mapData;
 
         [SerializeField] private GameObject m_missionTextHolder;
         private Transform m_content;
 
         private bool m_isActive;
 
+        private PauseMenuController m_pauseMenu;
+
         [Inject]
         private void Constructor(RectTransform content)
         {
+            m_pauseMenu = transform.GetComponentInParent<PauseMenuController>();
             m_content = content;
 
             PlayerInputs playerInputs = new PlayerInputs();
@@ -31,15 +33,18 @@ namespace Pinbattlers.Menus
 
         private void OnEscapePressed(InputAction.CallbackContext context)
         {
-            if (m_isActive)
+            if (!m_pauseMenu.OptionsMenuActive)
             {
-                WriteMissions();
-                m_isActive = false;
-            }
-            else
-            {
-                EraseMissions();
-                m_isActive = true;
+                if (m_isActive)
+                {
+                    WriteMissions();
+                    m_isActive = false;
+                }
+                else
+                {
+                    EraseMissions();
+                    m_isActive = true;
+                }
             }
         }
 

@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using Zenject;
 
 namespace Pinbattlers.Menus
 {
@@ -8,15 +7,13 @@ namespace Pinbattlers.Menus
     {
         private GameObject m_pauseMenu;
 
-        public bool OptionsMenuActive { get; set; }
+        [field: SerializeField] public bool OptionsMenuActive { get; set; }
 
         [SerializeField] private GameObject m_confirmationMenu;
 
-        [Inject]
-        private void Constructor([Inject(Id = "PauseMenu")] RectTransform pauseMenu) => m_pauseMenu = pauseMenu.gameObject;
-
         private void Start()
         {
+            m_pauseMenu = transform.GetChild(0).gameObject;
             PlayerInputs playerInputs = new PlayerInputs();
             playerInputs.Enable();
             playerInputs.Computer.Pause.performed += SetPauseMenuState;

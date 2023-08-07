@@ -5,10 +5,10 @@ using Zenject;
 [CreateAssetMenu(fileName = "MapDataInstaller", menuName = "Installers/MapDataInstaller")]
 public class MapDataInstaller : ScriptableObjectInstaller<MapDataInstaller>
 {
-    [SerializeField] private MapsData m_mapData;
+    [SerializeField] private MapData m_mapData;
 
     public override void InstallBindings()
     {
-        Container.Bind<MapsData>().FromInstance(m_mapData).AsSingle();
+        Container.Bind<MapData>().FromInstance(m_mapData).AsSingle();
     }
 }

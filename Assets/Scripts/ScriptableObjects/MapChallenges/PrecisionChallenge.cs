@@ -15,7 +15,6 @@ namespace Pinbattlers.Scriptables
 
         public override bool ConclusionVerification()
         {
-            Debug.Log("Obstáculo que precisa ativar: " + m_wasActivated.name);
             if (m_wasActivated)
             {
                 GameOverMenuController.Instance.Stars += 1;

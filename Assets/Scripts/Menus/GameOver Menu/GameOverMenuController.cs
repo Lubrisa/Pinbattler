@@ -18,7 +18,7 @@ namespace Pinbattlers.Menus
         private PlayerData m_playerData;
 
         [Inject]
-        private MapsData m_mapData;
+        private MapData m_mapData;
 
         #endregion PlayerAndMapData
 

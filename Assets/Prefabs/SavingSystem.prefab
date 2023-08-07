@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6071817457439229505
 Transform:
   m_ObjectHideFlags: 0
@@ -46,13 +46,9 @@ MonoBehaviour:
   m_playerData: {fileID: 11400000, guid: 8fea82cabf82ae9479ead00c45eca3f8, type: 2}
   m_freshPlayerData: {fileID: 11400000, guid: 17e5540433d996f47a19b2276ce0440b, type: 2}
   m_mapsData:
-  - {fileID: 11400000, guid: af4916b93f27e804fa75596836f7b1f1, type: 2}
+  - {fileID: 11400000, guid: 1b5b479c55f58124e8b3221d5e29a3db, type: 2}
   - {fileID: 11400000, guid: 0722cb94392a79146bb9258bb4f8b9d8, type: 2}
   - {fileID: 11400000, guid: 9ebab8a1089a6c242acb9d04279c2aa5, type: 2}
-  m_freshMapsData:
-  - {fileID: 11400000, guid: af3d9e26eb4583243b6d83053dab6321, type: 2}
-  - {fileID: 11400000, guid: 5885265cfce9f1d43b2036d1d9450c76, type: 2}
-  - {fileID: 11400000, guid: 18ed352e782e7e84691dfd34018bdcdc, type: 2}
   m_monstersData:
   - {fileID: 11400000, guid: 1cc0a22c5f446514985c50c6a9e2d937, type: 2}
   - {fileID: 11400000, guid: a491df68a26d0bf4b8dccf2d3bc76101, type: 2}

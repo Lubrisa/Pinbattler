@@ -1,12 +1,10 @@
 using Pinbattlers.Scriptables;
-using System;
 using UnityEngine;
 
 namespace Pinbattlers.Menus
 {
     [CreateAssetMenu(fileName = "ID_MapNameData", menuName = "MapsData")]
-    [Serializable]
-    public class MapsData : ScriptableObject
+    public class MapData : ScriptableObject
     {
         [field: SerializeField] public string MapName { get; private set; }
         [field: SerializeField] public string MapDescription { get; private set; }
@@ -15,7 +13,7 @@ namespace Pinbattlers.Menus
         [field: SerializeField] public BaseDifficultyModifier[] MapModifiers { get; private set; }
         [field: SerializeField] public int MapHighScore { get; set; }
 
-        [SerializeField] private MapsData[] m_mapDependency;
+        [SerializeField] private MapData[] m_mapDependency;
 
         public bool Unlocked()
         {
