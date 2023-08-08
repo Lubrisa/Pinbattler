@@ -12,10 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71edcfafa1a9ab34ca20bede42570d1f, type: 3}
   m_Name: SpiderWalkingState
   m_EditorClassIdentifier: 
-  <StateChangeVerification>k__BackingField: {fileID: 0}
   m_walkPositions:
-  - {x: -4.31, y: -3.53}
-  - {x: -0.96, y: -4.73}
-  - {x: 2.45, y: -7.43}
-  - {x: -3.48, y: -8.09}
+  - {x: 9.64, y: 7.83}
+  - {x: -0.14, y: 7.83}
+  - {x: -10.53, y: 7.83}
+  - {x: -10.53, y: 0.32}
+  - {x: 0.12, y: 0.32}
+  - {x: 10.34, y: 0.32}
+  - {x: 4.05, y: -5.79}
+  - {x: -4.07, y: -5.79}
   m_idleState: {fileID: 11400000, guid: 47d675bc4d3790a46a339ce9e5850c9a, type: 2}
