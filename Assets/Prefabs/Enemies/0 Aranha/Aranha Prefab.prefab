@@ -787,6 +787,7 @@ MonoBehaviour:
   m_attackState: {fileID: 11400000, guid: eea618ded47c4a641a4c2633e557ddb4, type: 2}
   m_rotationSpeed: 20
   m_rotationModifier: 260
+  m_portalWeb: {fileID: 8296497090073592966, guid: f10bfda2bb0209347b31b294370cddad, type: 3}
 --- !u!114 &5865195441967783001
 MonoBehaviour:
   m_ObjectHideFlags: 0

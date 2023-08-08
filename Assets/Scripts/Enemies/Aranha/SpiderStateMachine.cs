@@ -45,6 +45,7 @@ public class SpiderStateMachine : BaseStateMachine, IEnemy
 
     [SerializeField] private float m_rotationSpeed;
     [SerializeField] private float m_rotationModifier;
+    [SerializeField] private GameObject m_portalWeb;
 
     protected override void Start()
     {
@@ -107,12 +108,15 @@ public class SpiderStateMachine : BaseStateMachine, IEnemy
         }
     }
 
+    [ContextMenu("Kill")]
     public void Die()
     {
         m_givePoints.Raise(m_pointsReward);
         GameOverMenuController.Instance.Essences += m_essencesReward;
 
         m_monsterData.QuantityKilled++;
+
+        Instantiate(m_portalWeb, transform.position, Quaternion.identity, transform.parent);
 
         Destroy(this.gameObject);
     }

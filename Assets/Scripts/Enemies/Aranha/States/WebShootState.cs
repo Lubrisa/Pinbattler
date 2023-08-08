@@ -33,7 +33,7 @@ public class WebShootState : BaseState
         if (m_attackProgression > 0) m_attackProgression -= Time.deltaTime;
         else
         {
-            Instantiate(m_web, Machine.transform.position, Machine.transform.rotation);
+            Instantiate(m_web, Machine.transform.position, Machine.transform.rotation, Machine.transform.parent);
             Machine.EnterNewState(m_idleState);
         }
     }

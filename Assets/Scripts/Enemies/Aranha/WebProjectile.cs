@@ -3,7 +3,7 @@ using ScriptableObjectArchitecture;
 using System.Collections;
 using UnityEngine;
 
-public class Web : MonoBehaviour
+public class WebProjectile : MonoBehaviour
 {
     private Rigidbody2D m_webRigidBody;
     private Animator m_webAnimator;
