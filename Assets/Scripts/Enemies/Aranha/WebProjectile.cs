@@ -34,7 +34,11 @@ public class WebProjectile : MonoBehaviour
             StartCoroutine(nameof(TimeToWebVanish));
         }
 
-        if (collision.transform.TryGetComponent(out PlayerController playerController)) m_playerCatched.Raise();
+        if (collision.transform.TryGetComponent(out PlayerController playerController))
+        {
+            m_playerCatched.Raise();
+            playerController.GetComponent<Rigidbody2D>().angularVelocity = 0;
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)

@@ -15,10 +15,13 @@ public class SpiderIdleState : BaseState
     {
         Machine = machine;
         m_timePassed = m_maxIdleTime;
+
+        Machine.GetComponent<Animator>().SetBool("Idle", true);
     }
 
     public override void Exit()
     {
+        Machine.GetComponent<Animator>().SetBool("Idle", false);
     }
 
     public override void LogicUpdate()

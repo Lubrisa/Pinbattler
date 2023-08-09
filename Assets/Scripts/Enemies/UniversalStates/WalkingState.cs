@@ -24,12 +24,12 @@ public class WalkingState : BaseState
             if (hit.collider == null && Vector2.Distance(Machine.transform.position, m_walkPositions[m_positionToWalk]) > 1f) break;
         }
 
-        Machine.transform.GetComponent<Animator>().SetTrigger("Walking");
+        Machine.transform.GetComponent<Animator>().SetBool("Walking", true);
     }
 
     public override void Exit()
     {
-        Machine.transform.GetComponent<Animator>().SetTrigger("Idle");
+        Machine.transform.GetComponent<Animator>().SetBool("Walking", false);
     }
 
     public override void LogicUpdate()

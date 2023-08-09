@@ -17,11 +17,12 @@ public class SpiderAttackState : BaseState
 
         Machine.IsAttacking = true;
 
-        Machine.transform.GetComponent<Animator>().SetTrigger("Walking");
+        Machine.transform.GetComponent<Animator>().SetBool("Walking", true);
     }
 
     public override void Exit()
     {
+        Machine.transform.GetComponent<Animator>().SetBool("Walking", false);
     }
 
     public override void LogicUpdate()

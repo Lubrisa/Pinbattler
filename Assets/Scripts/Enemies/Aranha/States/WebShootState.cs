@@ -7,8 +7,6 @@ public class WebShootState : BaseState
 
     private GameObject m_player;
 
-    [SerializeField] private float m_attackDelay;
-    private float m_attackProgression;
     [SerializeField] private GameObject m_web;
 
     [SerializeField] private BaseState m_idleState;
@@ -18,24 +16,19 @@ public class WebShootState : BaseState
         Machine = machine;
 
         m_player = GameObject.FindGameObjectWithTag("Player");
-        m_attackProgression = m_attackDelay;
 
-        Machine.transform.GetComponent<Animator>().SetTrigger("Attack");
+        Machine.transform.GetComponent<Animator>().SetBool("Attack", true);
     }
 
     public override void Exit()
     {
-        Machine.transform.GetComponent<Animator>().SetTrigger("Idle");
+        Machine.transform.GetComponent<Animator>().SetBool("Attack", false);
     }
 
     public override void LogicUpdate()
     {
-        if (m_attackProgression > 0) m_attackProgression -= Time.deltaTime;
-        else
-        {
-            Instantiate(m_web, Machine.transform.position, Machine.transform.rotation, Machine.transform.parent);
-            Machine.EnterNewState(m_idleState);
-        }
+        Instantiate(m_web, Machine.transform.position, Machine.transform.rotation, Machine.transform.parent);
+        Machine.EnterNewState(m_idleState);
     }
 
     public override void PhysicsUpdate()
