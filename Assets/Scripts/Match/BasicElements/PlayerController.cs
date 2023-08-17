@@ -17,7 +17,7 @@ namespace Pinbattlers.Player
         private PlayerData m_playerData;
 
         private int m_maxLife;
-        public int Life { get; private set; }
+        [field: SerializeField] public int Life { get; private set; }
         private int m_attack;
         private int m_defense;
         private int m_leftBalls;
@@ -46,7 +46,6 @@ namespace Pinbattlers.Player
         {
             // Setting respawn position.
             m_respawnPosition = transform.position;
-            m_playerRemainingBallsUpdate.Raise(m_leftBalls);
         }
 
         private void OnEnable()
@@ -64,6 +63,8 @@ namespace Pinbattlers.Player
                 // Setting skin.
                 GetComponent<SpriteRenderer>().sprite = m_playerData.SkinEquiped;
             }
+            
+            m_playerRemainingBallsUpdate.Raise(m_leftBalls);
 
             m_saverTime.AddListener(StartSaverTimer);
         }
@@ -87,6 +88,8 @@ namespace Pinbattlers.Player
 
             Instance = this;
         }
+
+        private void OnDisable() => m_saverTime.RemoveListener(StartSaverTimer);
 
         #endregion Initialization
 
@@ -141,6 +144,7 @@ namespace Pinbattlers.Player
         public void TakeDamage(int damage)
         {
             Life -= damage - m_defense <= 0 ? 1 : damage - m_defense;
+            Life = Life < 0 ? 0 : Life;
 
             if (Life <= 0) Die();
 
@@ -191,7 +195,11 @@ namespace Pinbattlers.Player
 
             m_death.Raise();
 
-            if (m_leftBalls < 0) m_gameOver.Raise();
+            if (m_leftBalls < 0)
+            {
+                m_gameOver.Raise();
+                gameObject.SetActive(false);
+            }
         }
 
         #endregion LifeManagement

@@ -18,8 +18,8 @@ MonoBehaviour:
   <AttackModifier>k__BackingField: 0
   <Defense>k__BackingField: 0
   <Skins>k__BackingField:
-  - {fileID: 21300000, guid: d805b74502943494e983a20353f6ab86, type: 3}
-  <SkinEquiped>k__BackingField: {fileID: 21300000, guid: d805b74502943494e983a20353f6ab86, type: 3}
+  - {fileID: 21300000, guid: 0d6adb294d4749e4c9cc31d291af1bcb, type: 3}
+  <SkinEquiped>k__BackingField: {fileID: 21300000, guid: 0d6adb294d4749e4c9cc31d291af1bcb, type: 3}
   <Abilities>k__BackingField: []
   <AbilityEquiped>k__BackingField: {fileID: 0}
   <Relics>k__BackingField: []
