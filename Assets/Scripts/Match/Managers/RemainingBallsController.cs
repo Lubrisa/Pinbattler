@@ -1,10 +1,16 @@
+using Pinbattlers.Player;
 using UnityEngine;
+using UnityEngine.UI;
+using Zenject;
 
 namespace Pinbattlers.Match
 {
     public class RemainingBallsController : MonoBehaviour
     {
         [SerializeField] private GameObject[] m_remainingBalls;
+
+        [Inject]
+        private PlayerData m_playerData;
 
         private void Start()
         {
@@ -13,6 +19,7 @@ namespace Pinbattlers.Match
             for (int i = 0; i < m_remainingBalls.Length; i++)
             {
                 m_remainingBalls[i] = transform.GetChild(i).gameObject;
+                m_remainingBalls[i].GetComponent<Image>().sprite = m_playerData.SkinEquiped;
             }
         }
 

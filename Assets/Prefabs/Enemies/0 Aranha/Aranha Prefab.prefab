@@ -780,13 +780,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_monsterData: {fileID: 11400000, guid: 1cc0a22c5f446514985c50c6a9e2d937, type: 2}
+  <CurrentLife>k__BackingField: 0
   <CurrentState>k__BackingField: {fileID: 11400000, guid: 47d675bc4d3790a46a339ce9e5850c9a, type: 2}
   m_givePoints: {fileID: 11400000, guid: 6d1833cfaf8fd61479a391f0c111b64d, type: 2}
   m_pointsReward: 200
   m_essencesReward: 20
   m_attackState: {fileID: 11400000, guid: eea618ded47c4a641a4c2633e557ddb4, type: 2}
   m_rotationSpeed: 20
-  m_rotationModifier: 260
+  m_rotationModifier: 270
   m_portalWeb: {fileID: 8296497090073592966, guid: f10bfda2bb0209347b31b294370cddad, type: 3}
 --- !u!114 &5865195441967783001
 MonoBehaviour:

@@ -4,7 +4,6 @@ using Pinbattlers.Player;
 using ScriptableObjectArchitecture;
 using UnityEngine;
 using UnityEngine.UI;
-using Zenject.SpaceFighter;
 
 public class SpiderStateMachine : BaseStateMachine, IEnemy
 {
@@ -13,7 +12,7 @@ public class SpiderStateMachine : BaseStateMachine, IEnemy
     #region Attributes
 
     public override int MaxLife { get; protected set; }
-    public override int CurrentLife { get; protected set; }
+    [field: SerializeField] public override int CurrentLife { get; protected set; }
     public override int Attack { get; protected set; }
     public override int Defense { get; protected set; }
     public override float MoveSpeed { get; protected set; }
@@ -64,13 +63,17 @@ public class SpiderStateMachine : BaseStateMachine, IEnemy
 
     protected override void Update()
     {
+        LookTowardsPlayer();
+
+        CurrentState.LogicUpdate();
+    }
+
+    private void LookTowardsPlayer()
+    {
         Vector3 vectorToTarget = m_player.transform.position - transform.position;
         float angle = Mathf.Atan2(vectorToTarget.y, vectorToTarget.x) * Mathf.Rad2Deg - m_rotationModifier;
         Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
         transform.rotation = Quaternion.Slerp(transform.rotation, q, Time.deltaTime * m_rotationSpeed);
-
-        Debug.Log(CurrentState.name);
-        CurrentState.LogicUpdate();
     }
 
     protected override void FixedUpdate()

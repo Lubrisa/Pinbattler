@@ -1,6 +1,7 @@
 using ScriptableObjectArchitecture;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using Zenject;
 
@@ -17,7 +18,7 @@ namespace Pinbattlers.Player
         private PlayerData m_playerData;
 
         private int m_maxLife;
-        public int Life { get; private set; }
+        [field: SerializeField] public int Life { get; private set; }
         private int m_attack;
         private int m_defense;
         private int m_leftBalls;
@@ -39,21 +40,17 @@ namespace Pinbattlers.Player
 
         private void Awake()
         {
+            Debug.Log("Awake");
             if (Instance == null) Instance = this;
-        }
-
-        private void Start()
-        {
-            // Setting respawn position.
-            m_respawnPosition = transform.position;
-            m_playerRemainingBallsUpdate.Raise(m_leftBalls);
         }
 
         private void OnEnable()
         {
+            Debug.Log("OnEnable");
             if (Instance != this && m_isOneCopy) CopyDataFromOriginalInstance();
             else
             {
+                Debug.Log("First Instance");
                 // Setting main attributes.
                 Life = m_playerData.Life + m_playerData.LifeModifier;
                 m_maxLife = Life;
@@ -61,15 +58,23 @@ namespace Pinbattlers.Player
                 m_attack = m_playerData.Attack + m_playerData.AttackModifier;
                 m_defense = m_playerData.Defense;
                 m_leftBalls = 2;
-                // Setting skin.
-                GetComponent<SpriteRenderer>().sprite = m_playerData.SkinEquiped;
             }
+            GetComponent<SpriteRenderer>().sprite = m_playerData.SkinEquiped;
 
             m_saverTime.AddListener(StartSaverTimer);
         }
 
+        private void Start()
+        {
+            Debug.Log("Start");
+            // Setting respawn position.
+            m_respawnPosition = transform.position;
+            m_playerRemainingBallsUpdate.Raise(m_leftBalls);
+        }
+
         public void CopyDataFromOriginalInstance()
         {
+            Debug.Log("Copying Data");
             // The player data.
             m_playerData = Instance.m_playerData;
             // Attributes.
@@ -87,6 +92,8 @@ namespace Pinbattlers.Player
 
             Instance = this;
         }
+
+        private void OnDisable() => m_saverTime.RemoveListener(StartSaverTimer);
 
         #endregion Initialization
 
@@ -141,6 +148,7 @@ namespace Pinbattlers.Player
         public void TakeDamage(int damage)
         {
             Life -= damage - m_defense <= 0 ? 1 : damage - m_defense;
+            Life = Life < 0 ? 0 : Life;
 
             if (Life <= 0) Die();
 
@@ -191,7 +199,11 @@ namespace Pinbattlers.Player
 
             m_death.Raise();
 
-            if (m_leftBalls < 0) m_gameOver.Raise();
+            if (m_leftBalls < 0)
+            {
+                m_gameOver.Raise();
+                gameObject.SetActive(false);
+            }
         }
 
         #endregion LifeManagement
